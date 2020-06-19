@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/frog.png">
+    <MainLayout msg="Coucou Frofro"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainLayout from './app/main-layout/main-layout.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    /* eslint-disable vue/no-unused-components */
+    MainLayout
   }
 }
 </script>
@@ -24,5 +25,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+img {
+  width: 50%;
 }
 </style>
