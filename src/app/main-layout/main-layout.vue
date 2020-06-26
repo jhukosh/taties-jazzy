@@ -1,6 +1,7 @@
+<!-- COMPONENT TO DELETE AT THE END-->
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>Coucou Frofro</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -31,11 +32,8 @@
 </template>
 
 <script>
-export default {
-  name: 'MainLayout',
-  props: {
-    msg: String
-  }
+  export default {
+    name: 'MainLayout',
 }
 </script>
 
