@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import MenuComponent from '@/app/main-layout/components/menu-component/menu-component.vue'
-  import FooterComponent from '@/app/main-layout/components/footer-component/footer-component.vue'
+  import MenuComponent from '@/app/components/main-layout/components/menu-component/menu-component.vue'
+  import FooterComponent from '@/app/components/main-layout/components/footer-component/footer-component.vue'
 
   export default {
     name: 'App',
