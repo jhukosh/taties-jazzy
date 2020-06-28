@@ -1,12 +1,18 @@
 import firebase from 'firebase'
 
 const db = firebase.firestore()
-const eventsCollection = db.collection('events')
 const getEvents = () => {
-    console.log('test service')
-    return eventsCollection.get()
+    const result = []
+    db.collection("events").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${doc.data().title}`);
+            result.push(doc.data())
+        });
+        console.log(result);
+        return result;
+    })
 }
 
-export default {
+export {
     getEvents
 }
