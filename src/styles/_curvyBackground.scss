@@ -1,0 +1,69 @@
+.curvyBackground {
+    width: 100%;
+    height: 599px;
+    background-image: linear-gradient(to bottom, $lightorangegradient, $darkerorangegradient 98%);
+}
+
+.trickyborder {
+    border-bottom: 1px solid $darkerorangegradient;
+    height: 20px;
+    background-color: $darkerorangegradient;
+}
+
+#chevronLeft {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 60px;
+    width: 50%;
+}
+#chevronLeft:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:  $darkerorangegradient;
+    transform: skew(0deg, 6deg);
+}
+
+
+#chevronRight {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 60px;
+    width: 50%;
+}
+#chevronRight:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background:  $darkerorangegradient;
+    transform: skew(0deg, -6deg);
+}
+
+.chevronContainer {
+    display: flex;
+}
+
+#chevronMiddle {
+    width: 5%;
+    background:  $darkerorangegradient;
+}
+
+
+#cone {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 100px solid red;
+    border-radius: 50%;
+  }
