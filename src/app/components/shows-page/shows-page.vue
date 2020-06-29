@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <p>Shows page</p>
         <p>{{ shows }}</p>
         <button @click="getEvent">Click me</button>
