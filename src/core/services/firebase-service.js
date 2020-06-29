@@ -13,7 +13,7 @@ export const firebaseService = {
                 reject('No event found in databse')
             })
         }),
-        saveNewEvent: (newEvent) => new Promise((resolve, reject) => {
+        /*saveNewEvent: (newEvent) => new Promise((resolve, reject) => {
             db.collection("events").add(newEvent)
             .then(function() {
                 console.log("Document successfully written!");
@@ -21,6 +21,6 @@ export const firebaseService = {
             .catch(function(error) {
                 console.error("Error writing document: ", error);
             });
-        })
+        })*/
     }
 }

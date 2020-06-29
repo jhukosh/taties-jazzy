@@ -3,12 +3,9 @@
     -moz-osx-font-smoothing: 'text-font';
     text-align: center;
     color: $strawberry;
-    margin-top: 60px;
-    font-family: 'text-font' !important;
+    font-family: 'text-font', sans-serif !important;
   }
-img {
-    width: 50%;
-}
+
 h1, h2, h3, h4 {
-    font-family: 'title-font' !important;
+    font-family: 'title-font', sans-serif !important;
 }

@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <MenuComponent />
+    <HeaderComponent />
     <FooterComponent />
   </div>
 </template>
 
 <script>
-  import MenuComponent from '@/app/components/main-layout/components/menu-component/menu-component.vue'
+  import HeaderComponent from '@/app/components/main-layout/components/header-component/header-component.vue'
   import FooterComponent from '@/app/components/main-layout/components/footer-component/footer-component.vue'
 
   export default {
     name: 'App',
     components: {
-      MenuComponent,
+      HeaderComponent,
       FooterComponent
     }
   }
@@ -20,17 +20,4 @@
 
 <style lang="scss">
   @import "main.scss";
-
-  #nav {
-    padding: 30px;
-
-    a {
-      font-weight: bold;
-      color: #2c3e50;
-
-      &.router-link-exact-active {
-        color: #42b983;
-      }
-    }
-  }
 </style>

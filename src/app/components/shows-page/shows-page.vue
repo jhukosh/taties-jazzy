@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { firebaseService } from '@/app/services/firebase-service.js'
+import { firebaseService } from '@/core/services/firebase-service.js'
 export default {
     name: 'ShowsPage',
     mixins: [firebaseService],
