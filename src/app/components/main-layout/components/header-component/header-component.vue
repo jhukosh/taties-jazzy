@@ -10,7 +10,9 @@
             <li class="navItem">
                 <router-link to="/classes">Master class</router-link>
             </li>
-            <img src="@/assets/logo515.png" alt="Logo Taties Jazzy" class="headerLogo">
+            <li>
+                <img src="@/assets/logo515.png" alt="Logo Taties Jazzy" class="headerLogo">
+            </li>
             <li class="navItem">
                 <router-link to="/association">L'association</router-link>
             </li>
