@@ -8,7 +8,23 @@
     background-image: linear-gradient(to bottom, $lightorangegradient, $darkerorangegradient 98%);
 }
 
-#chevronLeft {
+.chevronContainer {
+    display: flex;
+}
+
+// Top curve
+#chevronUpMiddle {
+    width: 55%;
+    background: $lightorangegradient;
+    height: 109px;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+    position: absolute;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+#chevronUpLeft {
     position: relative;
     text-align: center;
     padding: 12px;
@@ -17,19 +33,19 @@
     width: 50%;
 }
 
-#chevronLeft:before {
+#chevronUpLeft:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: #be1900;
-    transform: skew(0deg, 6deg);
-    border-bottom-right-radius: 45%;
+    background: $lightorangegradient;
+    transform: skew(0deg, -6deg);
+    border-top-right-radius: 45%;
 }
 
-#chevronRight {
+#chevronUpRight {
     position: relative;
     text-align: center;
     padding: 12px;
@@ -38,29 +54,80 @@
     width: 50%;
 }
 
-#chevronRight:after {
+#chevronUpRight:after {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
     width: 100%;
-    background: #be1900;
+    background: $lightorangegradient;
+    transform: skew(0deg, 6deg);
+    border-top-left-radius: 45%;
+}
+
+#chevronUpMiddle {
+    width: 60%;
+    background: $lightorangegradient;
+    height: 120px;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: translateY(-25px);
+}
+
+// Bottom curve
+#chevronDownLeft {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 60px;
+    width: 50%;
+}
+
+#chevronDownLeft:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $darkerorangegradient;
+    transform: skew(0deg, 6deg);
+    border-bottom-right-radius: 45%;
+}
+
+#chevronDownRight {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 60px;
+    width: 50%;
+}
+
+#chevronDownRight:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: $darkerorangegradient;
     transform: skew(0deg, -6deg);
     border-bottom-left-radius: 45%;
 }
 
-.chevronContainer {
-    display: flex;
-}
-
-#chevronMiddle {
+#chevronDownMiddle {
     width: 55%;
-    background: #be1900;
+    background: $darkerorangegradient;
     height: 109px;
     margin-left: 22.5%;
     margin-right: 22.5%;
     position: absolute;
-    border-bottom-left-radius: 105%;
-    border-bottom-right-radius: 105%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
