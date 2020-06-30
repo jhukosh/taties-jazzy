@@ -22,10 +22,17 @@
             <div id="chevronDownRight"></div> 
         </div>
 
-        <div class="flexContainer">
+        <div class="flexContainer" style="justify-content: space-between;">
             <div class="triangleDecorationLeft"></div>
             <div class="triangleDecorationRight"></div>
         </div>
+
+        <div class="flexContainer" style="justify-content: space-between;margin-top:10px;">
+            <div class="blackVerticalLine"></div>
+            <div class="blackVerticalLine"></div>
+        </div>
+
+        <div style="margin-top:10px;margin-left: auto;margin-right: auto;" class="otherBlackVerticalLine"></div>
 
     </div>
 </template>

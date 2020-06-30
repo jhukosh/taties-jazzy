@@ -159,3 +159,20 @@
     border-color: transparent $lightpinkgradient transparent transparent;
     
 }
+
+// **************************************************************************************
+// Vertical blacl separator line
+
+@mixin blackVerticalLine($widthValue, $borderHeightValue, $borderColorValue) {
+    width: $widthValue;
+    border: solid $borderHeightValue $borderColorValue;
+    border-radius: 10px;
+}
+
+.blackVerticalLine {
+    @include blackVerticalLine(190px, 2px, #000000)
+}
+
+.otherBlackVerticalLine {
+    @include blackVerticalLine(1247px, 3px, #000000)
+}
