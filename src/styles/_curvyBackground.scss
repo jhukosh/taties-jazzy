@@ -4,7 +4,7 @@
 
 .curvyBackground {
     width: 100%;
-    height: 599px;
+    height: 500px;
     background-image: linear-gradient(to bottom, $lightorangegradient, $darkerorangegradient 98%);
 }
 
@@ -42,7 +42,7 @@
     width: 100%;
     background: $lightorangegradient;
     transform: skew(0deg, -6deg);
-    border-top-right-radius: 45%;
+    border-top-right-radius: 70%;
 }
 
 #chevronUpRight {
@@ -63,7 +63,7 @@
     width: 100%;
     background: $lightorangegradient;
     transform: skew(0deg, 6deg);
-    border-top-left-radius: 45%;
+    border-top-left-radius: 70%;
 }
 
 #chevronUpMiddle {
@@ -75,7 +75,7 @@
     position: absolute;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    transform: translateY(-25px);
+    transform: translateY(-15px);
 }
 
 // Bottom curve
@@ -130,4 +130,9 @@
     position: absolute;
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
+}
+
+.curvyBackgroundSvg {
+    position: absolute;
+    right: 1%;
 }
