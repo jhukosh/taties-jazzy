@@ -132,7 +132,10 @@
     border-bottom-right-radius: 100%;
 }
 
-.curvyBackgroundSvg {
+// Svg style
+#curvyBackgroundSvg {
     position: absolute;
     right: 1%;
+    width: 309px;
+    height: 309px;
 }
