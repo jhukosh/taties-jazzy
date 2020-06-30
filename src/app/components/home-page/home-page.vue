@@ -53,5 +53,13 @@
             <div class="footerSeparator"></div>
             <div class="footerSeparator"></div>
         </div>
+        
+        <!-- 3 Différents buttons -->
+        <p class="messageDev">Button :</p>
+        <div class="flexContainer" style="justify-content: space-around; margin-top:10px;">
+            <button class="whiteButton"><span class="whiteButtonTxt">RÉSERVER MON BILLET</span></button>
+            <button class="strawberryButton"><span class="strawberryButtonTxt">ENVOYER UN MAIL</span></button>
+            <button class="blackButton"><span class="blackButtonTxt">VOIR PLUS</span></button>
+        </div>
     </div>
 </template>

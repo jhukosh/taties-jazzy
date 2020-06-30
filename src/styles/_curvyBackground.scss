@@ -205,5 +205,56 @@
 .footerSeparator {
     width: 0;
     height: 141px;
-    border: solid 1px #979797;
+    border: solid 1px $middleGrey;
 }
+
+// **************************************************************************************
+// Buttons
+
+@mixin coloredButton ($btnWidth, $btnHeight, $borderRadiusValue, $borderRadiusColor, $backgroundColorValue) {
+    width: $btnWidth;
+    height: $btnHeight;
+    border-radius: $borderRadiusValue;
+    border: solid 1px $borderRadiusColor;
+    background-color: $backgroundColorValue;
+}
+
+@mixin coloredButtonText ($fontSizeValue, $textColorValue) {
+    font-family: FrutigerLTStd;
+    font-size: $fontSizeValue;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    color: $textColorValue;
+}
+
+.whiteButton {
+    @include coloredButton(233px, 50px, 31.5px, $middleGrey, #ffffff)
+}
+
+.whiteButtonTxt {
+    @include coloredButtonText(16px,#000000)
+}
+
+.strawberryButton {
+    @include coloredButton(231px, 60px, 31.5px, $strawberry, $strawberry)
+}
+
+.strawberryButtonTxt {
+    @include coloredButtonText(18px,#ffffff)
+}
+
+.blackButton {
+    @include coloredButton(184px, 50px, 31.5px, $middleGrey, #000000)
+}
+
+.blackButtonTxt {
+    @include coloredButtonText(16px,#ffffff)
+}
+
+// Canceling chrome behaviour (need to think about interactivity !)
+.whiteButton:focus, .strawberryButton:focus, .blackButton:focus {
+    outline: none;
+} 
