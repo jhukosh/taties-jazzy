@@ -9,8 +9,11 @@
             <div id="chevronUpRight"></div> 
         </div>
 
-        <!-- CurvyBackground svg -->
-        <img id="curvyBackgroundSvg" src="../../../assets/fill-1.svg" alt="">
+        <!-- CurvyBackground circle svg -->
+        <img id="curvyBackgroundCircle" src="../../../assets/fill-1.svg" alt="">
+
+        <!-- CurvyBackground circle svg -->
+        <img id="curvyBackgroundTrumpet" src="../../../assets/trumpet.svg" alt="">
 
         <!-- Actual background with linear gradient -->
         <div class="curvyBackground"></div> 
