@@ -3,7 +3,7 @@
         <p style="margin-bottom:50px;">Bienvenue ma gueule</p>
 
         <!-- Curve top container -->
-        <div class="chevronContainer">
+        <div class="flexContainer">
             <div id="chevronUpLeft"></div>
             <div id="chevronUpMiddle"></div>             
             <div id="chevronUpRight"></div> 
@@ -16,10 +16,16 @@
         <div class="curvyBackground"></div> 
 
         <!-- Curve bottom container -->
-        <div class="chevronContainer">
+        <div class="flexContainer">
             <div id="chevronDownLeft"></div>
             <div id="chevronDownMiddle"></div>             
             <div id="chevronDownRight"></div> 
         </div>
+
+        <div class="flexContainer">
+            <div class="triangleDecorationLeft"></div>
+            <div class="triangleDecorationRight"></div>
+        </div>
+
     </div>
 </template>
