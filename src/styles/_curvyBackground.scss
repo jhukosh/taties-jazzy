@@ -1,3 +1,8 @@
+.messageDev {
+    color: black;
+    font-size: 2rem;
+    text-align: left;
+}
 // The shape is a mix of 3 div elements, 2 chevron (left & right) with rotation to get clean edge on both sides
 // and a middle div in absolute positions covering the two others, to get the bottom round shape.
 // (Not media querry friendly)
@@ -184,4 +189,21 @@
 
 .otherBlackVerticalLine {
     @include blackVerticalLine(1247px, 3px, #000000)
+}
+
+// **************************************************************************************
+// Colored full width separator
+
+.coloredSeparator {
+    width: 100%;
+    height: 11px;
+    background-image: linear-gradient(to right, $lightpinkgradient, $darkerpinkgradient 100%);
+}
+
+// **************************************************************************************
+// Footer horizontal separator (color only used here ?)
+.footerSeparator {
+    width: 0;
+    height: 141px;
+    border: solid 1px #979797;
 }

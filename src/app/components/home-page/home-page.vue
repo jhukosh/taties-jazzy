@@ -3,6 +3,7 @@
         <p style="margin-bottom:50px;">Bienvenue ma gueule</p>
 
         <!-- Curve top container -->
+        <p class="messageDev">Curvy Bg :</p>
         <div class="flexContainer">
             <div id="chevronUpLeft"></div>
             <div id="chevronUpMiddle"></div>             
@@ -25,11 +26,15 @@
             <div id="chevronDownRight"></div> 
         </div>
 
+        <!-- Triangles -->
+        <p class="messageDev">Home page triangles :</p>
         <div class="flexContainer" style="justify-content: space-between;">
             <div class="triangleDecorationLeft"></div>
             <div class="triangleDecorationRight"></div>
         </div>
 
+        <!-- Horizontal black separators -->
+        <p class="messageDev">Honrizontal black separators :</p>
         <div class="flexContainer" style="justify-content: space-between;margin-top:10px;">
             <div class="blackVerticalLine"></div>
             <div class="blackVerticalLine"></div>
@@ -37,5 +42,16 @@
 
         <div style="margin-top:10px;margin-left: auto;margin-right: auto;" class="otherBlackVerticalLine"></div>
 
+        <!-- Horizontal colored separator -->
+        <p class="messageDev">Full width colored separator :</p>
+        <div class="coloredSeparator" style="margin-top:10px;margin-bottom:10px;"></div>
+
+        <!-- Footer separator -->
+        <p class="messageDev">Footer separator :</p>
+        <div class="flexContainer" style="justify-content: space-around;">
+            <div class="footerSeparator"></div>
+            <div class="footerSeparator"></div>
+            <div class="footerSeparator"></div>
+        </div>
     </div>
 </template>
