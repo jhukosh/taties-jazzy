@@ -1,13 +1,11 @@
+// The shape is a mix of 3 div elements, 2 chevron (left & right) with rotation to get clean edge on both sides
+// and a middle div in absolute positions covering the two others, to get the bottom round shape.
+// (Not media querry friendly)
+
 .curvyBackground {
     width: 100%;
     height: 599px;
     background-image: linear-gradient(to bottom, $lightorangegradient, $darkerorangegradient 98%);
-}
-
-.trickyborder {
-    border-bottom: 1px solid $darkerorangegradient;
-    height: 20px;
-    background-color: $darkerorangegradient;
 }
 
 #chevronLeft {
@@ -18,6 +16,7 @@
     height: 60px;
     width: 50%;
 }
+
 #chevronLeft:before {
     content: '';
     position: absolute;
@@ -25,10 +24,10 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background:  $darkerorangegradient;
+    background: #be1900;
     transform: skew(0deg, 6deg);
+    border-bottom-right-radius: 45%;
 }
-
 
 #chevronRight {
     position: relative;
@@ -38,6 +37,7 @@
     height: 60px;
     width: 50%;
 }
+
 #chevronRight:after {
     content: '';
     position: absolute;
@@ -45,8 +45,9 @@
     right: 0;
     height: 100%;
     width: 100%;
-    background:  $darkerorangegradient;
+    background: #be1900;
     transform: skew(0deg, -6deg);
+    border-bottom-left-radius: 45%;
 }
 
 .chevronContainer {
@@ -54,16 +55,12 @@
 }
 
 #chevronMiddle {
-    width: 5%;
-    background:  $darkerorangegradient;
+    width: 55%;
+    background: #be1900;
+    height: 109px;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+    position: absolute;
+    border-bottom-left-radius: 105%;
+    border-bottom-right-radius: 105%;
 }
-
-
-#cone {
-    width: 0;
-    height: 0;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-top: 100px solid red;
-    border-radius: 50%;
-  }
