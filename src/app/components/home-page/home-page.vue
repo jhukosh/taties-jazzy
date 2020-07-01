@@ -53,6 +53,10 @@
             <div class="footerSeparator"></div>
             <div class="footerSeparator"></div>
         </div>
+
+        <!-- Select -->
+        <p class="messageDev">Vertical page separator :</p>
+        <div class="verticalGreySeparator" style="margin-right: auto;margin-left: auto;"></div>
         
         <!-- 3 Différents buttons -->
         <p class="messageDev">Button :</p>
