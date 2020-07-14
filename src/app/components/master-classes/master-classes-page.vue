@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <p>Master class page</p>
         <p>{{ masterClasses }}</p>
     </div>
