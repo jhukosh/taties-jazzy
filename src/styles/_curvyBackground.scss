@@ -223,7 +223,7 @@
 }
 
 @mixin coloredButtonText ($fontSizeValue, $textColorValue) {
-    font-family: FrutigerLTStd;
+    font-family: FrutigerLTStd sans-serif;
     font-size: $fontSizeValue;
     font-weight: bold;
     font-stretch: normal;
