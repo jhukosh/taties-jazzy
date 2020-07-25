@@ -1,0 +1,38 @@
+.home-background {
+    align-items: center;
+    background: url('../../../../../assets/home-band-bg.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+
+    .logos {
+        height: 50%;
+        object-fit: contain;
+        width: 50%;
+        z-index: 2;
+    }
+
+    #banner {
+        height: auto;
+        width: 30%;
+    }
+
+    #jazzy {
+        align-self: flex-start;
+        margin-bottom: -60px;
+        width: 45%;
+    }
+
+    #asso {
+        align-self: flex-end;
+        margin-top: -60px;
+        width: 45%;
+    }
+}

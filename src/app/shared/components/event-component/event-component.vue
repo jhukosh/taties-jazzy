@@ -1,43 +1,44 @@
 <template>
     <div class="event">
-        <img :src="image" alt="" id="band-image"/>
-        <div id="event-infos">
-            <p>{{ type }}</p>
-            <p>{{ artist }}</p>
-            <p>{{ presentation }}</p>
+        <div class="event-image">
+            <img :src="image" alt=""/>
+        </div>
+        <div class="event-infos">
+            <div v-if="parentData" class="home-event-infos">
+                <p class="home-event-type">{{ parentData.type === "show" ? 'Concert' : 'Masterclass' }}</p>
+                <h4 class="home-event-date">{{ parentData.date }}</h4>
+            </div>
+            <hr v-if="parentData" class="home-event-separator">
+            <div v-else>
+                Faire titre etc. pour show et master classes
+            </div>
+            <div class="event-secondary-infos">
+                <p class="event-secondary-infos-artist">{{ parentData ? parentData.artist : 'artist' }}</p>
+                <p class="event-secondary-infos-presentation">{{ parentData ? parentData.presentation : 'présentation' }}</p>
+            </div>
         </div>
     </div>
 </template>
 <script>
 export default {
         name: 'EventComponent',
+        props: ['parentData'],
+        // watch: {
+        //     parentData: {
+        //             handler: 'methodName',
+        //             immediate: true
+        //         }
+        //     },
         data() {
             return {
-                type: 'Concert',
-                date: '20 septembre 2020',
-                artist: 'Christy & Flopy',
-                origin: 'New Orléans',
-                year: '2009',
-                presentation: 'Texte de présentation',
-                time: '21h00',
-                price: 15,
                 image: require('@/assets/photo-band-test.jpg')
             }
+        },
+        mounted() {
+            console.log(this.parentData);
         }
     }
 </script>
 <style lang="scss">
-    .event {
-        color: #393939;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        #band-image {
-            width: 30%;
-        }
-        #event-infos {
-            width: 40%;
-        }
-    }
+    @import "event-component.scss";
 </style>
