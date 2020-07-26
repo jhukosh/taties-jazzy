@@ -1,3 +1,4 @@
+@import '@/styles/_icons.scss';
 #footer {
     align-items: center;
     background-color: #0e0e0e;
@@ -10,19 +11,17 @@
     width: 100%;
 
     .section {
+        border-right: 1px solid white;
+        color: white;
         display: flex;
-        flex-direction: row;
+        height: 70%;
         width: 30%;
 
         .first-section-logos {
-            width: 50%;
-            
-            .logos {
-                display: flex;
-                flex-direction: column;
-                height: 63px;
-                object-fit: contain;
-                width: 100%;
+            width: 120px;
+
+            #banner-logo {
+                margin-top: -18px;
             }
         }
 
@@ -34,12 +33,51 @@
                 list-style: none;
                 
                 li {
+                    margin-top: 5%;
                     a {
-                        text-decoration: none;
                         color: white;
+                        text-decoration: none;
                     }
                 }
             }
         }
+        .footer-contact {
+            flex-direction: column;
+            width: 100%;
+
+            p {
+                margin-left: 20%;
+                text-align: start;
+                width:100%;
+            }
+
+            .footer-club-location {
+                flex-direction: row;
+                .pin-icon {
+                    @include pin-icon(white);
+                }
+                .pin-icon:before {
+                    @include pin-icon-before;
+                }
+            }
+
+            .footer-email-contact {
+                flex-direction: row;
+                .mail-icon {
+                    @include mail-icon(white);
+                }
+                .mail-icon:before {
+                    @include mail-icon-before;
+                }
+                .mail-icon:after {
+                    @include mail-icon-after;
+                }
+            }
+        }
+        .footer-social-media {
+            flex-direction: column;
+        }
+    }:last-child {
+        border-right: none;
     }
 }
