@@ -33,15 +33,34 @@
                 </div>
                 <div class="footer-email-contact">
                     <div class="mail-icon"></div>
-                    <p>
+                    <a href="mailto:lestatiesjazzy@gmail.com" title="Envoyer un email à lestatiesjazzy@gmail.com">
                         lestatiesjazzy@gmail.com
-                    </p>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="section">
             <div class="footer-social-media">
-                blou
+                <div class="footer-instagram">
+                    <img src="@/assets/social-media/instagram.png" alt="Logo Instagram">
+                    <a 
+                    href="https://www.instagram.com/lestatiesjazzy/?hl=fr"
+                    target="_blank"
+                    title="Redirection vers le compte instagram"
+                    >
+                        @lestatiesjazzy
+                    </a>
+                </div>
+                <div class="footer-facebook">
+                    <img src="@/assets/social-media/facebook.png" alt="Logo Facebook">
+                    <a 
+                    href="https://www.facebook.com/lestatiesjazzy"
+                    target="_blank"
+                    title="Redirection vers le compte instagram"
+                    >
+                        Les Taties Jazzy
+                    </a>
+                </div>
             </div>
         </div>
     </div>

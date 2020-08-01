@@ -17,6 +17,11 @@
         height: 70%;
         width: 30%;
 
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
         .first-section-logos {
             width: 120px;
 
@@ -34,25 +39,18 @@
                 
                 li {
                     margin-top: 5%;
-                    a {
-                        color: white;
-                        text-decoration: none;
-                    }
                 }
             }
         }
         .footer-contact {
-            flex-direction: column;
             width: 100%;
 
-            p {
-                margin-left: 20%;
+            p, a {
+                margin-left: 12%;
                 text-align: start;
-                width:100%;
             }
 
             .footer-club-location {
-                flex-direction: row;
                 .pin-icon {
                     @include pin-icon(white);
                 }
@@ -62,7 +60,7 @@
             }
 
             .footer-email-contact {
-                flex-direction: row;
+                text-align: start;
                 .mail-icon {
                     @include mail-icon(white);
                 }
@@ -75,7 +73,21 @@
             }
         }
         .footer-social-media {
+            display: flex;
             flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+            a {
+                margin-left: 10%;
+                align-self: flex-end;
+            }
+            .footer-instagram, .footer-facebook {
+                display: inherit;
+            }
         }
     }:last-child {
         border-right: none;
