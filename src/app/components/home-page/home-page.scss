@@ -1,0 +1,19 @@
+.home-band {
+    margin-bottom: 50px;
+}
+
+.main-event {
+    border-top: 2px solid black;
+    color: black;
+    display:flex;
+    font-size: 22px;
+    justify-content: center;
+
+    .main-event-title {
+        background: white;
+        margin-top: -15px;
+        padding-left: 20px;
+        text-align: start;
+        width: 70%;
+    }
+}
