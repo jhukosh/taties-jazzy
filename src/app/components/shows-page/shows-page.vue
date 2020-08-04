@@ -1,15 +1,21 @@
 <template>
-    <div>
+    <div class="main">
         <p>Shows page</p>
         <p>{{ shows }}</p>
         <button @click="getEvent">Click me</button>
+        <EventComponent />
     </div>
 </template>
 
 <script>
-import { firebaseService } from '@/app/services/firebase-service.js'
+import { firebaseService } from '@/core/services/firebase-service.js'
+import EventComponent from '@/app/shared/components/event-component/event-component.vue'
+
 export default {
     name: 'ShowsPage',
+    components: {
+        EventComponent
+    },
     mixins: [firebaseService],
     data() {
         return {

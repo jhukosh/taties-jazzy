@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <div class="main">
         <p>Master class page</p>
         <p>{{ masterClasses }}</p>
     </div>
 </template>
 
 <script>
-import { firebaseService } from '@/app/services/firebase-service.js'
+import { firebaseService } from '@/core/services/firebase-service.js'
 export default {
     name: 'MasterClassesPage',
     mixins: [firebaseService],
