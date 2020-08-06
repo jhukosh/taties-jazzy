@@ -1,8 +1,16 @@
 @font-face {
-    font-family: 'title-font';
-    src: url(~@/assets/fonts/bod72b--.ttf) format('truetype');
+  font-family: 'title-font';
+  src: url(~@/assets/fonts/bod72b--.ttf) format('truetype');
   }
 @font-face {
-    font-family: 'text-font';
-    src: url(~@/assets/fonts/FrutigerLTStd-Roman.ttf) format('truetype');
+  font-family: 'text-font';
+  src: url(~@/assets/fonts/FrutigerLTStd-Roman.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'hand-font';
+  src: url(~@/assets/fonts/bradley_hand_itc_tt_bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'BodoniSvtyTwoITCTT';
+  src: url(~@/assets/fonts/Bodoni_SvtyTwo_ITC_TT_Book.ttf) format('truetype');
 }
