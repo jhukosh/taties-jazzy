@@ -22,6 +22,4 @@
 
 <style lang="scss">
     @import "about-us-component.scss";
-    // @import "../../../../../styles/_mixins-global.scss";
-    // @import "../../../../../styles/_colors.scss";
 </style>

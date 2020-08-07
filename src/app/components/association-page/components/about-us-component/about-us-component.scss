@@ -8,10 +8,13 @@
         }
         #Who-we-are{
             width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            margin-left: 3rem;
+            margin-bottom: 1rem;
             .taties-header {
-                width: 130px;
-                height: 19px;
-                font-family: FrutigerLTStd-Roman;
+                font-family: 'FrutigerLTStd-Roman', sans-serif !important;
                 font-size: 18px;
                 font-weight: normal;
                 font-stretch: normal;
@@ -22,9 +25,7 @@
                 margin: 0;
             }
             .who-we-are-title {
-                width: 334px;
-                height: 45px;
-                font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;;
+                font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
                 font-size: 38px;
                 font-weight: bold;
                 font-stretch: normal;
@@ -33,6 +34,9 @@
                 letter-spacing: normal;
                 color: #000000;
                 margin: 0;
+                .red-dot {
+                    color: $darkerorangegradient;
+                }
             }
         }
     }
