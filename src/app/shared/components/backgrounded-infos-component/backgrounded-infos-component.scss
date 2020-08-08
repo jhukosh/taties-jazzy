@@ -1,0 +1,48 @@
+.background {
+  background-image: url('../../../../assets/customSVG/curvy-bg-testHome.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: fit-content;
+  display: block;
+
+  .second-version {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .trumpet-icon {
+      @include curvyBackgroundSVG(0%, unset);
+    }
+    .text-part {
+      color: white;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-left: 10%;
+      width: 40%;
+    }
+    .text-part > *{
+      width: 70%;
+      text-align: start;
+      margin-left: 10%;
+      line-height: 1.6;
+    }
+    h3 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .img-part {
+      margin-right: 10%;
+      padding-bottom: 5%;
+      padding-top: 5%;
+      justify-content: flex-start;
+      width: 40%;
+      img {
+        width: 80%;
+        margin-right: 10%;
+      }
+    }
+  }
+}
