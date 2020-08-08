@@ -1,3 +1,4 @@
+@import '@/styles/_icons.scss';
 .background {
   background-image: url('../../../../assets/customSVG/curvy-bg-testHome.svg');
   background-size: 100% 465px;
@@ -6,6 +7,13 @@
   width: 100%;
   height: 465px;
   display: block;
+  h3, h4 {
+    font-size: 26px;
+    letter-spacing: 0.5px;
+  }
+  p {
+    font-size: 14px;
+  }
 
   .home-circle-version {
     display: flex;
@@ -13,15 +21,36 @@
     align-items: center;
     justify-content: center;
     .text-part {
-      margin-right: 10%;
+      margin-left: 8%;
+      text-align: start;
       width: 40%;
+      h3 {
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 2%;
+      }
+      .members-list {
+        list-style: none;
+        padding-left: 0;
+        li {
+          padding-top: 5%;
+          font-size: 18px;
+          .check-icon {
+            @include check-icon(white);
+          }
+          .list-text {
+            margin-left: 10%;
+          }
+        }
+      }
     }
     .img-part {
       width: 40%;
       img {
-        width: 80%;
-        margin-right: 10%;
-        margin-top: 10%;
+        width: 70%;
+        margin-left: 20%;
+        margin-top: 20%;
       }
     }
     .circle-icon {
@@ -48,12 +77,6 @@
       text-align: start;
       margin-left: 10%;
       line-height: 1.6;
-    }
-    h3 {
-      font-size: 26px;
-    }
-    p {
-      font-size: 14px;
     }
     .img-part {
       margin-right: 10%;

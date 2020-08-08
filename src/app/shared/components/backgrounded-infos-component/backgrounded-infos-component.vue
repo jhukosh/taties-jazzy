@@ -8,6 +8,11 @@
     <div class="text-part">
       <h3>DEVENEZ ADHÉRENT</h3>
       <h4>&amp; profitez de nombreux <span>avantages</span> !</h4>
+      <ul class="members-list">
+        <li><span class="check-icon"></span><span class="list-text">Bons plans</span></li>
+        <li><span class="check-icon"></span><span class="list-text">4 places "Découverte" gratuites</span></li>
+        <li><span class="check-icon"></span><span class="list-text">Réductions sur tous les concerts</span></li>
+      </ul>
     </div>
     <img src="@/assets/circle.png" class="circle-icon">
   </div>
