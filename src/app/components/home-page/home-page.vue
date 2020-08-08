@@ -7,10 +7,8 @@
           <h3 class="main-event-title">Programmation</h3>
         </div>
         <EventComponent :parentData="homeShow"/>
+        <BackgroundedInfosComponent :parentData="'circle'"/>
         <BackgroundedInfosComponent :parentData="'trumpet'"/>
-        <div>
-          under
-        </div>
     </div>
 </template>
 <script>

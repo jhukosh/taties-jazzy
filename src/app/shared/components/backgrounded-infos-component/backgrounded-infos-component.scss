@@ -1,12 +1,35 @@
 .background {
   background-image: url('../../../../assets/customSVG/curvy-bg-testHome.svg');
-  background-size: 100% 100%;
+  background-size: 100% 465px;
   background-repeat: no-repeat;
+  color: white;
   width: 100%;
-  height: fit-content;
+  height: 465px;
   display: block;
 
-  .second-version {
+  .home-circle-version {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .text-part {
+      margin-right: 10%;
+      width: 40%;
+    }
+    .img-part {
+      width: 40%;
+      img {
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 10%;
+      }
+    }
+    .circle-icon {
+      @include curvyBackgroundSVG(unset, 1%);
+    }
+  }
+
+  .home-trumpet-version {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -15,7 +38,6 @@
       @include curvyBackgroundSVG(0%, unset);
     }
     .text-part {
-      color: white;
       padding-top: 5%;
       padding-bottom: 5%;
       margin-left: 10%;

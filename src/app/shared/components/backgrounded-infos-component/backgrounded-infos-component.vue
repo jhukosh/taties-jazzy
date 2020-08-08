@@ -1,14 +1,19 @@
 <template>
 <div class="background">
-  <div v-if="parentData === 'disk'">
-    <img src="@/assets/members2.jpg" />
+  <!-- Backgrounded component with circle icon -->
+  <div v-if="parentData === 'circle'" class="home-circle-version">
+    <div class="img-part">
+      <img src="@/assets/members.jpg" />
+    </div>
     <div class="text-part">
       <h3>DEVENEZ ADHÉRENT</h3>
       <h4>&amp; profitez de nombreux <span>avantages</span> !</h4>
     </div>
     <img src="@/assets/circle.png" class="circle-icon">
   </div>
-  <div v-if="parentData === 'trumpet'" class="second-version">
+
+  <!-- Backgrounded component with trumpet icon -->
+  <div v-if="parentData === 'trumpet'" class="home-trumpet-version">
     <img src="@/assets/trumpet.png" class="trumpet-icon">
     <div class="text-part">
       <h3>Des Fous de Jazz</h3>
@@ -27,6 +32,11 @@
     <div class="img-part">
       <img src="@/assets/members2.jpg" />
     </div>
+  </div>
+
+  <!-- Backgrounded component with circle icon for association page -->
+  <div v-if="parentData === 'association-page'">
+    <img src="@/assets/circle.png" class="circle-icon">
   </div>
 </div>
 </template>
