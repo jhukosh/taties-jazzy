@@ -7,7 +7,8 @@
             </div>
         </div>
         <div class="coloredSeparator"></div>
-
+        <div id="testBg"></div>
+        <img src="../../../../../assets/customSVG/curvy-bg-test.svg" alt="">
     </div>
 </template>
 
