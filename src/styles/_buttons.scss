@@ -1,6 +1,6 @@
 // Buttons mixins
 
-@mixin coloredButton ($btnWidth, $btnHeight, $borderRadiusValue, $borderRadiusColor, $backgroundColorValue) {
+@mixin colored-button ($btnWidth, $btnHeight, $borderRadiusValue, $borderRadiusColor, $backgroundColorValue) {
     width: $btnWidth;
     height: $btnHeight;
     border-radius: $borderRadiusValue;
@@ -8,7 +8,7 @@
     background-color: $backgroundColorValue;
 }
 
-@mixin coloredButtonText ($fontSizeValue, $textColorValue) {
+@mixin colored-button-text ($fontSizeValue, $textColorValue) {
     font-family: FrutigerLTStd sans-serif;
     font-size: $fontSizeValue;
     font-weight: bold;
@@ -21,31 +21,31 @@
 
 // Buttons classes
 
-.whiteButton {
-    @include coloredButton(233px, 50px, 31.5px, $middleGrey, #ffffff)
+.white-button {
+    @include colored-button(233px, 50px, 31.5px, $middleGrey, #ffffff)
 }
 
-.whiteButtonTxt {
-    @include coloredButtonText(16px,#000000)
+.white-button-txt {
+    @include colored-button-text(16px,#000000)
 }
 
-.strawberryButton {
-    @include coloredButton(231px, 60px, 31.5px, $strawberry, $strawberry)
+.strawberry-button {
+    @include colored-button(231px, 60px, 31.5px, $strawberry, $strawberry)
 }
 
-.strawberryButtonTxt {
-    @include coloredButtonText(18px,#ffffff)
+.strawberry-button-txt {
+    @include colored-button-text(18px,#ffffff)
 }
 
-.blackButton {
-    @include coloredButton(184px, 50px, 31.5px, $middleGrey, #000000)
+.black-button {
+    @include colored-button(184px, 50px, 31.5px, $middleGrey, #000000)
 }
 
-.blackButtonTxt {
-    @include coloredButtonText(16px,#ffffff)
+.black-button-txt {
+    @include colored-button-text(16px,#ffffff)
 }
 
 // Canceling chrome button default behaviour (need to think about interactivity !)
-.whiteButton:focus, .strawberryButton:focus, .blackButton:focus {
+.white-button:focus, .strawberry-button:focus, .black-button:focus {
     outline: none;
 } 

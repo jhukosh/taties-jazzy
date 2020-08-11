@@ -26,7 +26,7 @@
   .join-button {
     padding: 50px;
     button {
-      @include coloredButton(231px, 60px, 31.5px, $strawberry, $strawberry);
+      @include colored-button(231px, 60px, 31.5px, $strawberry, $strawberry);
       color: white;
     }
   }

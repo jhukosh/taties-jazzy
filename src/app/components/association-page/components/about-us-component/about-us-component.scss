@@ -4,7 +4,7 @@
         align-items: center;
         margin-top: 3em;
         .blackHorizontalSeparator {
-            width: 10%;
+            width: 15%;
         }
         #Who-we-are {
             width: 80%;
@@ -38,6 +38,67 @@
                     color: $darkerorangegradient;
                 }
             }
+        }
+    }
+    #About-us-presentation {
+        margin-top: 2rem;
+        .about-us-content {
+            display: flex;
+            .about-us-content-image {
+                width: 50%;
+                // temp css waiting for trumpet svg
+                display: flex;
+                justify-content: center;
+                .article-image {
+                    width: 80%;
+                }
+                .article-image-last {
+                    width: 75%;
+                }
+            }
+            .about-us-article {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                div {
+                    width: 80%;
+                    text-align: initial;
+                }
+                .article-header {
+                    font-family: 'FrutigerLTStd', sans-serif !important;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.72;
+                    letter-spacing: normal;
+                    color: #000000;
+                }
+                .article-handwritting, .article-next-header {
+                    font-family: 'BradleyHandITCTT', sans-serif !important;
+                    font-size: 34px;
+                    color: $strawberry;
+                }
+                .article-content {
+                    font-family: 'FrutigerLTStd', sans-serif !important;    
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    color: $text-article;
+                }
+            }
+
+            // Second part
+            #Article-second-part {
+                justify-content: unset !important;
+                align-items: center !important;
+                margin-top: -2rem;
+            }
+
         }
     }
 }
