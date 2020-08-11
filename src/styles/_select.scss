@@ -1,0 +1,48 @@
+// Select classes
+
+.select-css {
+	display: block;
+	font-size: 24px;
+    font-family: FrutigerLTStd-Roman;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+	color: #000000;
+	padding: .6em 1.4em .5em 2.8em;
+    width: 282px;
+    height: 65px;
+	box-sizing: border-box;
+	margin: 0;
+	border: 1px solid #979797;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	border-radius: 32.5px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #ffffff;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Feather-arrows-chevron-down.svg/1200px-Feather-arrows-chevron-down.svg.png');
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: 1em auto, 100%;
+}
+
+.select-css::-ms-expand {
+	display: none;
+}
+
+.select-css:hover {
+	border-color: #888;
+}
+
+.select-css:focus {
+	border-color: #aaa;
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+
+.select-css option {
+	font-weight:normal;
+}

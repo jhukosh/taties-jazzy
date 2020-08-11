@@ -20,5 +20,4 @@
 
 <style lang="scss">
     @import "association-page.scss";
-    // @import "../../../../../styles/_mixins-global.scss";
 </style>

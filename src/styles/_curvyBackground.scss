@@ -1,0 +1,16 @@
+// Curvy background Svg styles
+@mixin curvyBackgroundSVG ($leftValue, $rightValue) {
+    position: absolute;
+    right: $rightValue;
+    left: $leftValue;
+    width: 309px;
+    height: 309px;
+}
+
+#curvyBackgroundCircle {
+    @include curvyBackgroundSVG(unset, 1%)
+}
+
+#curvyBackgroundTrumpet {
+    @include curvyBackgroundSVG(0%, unset)
+}

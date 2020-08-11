@@ -1,0 +1,36 @@
+// Black separator mixins
+
+@mixin separatorLine($widthValue,$heightValue, $borderHeightValue, $borderRadiusValue, $borderColorValue) {
+    width: $widthValue;
+    height: $heightValue;
+    border: solid $borderHeightValue $borderColorValue;
+    border-radius: $borderRadiusValue;
+}
+
+// Separators classes
+
+.blackHorizontalSeparator {
+    @include separatorLine(190px, 0px, 2px, 0px, #000000)
+}
+
+.fullBlackHorizontalSeparator {
+    @include separatorLine(1247px, 0px, 3px, 0px, #000000)
+}
+
+.verticalGreySeparator {
+    @include separatorLine(0px, 516px, 1px, 0px, $middleGrey)
+}
+
+// Footer vertical separator
+.footerSeparator {
+    @include separatorLine(0px, 141px, 1px, 0px, $middleGrey)
+}
+
+// **************************************************************************************
+// Colored full width horizontal separator
+
+.coloredSeparator {
+    width: 100%;
+    height: 0.7em;
+    background-image: linear-gradient(to right, $lightpinkgradient, $darkerpinkgradient 100%);
+}

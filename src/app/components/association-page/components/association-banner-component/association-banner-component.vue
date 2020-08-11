@@ -7,8 +7,6 @@
             </div>
         </div>
         <div class="coloredSeparator"></div>
-        <div id="testBg"></div>
-        <img src="../../../../../assets/customSVG/curvy-bg-test.svg" alt="">
     </div>
 </template>
 
@@ -20,5 +18,4 @@
 
 <style lang="scss">
     @import "association-banner-component.scss";
-    @import "../../../../../styles/_mixins-global.scss";
 </style>
