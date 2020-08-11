@@ -1,0 +1,33 @@
+@import '@/styles/_icons.scss';
+.main-join {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.897)), url('../../../../../assets/join-us.png');
+  background-size: cover;
+  background-blend-mode: saturation;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  text-align: start;
+  width: 100%;
+
+  .join-text {
+    padding: 50px;
+    line-height: normal;
+    p {
+      color: $strawberry;
+    }
+    h4 {
+      font-size: 26px;
+      margin: 0;
+    }
+  }
+  .join-button {
+    padding: 50px;
+    button {
+      @include coloredButton(231px, 60px, 31.5px, $strawberry, $strawberry);
+      color: white;
+    }
+  }
+}

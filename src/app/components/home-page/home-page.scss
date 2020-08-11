@@ -17,3 +17,28 @@
         width: 70%;
     }
 }
+
+.home-social-media {
+    font-size: 26px;
+    color: black;
+    margin-bottom: 20px;
+    span {
+        color: $strawberry;
+    }
+    .home-social-media-icons {
+        justify-content: center;
+        img {
+            padding: 2%;
+        }
+    }
+    .home-img-gallery {
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        img {
+            margin-left: 10px;
+            width: 23%;
+        }
+    }
+}
