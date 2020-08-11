@@ -1,11 +1,11 @@
 @import '@/styles/_icons.scss';
 .background {
   background-image: url('../../../../assets/customSVG/curvy-bg-testHome.svg');
-  background-size: 100% 465px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   color: white;
   width: 100%;
-  height: 465px;
+  height: 100%;
   display: block;
   h3, h4 {
     font-size: 26px;
@@ -19,11 +19,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    position: relative;
     .text-part {
-      margin-left: 8%;
+      margin-left: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
       text-align: start;
-      width: 40%;
+      width: 50%;
       h3 {
         margin-bottom: 0;
       }
@@ -34,7 +37,7 @@
         list-style: none;
         padding-left: 0;
         li {
-          padding-top: 5%;
+          padding-top: 3%;
           font-size: 18px;
           .check-icon {
             @include check-icon(white);
@@ -47,6 +50,8 @@
     }
     .img-part {
       width: 40%;
+      position: absolute;
+      left: 0;
       img {
         width: 70%;
         margin-left: 20%;
