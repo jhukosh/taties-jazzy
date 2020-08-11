@@ -20,7 +20,7 @@
             <div class="about-us-content">
                 <div class="about-us-content-image">
                     <!-- <img src="../../../../../assets/trumpet.png" alt="background trompet decoration"> -->
-                    <img  class="article-image"  src="../../../../../assets/association-image-1.png" alt="association founder picture">
+                    <img  class="article-image"  src="../../../../../assets/association-page-assets/association-image-1.png" alt="association founder picture">
                 </div>
                 <div class="about-us-article">
                     <div class="article-header">
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="about-us-content-image">
-                    <img  class="article-image-last"  src="../../../../../assets/association-image-2.png" alt="found at festival picture">
+                    <img  class="article-image-last"  src="../../../../../assets/association-page-assets/association-image-2.png" alt="found at festival picture">
                 </div>
             </div>
         </div>
