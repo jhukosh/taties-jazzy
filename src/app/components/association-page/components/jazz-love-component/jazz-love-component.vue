@@ -1,13 +1,25 @@
 <template>
     <div id="Jazz-main">
         <div id="Background">
-            <div class="jazz-header">L’amour du jazz</div>
-            <div class="jazz-content">
-                L’association vous propose aussi des Master Class, en compagnie de professionnels et passionnés du genre. 
-                Seul ou entre amis, vous pourrez venirs vous essayez l’espace d’un moment sur ces rythmes entraînant et vivre une expérience qui groove!
+            <div id="Jazz-top-part">
+                <div class="jazz-header">L’amour du jazz</div>
+                <div class="jazz-content">
+                    <img src="../../../../../assets/circle.png" alt="background graphical circle">
+                    <p>L’association vous propose aussi des Master Class, en compagnie de professionnels et passionnés du genre. 
+                    Seul ou entre amis, vous pourrez venirs vous essayez l’espace d’un moment sur ces rythmes entraînant et vivre une expérience qui groove!</p>
+                </div>
             </div>
-            <div class="jazz-image"></div>
-            <div class="jazz-content-justified"></div>
+            <div class="jazz-image">
+                <img src="../../../../../assets/association-page-assets/jazz-image-1.png" alt="jazz concert picture">
+                <img src="../../../../../assets/association-page-assets/jazz-image-2.png" alt="jazz concert picture">
+                <img src="../../../../../assets/association-page-assets/jazz-image-3.png" alt="jazz concert picture">
+            </div>
+            <div id="Jazz-bottom-part">
+                <div class="jazz-content-justified">
+                    Nous tenons régulièrement à jour les thèmes et dates dans la rubriques “Master Class”. 
+                    Pour tous renseignements complémentaires, et pour s’inscrire, un formulaire est disponible dans la rubrique “Contact”.
+                </div>
+            </div>
         </div>
     </div>
 </template>
