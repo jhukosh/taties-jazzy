@@ -3,7 +3,7 @@
         display: flex;
         align-items: center;
         margin-top: 3em;
-        .blackHorizontalSeparator {
+        .black-horizontal-separator {
             width: 15%;
         }
         #Who-we-are {
@@ -34,9 +34,6 @@
                 letter-spacing: normal;
                 color: #000000;
                 margin: 0;
-                .red-dot {
-                    color: $darkerorangegradient;
-                }
             }
         }
     }

@@ -9,28 +9,33 @@
 
 // Separators classes
 
-.blackHorizontalSeparator {
+.black-horizontal-separator {
     @include separatorLine(190px, 0px, 2px, 0px, #000000)
 }
 
-.fullBlackHorizontalSeparator {
+.full-black-horizontal-separator {
     @include separatorLine(1247px, 0px, 3px, 0px, #000000)
 }
 
-.verticalGreySeparator {
+.vertical-grey-separator {
     @include separatorLine(0px, 516px, 1px, 0px, $middleGrey)
 }
 
 // Footer vertical separator
-.footerSeparator {
+.footer-separator {
     @include separatorLine(0px, 141px, 1px, 0px, $middleGrey)
 }
 
 // **************************************************************************************
 // Colored full width horizontal separator
 
-.coloredSeparator {
+.colored-separator {
     width: 100%;
     height: 0.7em;
     background-image: linear-gradient(to right, $lightpinkgradient, $darkerpinkgradient 100%);
+}
+
+// Colored red dot
+.red-dot {
+    color: $darkerorangegradient;
 }

@@ -3,7 +3,7 @@
 
         <!-- Header -->
         <div id="About-us-header">
-            <div class="blackHorizontalSeparator"></div>
+            <div class="black-horizontal-separator"></div>
             <div id="Who-we-are">
                 <p class="taties-header">Les Taties Jazzy</p>
                 <p class="who-we-are-title">
@@ -11,7 +11,7 @@
                     <span class="red-dot">•</span>
                 </p>
             </div>
-            <div class="blackHorizontalSeparator"></div>
+            <div class="black-horizontal-separator"></div>
         </div>
 
         <!-- Content -->

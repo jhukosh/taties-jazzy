@@ -6,7 +6,7 @@
                 <p id="Association-title">L’association</p>
             </div>
         </div>
-        <div class="coloredSeparator"></div>
+        <div class="colored-separator"></div>
     </div>
 </template>
 

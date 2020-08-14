@@ -1,0 +1,143 @@
+#Founder-main {
+    // Title
+    #Founder-header {
+        display: flex;
+        align-items: center;
+        margin-top: 3em;
+        .black-horizontal-separator {
+            width: 15%;
+        }
+        #Two-founder {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            margin-left: 3rem;
+            margin-bottom: 1rem;
+            .founder-header-title {
+                font-family: 'FrutigerLTStd-Roman', sans-serif !important;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $strawberry;
+                margin: 0px;
+            }
+            .two-founder-title {
+                font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
+                font-size: 38px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #000000;
+                margin: 0px;
+            }
+        }
+    }
+    // Image & background text
+    #Founder-picture {
+        img {
+            width: 80%;
+        }
+    }
+    .background-big-text-top {
+        position: relative;
+        top: -12rem;        
+        p {
+            opacity: 0.06;
+            font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
+            // font-family: AvenirNext; Originaly (licencied font)
+            font-size: 308px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 35.84px;;
+            // Value changed, cause of wrong font style
+            // letter-spacing: 16.84px;
+            color: #4c4c4c;
+            margin: 0px;    
+            text-align: left;
+            margin-left: -5rem;
+        }
+    }
+    // Founder
+    #Founder-content {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -19rem;
+        .founder {
+            width: 40%;
+            .founder-header {
+                font-family: 'BodoniSvtyTwoSCITCTT', sans-serif !important;
+                font-size: 38px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #000000;
+                .sub-header {
+                    font-size: 28px;
+                    color: #be1900;
+                }
+            }
+            .founder-content {
+                font-family: 'FrutigerLTStd-Roman', sans-serif !important;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.79;
+                letter-spacing: normal;
+                color: $text-article;
+                .founder-one-subtitle {
+                    font-family: 'FrutigerLTStd-Roman', sans-serif !important;
+                    font-size: 16px;
+                    font-weight: 900;
+                    color: #000000;
+                }
+            }
+            .align-right {
+                text-align: right;
+            }
+            .align-left {
+                text-align: left;
+            }
+        }
+        .founder-two {
+            width: 40%;
+        }
+    }
+    // Bottom backround text
+    .background-big-text-bottom {
+        position: relative;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        p {
+            opacity: 0.06;
+            font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
+            // font-family: AvenirNext; Originaly (licencied font)
+            font-size: 278px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 48.2px;
+            // Value changed, cause of wrong font style
+            // letter-spacing: 15.2px;
+            color: #4c4c4c;
+            text-align: right;
+            margin: 0px;
+            margin-right: -5rem;
+        }
+    }
+}
