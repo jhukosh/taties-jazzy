@@ -5,11 +5,11 @@
         <div id="About-us-header">
             <div class="black-horizontal-separator"></div>
             <div id="Who-we-are">
-                <p class="taties-header">Les Taties Jazzy</p>
-                <p class="who-we-are-title">
+                <h4 class="taties-header">Les Taties Jazzy</h4>
+                <h2 class="who-we-are-title">
                     Qui sommes-nous ?
                     <span class="red-dot">•</span>
-                </p>
+                </h2>
             </div>
             <div class="black-horizontal-separator"></div>
         </div>
@@ -26,9 +26,9 @@
                     <div class="article-header">
                         Les Taties Jazzy, c’est avant tout une ambiance, une atmosphère. La rencontre des artistes aux sonorités qui swing, des rythmes qui balances au long des partitions improvisées...
                     </div>
-                    <div class="article-handwritting">
+                    <h3 class="article-handwritting">
                         ‘’fous de jazz ‘’
-                    </div>
+                    </h3>
                     <div class="article-content">
                         Le projet des Taties Jazzy est de proposer un endroit, et des conditions appropriés aux artistes passionnés de Jazz. Le but est qu’ils puissent se produirent et offrir une performance de qualité, dans un cadre idéal pour les amateurs de Jazz. <br><br>
                         Les aficionados du genre pourrons venir apprécier et découvrir des talents, mais aussi des inspirations revisités, dans un cadre dédiés. <br><br>
@@ -39,9 +39,9 @@
 
             <div class="about-us-content">
                 <div class="about-us-article" id="Article-second-part">
-                    <div class="article-next-header">
+                    <h3 class="article-next-header">
                         ‘’Des potes ‘’<br>
-                    </div>
+                    </h3>
                     <div class="article-content">
                         <p>Nous sommes un groupe d’amis dont l’envie était, de créer un endroit où les artistes de jazz peuvent venirs à la rencontre d’un public passionné et de partager un moment joyeux et festif. <br><br></p>
                         <p>Nous sommes nous mêmes de grands amateurs de musiques (dont le Jazz, principalement), et certains d’entre nous s’adonnent même à cette passion, seul ou dans un groupe. La musique prend donc une grande place dans nos vies et est un élément qui nous lie.<br><br></p>

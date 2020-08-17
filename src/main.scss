@@ -6,21 +6,21 @@ body {
     -webkit-font-smoothing: 'text-font';
     -moz-osx-font-smoothing: 'text-font';
     text-align: center;
-    color: $strawberry;
+    // color: $strawberry;
     font-family: 'text-font', sans-serif !important;
-
     .main {
         min-height: calc(100vh - 200px);
     }
   }
 
 h1, h2, h3, h4 {
-    font-family: 'title-font', sans-serif !important;
+    font-family: 'bod72b', sans-serif !important;
     span {
-      font-family: 'title-font', sans-serif !important;
+      font-family: 'bod72b', sans-serif !important;
     }
 }
 
 p, span, button {
   font-family: 'text-font', sans-serif !important;
+  margin: 0;
 }

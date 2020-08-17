@@ -3,7 +3,7 @@
         <!-- association background banner component -->
         <div id="Association-bg-banner">
             <div id="Association-banner-image">
-                <p id="Association-title">L’association</p>
+                <h1 id="Association-title">L’association</h1>
             </div>
         </div>
         <div class="colored-separator"></div>

@@ -4,7 +4,7 @@
         <AboutUs/>
         <JazzLove/>
         <Founder/>
-
+        <IntimistPlace/>
     </div>
 </template>
 
@@ -13,6 +13,7 @@
     import AboutUs from '@/app/components/association-page/components/about-us-component/about-us-component.vue'
     import JazzLove from '@/app/components/association-page/components/jazz-love-component/jazz-love-component.vue'
     import Founder from '@/app/components/association-page/components/founder-component/founder-component.vue'
+    import IntimistPlace from '@/app/components/association-page/components/intimist-place-component/intimist-place-component.vue'
     export default {
         name: 'Association',
         components: {
@@ -20,6 +21,7 @@
             AboutUs,
             JazzLove,
             Founder,
+            IntimistPlace
         },
     }
 </script>
