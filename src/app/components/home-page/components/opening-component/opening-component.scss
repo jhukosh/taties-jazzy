@@ -1,0 +1,30 @@
+.opening-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 0;
+  margin-left: 0;
+  h3 {
+    font-size: 88px;
+  }
+  .opening-logo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    .opening-logo-bg {
+      border-radius: 50%;
+      background-color: black;
+      width:480px;
+      height: 480px;
+      h3 {
+        margin: -12% 0;
+      }
+    }
+  }
+  .opening-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+}
