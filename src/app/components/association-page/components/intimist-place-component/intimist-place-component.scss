@@ -43,10 +43,20 @@
             }
             .place-image {
                 width: 45%;
+                z-index: 2;
                 img {
                     width: 95%;
                 }
             }
+        }
+    }
+    #Background-trumpet {
+        text-align: end;
+        img {
+            position: relative;
+            top: -40rem;
+            z-index: 1;
+            left: 4rem;
         }
     }
 }

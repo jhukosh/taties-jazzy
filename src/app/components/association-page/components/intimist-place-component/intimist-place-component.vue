@@ -12,6 +12,9 @@
                 </div>
             </div>
         </div>
+        <div id="Background-trumpet">
+            <img src="./../../../../../assets/reverse-trumpet.png" alt="">
+        </div>
     </div>
 </template>
 
