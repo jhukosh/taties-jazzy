@@ -1,19 +1,6 @@
 <template>
     <div id="Founder-main">
 
-        <!-- Header -->
-        <div id="Founder-header">
-            <div class="black-horizontal-separator"></div>
-            <div id="Two-founder">
-                <p class="founder-header-title">Les Taties Jazzy</p>
-                <p class="two-founder-title">
-                    Deux fondatrices pour une passion
-                    <span class="red-dot">•</span>
-                </p>
-            </div>
-            <div class="black-horizontal-separator"></div>
-        </div>
-
         <!-- Founder picture-->
         <div id="Founder-picture">
             <img src="../../../../../assets/association-page-assets/association-staff.png" alt="taties jazzy founder picture">

@@ -1,43 +1,4 @@
 #Founder-main {
-    // Title
-    #Founder-header {
-        display: flex;
-        align-items: center;
-        margin-top: 3em;
-        .black-horizontal-separator {
-            width: 15%;
-        }
-        #Two-founder {
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            align-items: baseline;
-            margin-left: 3rem;
-            margin-bottom: 1rem;
-            .founder-header-title {
-                font-family: 'FrutigerLTStd-Roman', sans-serif !important;
-                font-size: 18px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: $strawberry;
-                margin: 0px;
-            }
-            .two-founder-title {
-                font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
-                font-size: 38px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: #000000;
-                margin: 0px;
-            }
-        }
-    }
     // Image & background text
     #Founder-picture {
         img {

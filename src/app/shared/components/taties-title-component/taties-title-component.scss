@@ -1,0 +1,39 @@
+.taties-title-main {
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 1rem;
+    .black-horizontal-separator {
+        width: 15%;
+    }
+    .title-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+        .taties-subtitle {
+            font-family: 'FrutigerLTStd-Roman', sans-serif !important;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $strawberry;
+            margin: 0;
+        }
+        .taties-title {
+            font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
+            font-size: 38px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            margin: 0;
+        }
+    }
+}

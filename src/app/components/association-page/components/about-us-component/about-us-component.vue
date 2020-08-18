@@ -1,19 +1,6 @@
 <template>
     <div id="About-us-main">
 
-        <!-- Header -->
-        <div id="About-us-header">
-            <div class="black-horizontal-separator"></div>
-            <div id="Who-we-are">
-                <h4 class="taties-header">Les Taties Jazzy</h4>
-                <h2 class="who-we-are-title">
-                    Qui sommes-nous ?
-                    <span class="red-dot">•</span>
-                </h2>
-            </div>
-            <div class="black-horizontal-separator"></div>
-        </div>
-
         <!-- Content -->
         <div id="About-us-presentation">
             
