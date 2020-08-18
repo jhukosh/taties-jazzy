@@ -2,25 +2,15 @@ body {
   margin: 0;
 }
 
-#app {
-    -webkit-font-smoothing: 'text-font';
-    -moz-osx-font-smoothing: 'text-font';
-    text-align: center;
-    // color: $strawberry;
-    font-family: 'text-font', sans-serif !important;
-    .main {
-        min-height: calc(100vh - 200px);
-    }
-  }
-
-h1, h2, h3, h4 {
-    font-family: 'bod72b', sans-serif !important;
-    span {
-      font-family: 'bod72b', sans-serif !important;
-    }
+p {
+  margin: 0;
 }
 
-p, span, button {
-  font-family: 'text-font', sans-serif !important;
-  margin: 0;
+#app {
+  -webkit-font-smoothing: 'text-font';
+  -moz-osx-font-smoothing: 'text-font';
+  font-family: 'bod72b', sans-serif;
+  .main {
+    min-height: calc(100vh - 200px);
+  }
 }

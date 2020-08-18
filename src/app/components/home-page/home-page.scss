@@ -1,3 +1,14 @@
+h1, h2, h3, h4 {
+    font-family: 'bod72b', sans-serif;
+    span {
+        font-family: 'bod72b', sans-serif;
+    }
+}
+
+p, span, button {
+    font-family: 'bod72b', sans-serif;
+}
+
 .home-opening {
     margin-left: 0;
 }
@@ -26,6 +37,7 @@
     font-size: 26px;
     color: black;
     margin-bottom: 20px;
+    text-align: center;
     span {
         color: $strawberry;
     }

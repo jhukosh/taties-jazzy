@@ -44,7 +44,9 @@
         }
         .footer-contact {
             width: 100%;
-
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             p, a {
                 margin-left: 12%;
                 text-align: start;
