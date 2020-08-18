@@ -4,6 +4,7 @@
           <HomeBand />
         </div>
         <OpeningComponent class="home-opening" />
+        <p class="taties-header">Les Taties Jazzy</p>
         <div class="main-event">
           <h3 class="main-event-title">Programmation</h3>
         </div>
