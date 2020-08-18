@@ -16,6 +16,16 @@
                 <p class="event-secondary-infos-artist">{{ parentData ? parentData.artist : 'artist' }}</p>
                 <p class="event-secondary-infos-presentation">{{ parentData ? parentData.presentation : 'présentation' }}</p>
             </div>
+            <div class="event-icons">
+                <div class="event-icons-item">
+                    <div class="clock-icon"></div>
+                    <p> {{ parentData ? parentData.time + 'h' : '21h' }}</p>
+                </div>
+                <div class="event-icons-item">
+                    <div class="stamp-icon"></div>
+                    <p v-bind:style="parentData.price ? 'margin-left:65px':'margin-left:90px'"> {{ parentData ? parentData.price + '€' : 'Gratuit' }}</p>
+                </div>
+            </div>
         </div>
     </div>
 </template>
