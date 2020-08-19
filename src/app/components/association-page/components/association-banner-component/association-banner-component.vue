@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="Association-banner-component">
         <!-- association background banner component -->
         <div id="Association-bg-banner">
             <div id="Association-banner-image">
@@ -12,7 +12,7 @@
 
 <script>
     export default {
-        name: 'AssociationBanner',
+        name: 'AssociationBannerComponent',
     }
 </script>
 

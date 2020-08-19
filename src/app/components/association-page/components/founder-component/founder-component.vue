@@ -1,9 +1,9 @@
 <template>
-    <div id="Founder-main">
+    <div id="Founder-component">
 
         <!-- Founder picture-->
         <div id="Founder-picture">
-            <img src="../../../../../assets/association-page-assets/association-staff.png" alt="taties jazzy founder picture">
+            <img src="@/assets/association-page-assets/association-staff.png" alt="">
         </div>
 
         <!-- Background graphical text -->
@@ -47,7 +47,7 @@
                 </div>
                 <br><br>
                 <div class="founder-content align-left">
-                    “Salut la famille! Moi c’est Loreleï. Mon métier, c’est Ing.& son. 
+                    “Salut la famille! Moi c’est Loreleï. Mon métier, c’est Ing.&amp; son. 
                     Pour moi, la musique fait intégralement partie de ma vie. J’ai choisis mon job dans le secteur du spectacle afin de pouvoir vivre pleinement ma passion. a côté, je pratique régulièrement le violon et le chant. 
                     J’aime également exprimer ma créativité dans le dessin, j’ai d’ailleur beaucoup aimé bosser sur notre logo. Je suis quelqu’un d’enjoué, et j’aime vivre les choses à fond. 
                     <br><br>
@@ -72,7 +72,7 @@
 
 <script>
     export default {
-        name: 'Founder',
+        name: 'FounderComponent',
     }
 </script>
 

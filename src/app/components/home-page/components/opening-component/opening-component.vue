@@ -1,5 +1,5 @@
 <template>
-  <div class="opening-container">
+  <div class="opening-container-component">
     <div class="triangleDecorationLeft"></div>
     <div class="opening-content">
       <div class="opening-logo">

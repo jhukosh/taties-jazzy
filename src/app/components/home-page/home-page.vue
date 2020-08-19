@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="Home-page-component">
         <div class="home-band">
           <HomeBand />
         </div>

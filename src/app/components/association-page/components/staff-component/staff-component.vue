@@ -1,11 +1,11 @@
 <template>
-    <div id="Staff-main">
+    <div id="Staff-component">
         <div id="Staff-picture">
-            <img src="../../../../../assets/association-page-assets/association-staff.png" alt="taties jazzy founder picture">
+            <img src="@/assets/association-page-assets/association-staff.png" alt="">
         </div>
 
         <div class="bass-background-container">
-            <img class="bass-background" src="../../../../../assets/bass.png" alt="bass drawing in the background">
+            <img class="bass-background" src="@/assets/bass.png" alt="">
         </div>
 
         <div class="staff-content-container">
@@ -35,14 +35,14 @@
         </div>
 
         <div class="bass-background-container-placeholder">
-            <img class="bass-background-placeholder" src="../../../../../assets/bass.png" alt="bass drawing in the background">
+            <img class="bass-background-placeholder" src="@/assets/bass.png" alt="">
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'Staff',
+        name: 'StaffComponent',
     }
 </script>
 

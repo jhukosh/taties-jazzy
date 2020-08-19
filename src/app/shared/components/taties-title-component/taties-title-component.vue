@@ -14,7 +14,7 @@
 
 <script>
     export default {
-        name: 'TatiesTitle',
+        name: 'TatiesTitleComponent',
         props: ['subtitle','title'],
     }
 </script>

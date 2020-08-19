@@ -1,38 +1,38 @@
 <template>
-    <div id="Association-main">
-        <AssociationBanner/>
-        <TatiesTitle :subtitle="subtitle_value" :title="about_us_title.name"/>
-        <AboutUs/>
-        <JazzLove/>
-        <TatiesTitle :subtitle="subtitle_value" :title="founder_title.name"/>
-        <Founder/>
-        <IntimistPlace/>
+    <div id="Association-page-component">
+        <AssociationBannerComponent/>
+        <TatiesTitleComponent :subtitle="subtitle_value" :title="about_us_title.name"/>
+        <AboutUsComponent/>
+        <JazzLoveComponent/>
+        <TatiesTitleComponent :subtitle="subtitle_value" :title="founder_title.name"/>
+        <FounderComponent/>
+        <IntimistPlaceComponent/>
         <div id="Staff-container">
-            <TatiesTitle :subtitle="subtitle_value" :title="staff_title.name"/>
-            <Staff/>
+            <TatiesTitleComponent :subtitle="subtitle_value" :title="staff_title.name"/>
+            <StaffComponent/>
         </div>
     </div>
 </template>
 
 <script>
-    import AssociationBanner from '@/app/components/association-page/components/association-banner-component/association-banner-component.vue'
-    import AboutUs from '@/app/components/association-page/components/about-us-component/about-us-component.vue'
-    import JazzLove from '@/app/components/association-page/components/jazz-love-component/jazz-love-component.vue'
-    import Founder from '@/app/components/association-page/components/founder-component/founder-component.vue'
-    import IntimistPlace from '@/app/components/association-page/components/intimist-place-component/intimist-place-component.vue'
-    import Staff from '@/app/components/association-page/components/staff-component/staff-component.vue'
-    import TatiesTitle from '@/app/shared/components/taties-title-component/taties-title-component.vue'
+    import AssociationBannerComponent from '@/app/components/association-page/components/association-banner-component/association-banner-component.vue'
+    import AboutUsComponent from '@/app/components/association-page/components/about-us-component/about-us-component.vue'
+    import JazzLoveComponent from '@/app/components/association-page/components/jazz-love-component/jazz-love-component.vue'
+    import FounderComponent from '@/app/components/association-page/components/founder-component/founder-component.vue'
+    import IntimistPlaceComponent from '@/app/components/association-page/components/intimist-place-component/intimist-place-component.vue'
+    import StaffComponent from '@/app/components/association-page/components/staff-component/staff-component.vue'
+    import TatiesTitleComponent from '@/app/shared/components/taties-title-component/taties-title-component.vue'
     
     export default {
         name: 'Association',
         components: {
-            AssociationBanner,
-            AboutUs,
-            JazzLove,
-            Founder,
-            IntimistPlace,
-            Staff,
-            TatiesTitle 
+            AssociationBannerComponent,
+            AboutUsComponent,
+            JazzLoveComponent,
+            FounderComponent,
+            IntimistPlaceComponent,
+            StaffComponent,
+            TatiesTitleComponent
         },
         data: () => {
             return {

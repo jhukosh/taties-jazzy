@@ -1,5 +1,5 @@
 <template>
-    <div id="Intimist-place-main">
+    <div id="Intimist-place-component">
         <div id="Background">
             <div class="information-container">
                 <div class="place-information">
@@ -8,19 +8,19 @@
                     <div>Le but est qu’ils puissent se produirent et offrir une performance de qualité, dans un cadre idéal pour les amateurs de Jazz. Les aficionados du genre pourrons venir apprécier des artistes reconnus et découvrir des nouveaux talents dans un cadre dédié.</div>    
                 </div>
                 <div class="place-image">
-                    <img src="./../../../../../assets/association-page-assets/intimist-place.png" alt="cozy picture of taties jazzy place">
+                    <img src="@/assets/association-page-assets/intimist-place.png" alt="">
                 </div>
             </div>
         </div>
         <div id="Background-trumpet">
-            <img src="./../../../../../assets/reverse-trumpet.png" alt="">
+            <img src="@/assets/reverse-trumpet.png" alt="">
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'IntimistPlace',
+        name: 'IntimistPlaceComponent',
     }
 </script>
 
