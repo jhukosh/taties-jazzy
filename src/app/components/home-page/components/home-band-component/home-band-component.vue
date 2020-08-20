@@ -1,6 +1,6 @@
 <template>
     <!-- Carry css background-image -->
-    <div class="home-background">
+    <div class="home-component">
         <img src="@/assets/jazzy.png" alt="" id="jazzy"/>
         <GirlsAndBannerLogoComponent id="home-band-main-logo"/>
         <img src="@/assets/asso.png" alt="" id="asso"/>

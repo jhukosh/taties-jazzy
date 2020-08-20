@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 8%;
-  margin-bottom: 8%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   text-align: start;
   width: 100%;
 
@@ -26,7 +26,7 @@
   .join-button {
     padding: 50px;
     button {
-      @include coloredButton(231px, 60px, 31.5px, $strawberry, $strawberry);
+      @include colored-button(231px, 60px, 31.5px, $strawberry, $strawberry);
       color: white;
     }
   }

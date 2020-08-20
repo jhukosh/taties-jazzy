@@ -1,8 +1,10 @@
 <template>
-    <div>
+    <div id="Home-page-component">
         <div class="home-band">
           <HomeBand />
         </div>
+        <OpeningComponent class="home-opening" />
+        <p class="taties-header">Les Taties Jazzy</p>
         <div class="main-event">
           <h3 class="main-event-title">Programmation</h3>
         </div>
@@ -27,6 +29,7 @@
 </template>
 <script>
   import HomeBand from '@/app/components/home-page/components/home-band-component/home-band-component.vue'
+  import OpeningComponent from '@/app/components/home-page/components/opening-component/opening-component.vue'
   import JoinComponent from '@/app/components/home-page/components/join-component/join-component.vue'
   import EventComponent from '@/app/shared/components/event-component/event-component.vue'
   import BackgroundedInfosComponent from '@/app/shared/components/backgrounded-infos-component/backgrounded-infos-component.vue'
@@ -39,7 +42,8 @@
       HomeBand,
       EventComponent,
       BackgroundedInfosComponent,
-      JoinComponent
+      JoinComponent,
+      OpeningComponent
     },
     data() {
       return {

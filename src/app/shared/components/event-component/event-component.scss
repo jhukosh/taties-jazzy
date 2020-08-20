@@ -1,3 +1,4 @@
+@import '@/styles/_icons.scss';
 .event {
     color: #393939;
     display: flex;
@@ -8,6 +9,7 @@
 
     .event-image {
         width: 50%;
+        text-align: center;
         img {
             width: 65%;
         }
@@ -41,6 +43,43 @@
                 font-size: 22px;
                 text-transform: uppercase;
                 font-weight: bolder;
+            }
+        }
+    }
+
+    .event-icons {
+        display: flex;
+        flex-direction: row;
+        .event-icons-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: fit-content;
+            .clock-icon {
+                @include clock-icon(black);
+                margin-top: 15px;
+            }
+            .clock-icon:before {
+                @include clock-icon-before;
+            }
+            .clock-icon::after {
+                @include clock-icon-after;
+            }
+            .stamp-icon {
+                @include stamp-icon(black);
+                margin-top: 15px;
+            }
+            .stamp-icon:before {
+                @include stamp-icon-before;
+            }
+            .stamp-icon:after {
+                @include stamp-icon-after;
+            }
+            p {
+                margin-left: 8px;
+            }
+            .event-price-info {
+                margin-left: 65px;
             }
         }
     }

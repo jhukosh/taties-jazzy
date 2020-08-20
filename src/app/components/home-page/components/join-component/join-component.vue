@@ -1,5 +1,5 @@
 <template>
-  <div class="main-join">
+  <div class="join-component">
     <div class="join-text">
       <p>Rejoignez-nous !</p>
       <h4>Devenir bénévole ?</h4>
@@ -7,9 +7,9 @@
       <h4>Animer une Master Class ?</h4>
     </div>
     <div class="join-button">
-    <button>
-      ENVOYER UN MAIL
-    </button>
+      <button>
+        ENVOYER UN MAIL
+      </button>
     </div>
   </div>
 </template>
