@@ -1,3 +1,10 @@
 #Contact-page-component {
     overflow: hidden;
+    #Form-and-info-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+    }
 }

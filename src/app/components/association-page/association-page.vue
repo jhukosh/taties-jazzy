@@ -1,7 +1,6 @@
 <template>
     <div id="Association-page-component">
         <TitleBackgroundComponent :background_image="path_to_image" :background_title="background_title_value"/>
-        <!-- <AssociationBannerComponent/> -->
         <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.about_us_title"/>
         <AboutUsComponent/>
         <JazzLoveComponent/>
@@ -17,7 +16,6 @@
 
 <script>
     import TitleBackgroundComponent from '@/app/shared/components/title-background-component/title-background-component.vue'
-    //import AssociationBannerComponent from '@/app/components/association-page/components/association-banner-component/association-banner-component.vue'
     import AboutUsComponent from '@/app/components/association-page/components/about-us-component/about-us-component.vue'
     import JazzLoveComponent from '@/app/components/association-page/components/jazz-love-component/jazz-love-component.vue'
     import FounderComponent from '@/app/components/association-page/components/founder-component/founder-component.vue'
@@ -29,7 +27,6 @@
         name: 'Association',
         components: {
             TitleBackgroundComponent,
-            //AssociationBannerComponent,
             AboutUsComponent,
             JazzLoveComponent,
             FounderComponent,
