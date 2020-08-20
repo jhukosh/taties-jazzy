@@ -6,7 +6,6 @@
             <ContactFormComponent />
             <InfoContactFormComponent />
         </div>
-        
         <MapComponent />
     </div>
 </template>

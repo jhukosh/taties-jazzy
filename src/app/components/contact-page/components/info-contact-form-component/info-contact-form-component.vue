@@ -1,7 +1,7 @@
 <template>
     <div id="Info-contact-form-component">
         <div id="Info-contact-header">
-            <p>Salut <span class="strawberry-text">les artistes</span> !</p>
+            <h3>Salut <span class="strawberry-text">les artistes</span> !</h3>
             <p>Hé oui, c’est ici que ça se joue!</p>
         </div>
 
