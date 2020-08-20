@@ -5,14 +5,6 @@
     </p>
 
     <form id="Contact-form" @submit.prevent>
-      <!-- <div>
-        <label for="name">Nom</label>
-        <input v-model="messageForm.name" type="text" placeholder="Nom" id="name" />
-      </div>
-      <div>
-        <label for="firstname">Prénom</label>
-        <input v-model="messageForm.firstname" type="text" placeholder="Prénom" id="firstname" />
-      </div> -->
       <div>
         <input id="Email-input" v-model="messageForm.email" type="text" placeholder="Adresse e-mail"/>
       </div>
@@ -21,10 +13,12 @@
       </div>
 
       <div>
-        <label for="message">Message</label>
-        <input v-model="messageForm.message" type="password" placeholder="Votre message" id="message" />
+        <p class="message-label">Message</p>
+        <textarea id="Message-input" v-model="messageForm.message" type="text"/>
       </div>
-      <button @click="sendMessageForm" class="button">Envoyer</button>
+      <button id="Contact-submit-btn" class="black-button" @click="sendMessageForm">
+        <p class="black-button-txt">ENVOYER</p>
+      </button>
     </form>
   </div>
 </template>
@@ -38,8 +32,6 @@
     data() {
       return { 
         messageForm: {
-          // name: '',
-          // firstname: '',
           email: '',
           objet: '',
           message: ''
