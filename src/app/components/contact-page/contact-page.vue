@@ -1,12 +1,13 @@
 <template>
     <div id="Contact-page-component">
-        <TitleBackgroundComponent :background_image="path_to_image" :background_title="background_title_value"/>
-        <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.contact_title"/>
+        <TitleBackgroundComponent :background_image="path_to_image" :background_title="background_title_value" />
+        <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.contact_title" />
         <div id="Form-and-info-container">
             <ContactFormComponent />
             <InfoContactFormComponent />
         </div>
         <MapComponent />
+        <BookTicketButtonComponent />
     </div>
 </template>
 
@@ -16,6 +17,7 @@
     import ContactFormComponent from '@/app/components/contact-page/components/contact-form-component/contact-form-component.vue'
     import InfoContactFormComponent from '@/app/components/contact-page/components/info-contact-form-component/info-contact-form-component.vue'
     import MapComponent from '@/app/components/contact-page/components/map-component/map-component.vue'
+    import BookTicketButtonComponent from '@/app/shared/components/book-ticket-button-component/book-ticket-button-component.vue'
 
     export default {
         name: 'ContactPage',
@@ -24,7 +26,8 @@
             TatiesTitleComponent,
             ContactFormComponent, 
             InfoContactFormComponent,
-            MapComponent
+            MapComponent,
+            BookTicketButtonComponent
             },
         data: () => {
             return {

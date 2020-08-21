@@ -1,16 +1,17 @@
 <template>
     <div id="Association-page-component">
-        <TitleBackgroundComponent :background_image="path_to_image" :background_title="background_title_value"/>
-        <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.about_us_title"/>
-        <AboutUsComponent/>
-        <JazzLoveComponent/>
-        <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.founder_title"/>
-        <FounderComponent/>
-        <IntimistPlaceComponent/>
+        <TitleBackgroundComponent :background_image="path_to_image" :background_title="background_title_value" />
+        <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.about_us_title" />
+        <AboutUsComponent />
+        <JazzLoveComponent />
+        <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.founder_title" />
+        <FounderComponent />
+        <IntimistPlaceComponent />
         <div id="Staff-container">
-            <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.staff_title"/>
-            <StaffComponent/>
+            <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.staff_title" />
+            <StaffComponent />
         </div>
+        <BookTicketButtonComponent />
     </div>
 </template>
 
@@ -22,6 +23,7 @@
     import IntimistPlaceComponent from '@/app/components/association-page/components/intimist-place-component/intimist-place-component.vue'
     import StaffComponent from '@/app/components/association-page/components/staff-component/staff-component.vue'
     import TatiesTitleComponent from '@/app/shared/components/taties-title-component/taties-title-component.vue'
+    import BookTicketButtonComponent from '@/app/shared/components/book-ticket-button-component/book-ticket-button-component.vue'
 
     export default {
         name: 'Association',
@@ -32,7 +34,8 @@
             FounderComponent,
             IntimistPlaceComponent,
             StaffComponent,
-            TatiesTitleComponent
+            TatiesTitleComponent,
+            BookTicketButtonComponent
         },
         data: () => {
             return {
