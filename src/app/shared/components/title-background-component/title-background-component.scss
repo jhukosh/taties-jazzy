@@ -1,18 +1,18 @@
-#Association-banner-component {
-    #Association-bg-banner {
+#Title-background-component {
+    margin-top: -6em;
+    #Title-background-banner {
         display: flex;
         flex-direction: column;
         height: 582px;
         width: 100%;
-        #Association-banner-image {
-            background: url('../../../../../assets/association-page-assets/association-banner.jpg');
+        #Title-banner-image {
             background-size: cover;
             height: 100%;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            #Association-title {
+            #Main-page-title {
                 text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
                 font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
                 font-size: 128px;

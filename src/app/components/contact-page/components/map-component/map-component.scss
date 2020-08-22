@@ -1,0 +1,79 @@
+#Map-component {
+    #Location_background {
+        background-image: url("../../../../../assets/contact-page-assets/taties-jazzy-adresse.png");
+        margin-top: 8em;
+        background-repeat: no-repeat;
+        margin-bottom: -2em;
+        #Contact-informations {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 26.4375em;
+            height: 26.4375em;
+            opacity: 0.9;
+            border: solid 1px $middleGrey;
+            background-color: #000000;
+            margin-left: 55%;
+            transform: translateY(-8em);
+            .title-container {
+                padding-left: 3rem;
+                h2 {
+                    font-family: 'FrutigerLTStd', sans-serif;
+                    font-size: 24px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 2.29;
+                    letter-spacing: normal;
+                    color: #ffffff;
+                }
+            }
+            #Adresse-and-mail-container {
+                font-family: 'FrutigerLTStd', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 3.44;
+                letter-spacing: normal;
+                color: #ffffff;
+                padding-left: 3em;
+                padding-bottom: 2em;
+                .mail-variation {
+                    font-weight: normal;
+                    font-family: 'FrutigerLTStd-Roman', sans-serif;
+                }
+                .ajust-icon {
+                    width: 34px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            #External-link-container {
+                font-family: 'FrutigerLTStd-Roman', sans-serif;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 3.44;
+                letter-spacing: normal;
+                color: #ffffff;
+                text-decoration: underline;
+                padding-left: 3em;
+            }
+            .flex-container {
+                display: flex;
+                align-items: center;
+                object-fit: contain;
+                .company-logo {
+                    height: 34px;
+                    width: 34px;
+                }
+                p, a {
+                    margin-left: 1em;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
