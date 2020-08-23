@@ -8,7 +8,7 @@
         <FounderComponent />
         <IntimistPlaceComponent />
         <div id="Staff-container">
-            <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.staff_title" />
+            <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.staff_title"/>
             <StaffComponent />
         </div>
         <BookTicketButtonComponent />
