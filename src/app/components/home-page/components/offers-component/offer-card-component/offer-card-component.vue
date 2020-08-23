@@ -1,9 +1,10 @@
 <template>
   <div class="offer-card">
+    <p class="offer-subtitle">Tarif</p>
     <h4>
       {{ title }}
     </h4>
-    <p>
+    <p class="offer-price">
       {{ price }}
       <span> {{ bonus }} </span>
     </p>

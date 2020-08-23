@@ -1,3 +1,15 @@
 .offer-card {
-  border: 1px solid black;
+  border: 1px solid $light-grey;
+  height: 278px;
+  .offer-subtitle {
+    font-size: 14px;
+    color: $middleGrey;
+  }
+  h4 {
+    margin-top: 0;
+  }
+  .offer-price {
+    color:$strawberry;
+    font-size: 22px;
+  }
 }

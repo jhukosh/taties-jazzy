@@ -1,4 +1,8 @@
 #offers-component {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  .cards {
+    width: 20%;
+  }
 }

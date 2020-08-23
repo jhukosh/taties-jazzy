@@ -1,6 +1,7 @@
 <template>
 <div id="offers-component">
   <div 
+    class="cards"
     v-for="fare in fares" 
     :key="fare.type"
   >
@@ -24,24 +25,28 @@ export default {
       fares: [
         {
           title: 'Public visiteur',
-          price: 15,
+          price: '15€',
+          picture: '',
           type: 'public'
         },
         {
           title: 'Adhérents',
-          price: 10,
+          price: '10€/',
+          picture: '',
           type: 'member',
           bonus: ' +4 places gratuites'
         },
         {
           title: 'Jeunes (-30 ans)',
-          type: 'young',
-          price: 12,
+          picture: '',
+          price: '12€',
+          type: 'young'
         },
         {
           title: 'Enfants (-12ans)',
-          type: 'children',
-          price: 'Gratuit'
+          picture: '',
+          price: 'Gratuit',
+          type: 'children'
         }
       ]
     }
