@@ -1,10 +1,29 @@
-#container {
-    display: grid;
-    grid: repeat(2, 60px) / auto-flow 80px;
+#groscontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  #container1 {
+    display: flex;
+    flex-direction: column;
+      img {
+        //background-color: #8ca0ff;
+        width: 23rem;
+        height: 35.58rem;
+        margin: 0.7rem;
+      }
   }
-  
-  #container > div {
-    background-color: #8ca0ff;
-    width: 50px;
-    height: 50px;
+  #container2 {
+    display: flex;
+    flex-direction: column;
+      img {
+        //background-color: #8ca0ff;
+        width: 31rem;
+        height: 19.71rem;
+        margin: 0.7rem;
+    }
   }
+}
+
+
+
+
