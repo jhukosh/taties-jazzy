@@ -22,7 +22,7 @@
 // Buttons classes
 
 .white-button {
-    @include colored-button(233px, 50px, 31.5px, $middleGrey, #ffffff)
+    @include colored-button(18em, 50px, 31.5px, $middleGrey, #ffffff)
 }
 
 .white-button-txt {

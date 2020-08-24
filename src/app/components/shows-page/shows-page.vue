@@ -9,7 +9,6 @@
 
         <div id="Show-page-container">
             <EventComponent :parentData="shows"/>
-
         </div>
         
     </div>

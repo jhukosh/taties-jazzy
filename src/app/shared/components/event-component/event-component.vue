@@ -6,44 +6,74 @@
             <div class="event-image">
                 <img :src="image" alt=""/>
             </div>
-
-            <div v-if="parentData.type === 'show'">
-                
+            <div class="show-info" v-if="parentData.type === 'show'">
+                <h5>{{ parentData.title }}</h5>
+                <div class="info-icon-container">
+                    <!-- DEV : in comms waiting for backdata -->
+                    <!-- <div>
+                        <img src="../../../../assets/icons/map-pin-black-icon.png" alt="icone de marqueur de carte">
+                        {{ parentData.origin }}
+                    </div>
+                    <div>
+                        <img src="../../../../assets/icons/calendar-icon.png" alt="icone de calendrier">
+                        {{ parentData.creation }}
+                    </div>
+                    <div>
+                        <img src="../../../../assets/icons/music-note-icon.png" alt="icone de note de musique">
+                        {{ parentData.inspiration }}
+                    </div>
+                    <div>
+                        <img src="../../../../assets/icons/mic-icon.png" alt="icone de micro">
+                        {{ parentData.tour }}
+                    </div> -->
+                    
+                    <!-- DEV : PLACEHOLDER -->
+                    <div>
+                        <img src="../../../../assets/icons/map-pin-black-icon.png" alt="icone de marqueur de carte">
+                        Réunion
+                    </div>
+                    <div>
+                        <img src="../../../../assets/icons/calendar-icon.png" alt="icone de calendrier">
+                        2009
+                    </div>
+                    <div>
+                        <img src="../../../../assets/icons/music-note-icon.png" alt="icone de note de musique">
+                        New Orlean
+                    </div>
+                    <div>
+                        <img src="../../../../assets/icons/mic-icon.png" alt="icone de micro">
+                        Réunion, Marseille, Toulouse …
+                    </div>
+                    <!-- DEV : /PLACEHOLDER -->
+                </div>
+                <div class="show-content">
+                    <!-- <p>{{ parentData.text }}</p> -->
+                    <p>Ce groupe nous apporte des vibration d’antand avec un style à la New Orleans pur et significatifs. 
+                        Avec un chanteur touchant, un saxophoniste épatant et un pianiste pointilleux ce trio à de quoi vous faire vibrer le coeur.</p>
+                </div>
+                <div class="time-and-price-container">
+                    <div class="show-hours">
+                        <div class="clock-icon"></div>
+                        <p>{{ parentData.heure }}</p>
+                    </div>
+                    <div class="show-price">
+                        <div class="card-icon"></div>
+                        <p>{{ parentData.prix }} €</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="white-button">
+                        <p class="white-button-txt"><a href="#">RÉSERVER MON BILLET</a></p>
+                    </button>
+                </div>
             </div>
+
+
+
             <div v-else>
                 <p>Masterclassevent</p>
             </div>
 
-        </div>
-
-
-
-
-
-
-        <div class="event-infos">
-            <div v-if="parentData" class="home-event-infos">
-                <p class="home-event-type">{{ parentData.type === "show" ? 'Concert' : 'Masterclass' }}</p>
-                <h4 class="home-event-date">{{ parentData.date }}</h4>
-            </div>
-            <hr v-if="parentData" class="home-event-separator">
-            <div v-else>
-                Faire titre etc. pour show et master classes
-            </div>
-            <div class="event-secondary-infos">
-                <p class="event-secondary-infos-artist">{{ parentData ? parentData.artist : 'artist' }}</p>
-                <p class="event-secondary-infos-presentation">{{ parentData ? parentData.presentation : 'présentation' }}</p>
-            </div>
-            <div class="event-icons">
-                <div class="event-icons-item">
-                    <div class="clock-icon"></div>
-                    <p> {{ parentData ? parentData.time + 'h' : '21h' }}</p>
-                </div>
-                <div class="event-icons-item">
-                    <div class="stamp-icon"></div>
-                    <p v-bind:style="parentData.price ? 'margin-left:65px':'margin-left:90px'"> {{ parentData ? parentData.price + '€' : 'Gratuit' }}</p>
-                </div>
-            </div>
         </div>
     </div>
 </template>
