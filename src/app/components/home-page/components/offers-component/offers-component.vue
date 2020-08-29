@@ -9,6 +9,7 @@
     :title="fare.title" 
     :price="fare.price"
     :bonus="fare.bonus"
+    :picture="fare.picture"
   />
   </div>
 </div>
@@ -26,25 +27,25 @@ export default {
         {
           title: 'Public visiteur',
           price: '15€',
-          picture: '',
+          picture: require('@/assets/home-fares-assets/fare-1.jpg'),
           type: 'public'
         },
         {
           title: 'Adhérents',
           price: '10€/',
-          picture: '',
+          picture: require('@/assets/home-fares-assets/fare-1.jpg'),
           type: 'member',
           bonus: ' +4 places gratuites'
         },
         {
           title: 'Jeunes (-30 ans)',
-          picture: '',
+          picture: require('@/assets/home-fares-assets/fare-3.jpg'),
           price: '12€',
           type: 'young'
         },
         {
           title: 'Enfants (-12ans)',
-          picture: '',
+          picture: require('@/assets/home-fares-assets/fare-4.jpg'),
           price: 'Gratuit',
           type: 'children'
         }

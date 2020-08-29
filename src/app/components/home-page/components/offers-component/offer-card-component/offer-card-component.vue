@@ -1,5 +1,6 @@
 <template>
   <div class="offer-card">
+    <img :src="picture" alt="" class="offer-card-img" />
     <p class="offer-subtitle">Tarif</p>
     <h4>
       {{ title }}
@@ -13,7 +14,7 @@
 <script>
 export default {
   name: 'OfferCardComponent',
-  props: ['title', 'price', 'bonus']
+  props: ['title', 'price', 'bonus', 'picture']
 }
 </script>
 <style lang="scss" scoped>

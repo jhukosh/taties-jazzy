@@ -9,7 +9,16 @@
       <BackgroundedInfosComponent :parentData="'circle'"/>
       <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.fares" :undisplayDot="true" />
       <OffersComponent />
+      <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.offers" :undisplayDot="true" />
+      <!-- 
+      <OffersCommponent /> 
+      -->
       <JoinComponent />
+      <!-- 
+      <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.agenda" :undisplayDot="true" />
+      <EventComponent :parentData="homeClass"/> 
+      -->
+      <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.about_us" :undisplayDot="false" />
       <BackgroundedInfosComponent :parentData="'trumpet'"/>
       <div class="home-social-media">
         <h4>Retrouvez nous sur les <span class="home-social-media-text">réseaux sociaux</span> !</h4>
@@ -55,6 +64,8 @@
         title: {
           agenda: 'Programmation',
           fares: "Nos Tarifs Concerts",
+          about_us: 'Qui sommes-nous ?',
+          offers: 'Vous proposent',
           subtitle_value: 'Les Taties Jazzy'
         }
       }
@@ -63,6 +74,7 @@
       async getHomeEventsFromFirebase() {
         this.getHomeEvents().then( res => {
             this.homeShow = res.filter( show => show.type === "show")[0];
+            this.homeClass = res.filter( masterclass => masterclass.type === "masterclass")[0];
         })
       }
     },
