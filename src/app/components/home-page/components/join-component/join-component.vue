@@ -7,7 +7,7 @@
       <h4>Animer une Master Class ?</h4>
     </div>
     <div class="join-button">
-      <button>
+      <button class="strawberry-button strawberry-button-txt">
         ENVOYER UN MAIL
       </button>
     </div>

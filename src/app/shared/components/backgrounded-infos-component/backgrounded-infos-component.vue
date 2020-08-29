@@ -22,17 +22,19 @@
     <img src="@/assets/trumpet.png" class="trumpet-icon">
     <div class="text-part">
       <h3>Des Fous de Jazz</h3>
-      <p>
+      <p class="text-part-paragrah">
         Le projet des Taties Jazzy est de proposer un 
         endroit et des conditions appropriées aux artistes passionnés de Jazz.
       </p>
-      <p>
+      <p class="text-part-paragrah">
         Le but est qu'ils puissent se produire et offrir une performance de 
         qualité, dans un cadre idéal pour les amateurs de Jazz. Les afficionados 
         du genre pourront venir apprécier des artistes reconnus et découvrir 
         des nouveaux talents dans un cadre dédié.
       </p>
-      
+      <div>
+        <button class="black-button  black-button-txt">VOIR PLUS</button>
+      </div>
     </div>
     <div class="img-part">
       <img src="@/assets/members2.jpg" />

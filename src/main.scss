@@ -4,14 +4,10 @@ body {
     -webkit-font-smoothing: 'text-font';
     -moz-osx-font-smoothing: 'text-font';
     font-family: 'bod72b', sans-serif;
-    .main { // ???
+    .main {
       min-height: calc(100vh - 200px);
     }
-    p {
-      margin: 0;
-    }
     a {
-      color: #000000;
       text-decoration: unset;
     }
   }

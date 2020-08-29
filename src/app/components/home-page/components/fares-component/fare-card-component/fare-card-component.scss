@@ -1,0 +1,41 @@
+.fare-card {
+  box-shadow: none;
+  border: 1px solid $light-grey;
+  .fare-card-img {
+    width: 100%;
+  }
+  .fare-card-infos {
+    margin-top: -4px;
+    padding: 5% 5% 1% 5%;
+    .fare-card-subtitle {
+      font-size: 14px;
+      color: $middleGrey;
+    }
+    h4 {
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 4%;
+    }
+    .fare-card-price {
+      color:$strawberry;
+      font-size: 32px;
+      .fare-card-price-bonus {
+        color: $middleGrey;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.fare-card:hover {
+  box-shadow: 5px 5px 12px $middleGrey, -5px 0px 12px $middleGrey;
+  transition: all 0.2s ease;
+  .fare-card-infos {
+    background-color: $strawberry;
+    color: white;
+    transition: all 0.2s ease;
+    .fare-card-subtitle, .fare-card-price, .fare-card-price-bonus {
+      color: white;
+    }
+  }
+}
