@@ -1,8 +1,45 @@
-#offers-component {
+#Offers-component {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  div {
-    width: 50%;
+  .offers-trumpet-icon {
+    width: 15%;
+  }
+  .offers-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 10%;
+    width: 100%;
+    .offers-content-img {
+      width: 40%;
+      img {
+        width: 100%;
+      }
+    }
+    .offers-content-infos {
+      
+      width: 40%;
+      h4 {
+        font-size: 32px;
+      }
+      p, span {
+        font-family: 'FrutigerLTStd', sans-serif !important;
+        font-size: 18px;
+        margin-bottom: 8%;
+        strong {
+          font-weight: bolder;
+        }
+        span {
+          color: $text-article;
+          font-style: italic;
+          font-weight: lighter;
+        }
+      }
+      .offers-content-infos-second-paragraph {
+        color: $strawberry;
+      }
+    }
   }
 }
