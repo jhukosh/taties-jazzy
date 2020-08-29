@@ -1,0 +1,89 @@
+#Staff-component {
+    height: 100%;
+    #Staff-picture {
+        text-align: center;
+        img {
+            width: 80%;
+        }
+    }
+    .bass-background-container {
+        display: flex;
+        position: relative;
+        top: -8rem;
+        .bass-background {
+            transform: rotate(140deg);
+        }
+    }
+    .staff-content-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        height: 40rem;
+        position: relative;
+        top: -20rem;
+        .staff {
+            display: flex;
+            flex-direction: column;
+        }
+        .left-column {
+            width: 45%;
+            justify-content: space-between;
+            .staff-name-container {
+                margin-top: 7rem;
+                margin-left: 2rem;
+            }
+        }
+        .right-column {
+            width: 55%;
+            justify-content: space-between;
+            .staff-name-container {
+                margin-bottom: 3rem;
+                margin-left: 1rem;
+            }
+        }
+        .staff-name {
+            font-family: 'BodoniSvtyTwoSCITCTT', sans-serif !important;
+            font-size: 78px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            margin: 0px;
+            text-align: left;
+        }
+        .small {
+            font-size: 68px;
+        }
+        .subtitle {
+            font-size: 28px;
+            color: $darkerorangegradient;
+            text-align: left;
+            font-family: 'BodoniSvtyTwoSCITCTT', sans-serif !important;
+        }
+        .staff-content {
+            font-family: 'FrutigerLTStd-Roman', sans-serif !important;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: normal;
+            color: $text-article;
+            text-align: left;
+            margin: 0;
+        }
+    }
+    .bass-background-container-placeholder {
+        display: flex;
+        position: relative;
+        top: -30rem;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        .bass-background-placeholder {
+            transform: rotate(-40deg);
+        }
+    }
+}

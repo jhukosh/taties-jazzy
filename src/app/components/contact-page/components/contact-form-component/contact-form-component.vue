@@ -1,36 +1,39 @@
 <template>
-  <form @submit.prevent>
-    <h1>Get Started</h1>
-    <div>
-      <label for="name">Nom</label>
-      <input v-model="messageForm.name" type="text" placeholder="Nom" id="name" />
-    </div>
-    <div>
-      <label for="firstname">Prénom</label>
-      <input v-model="messageForm.firstname" type="text" placeholder="Prénom" id="firstname" />
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input v-model="messageForm.email" type="text" placeholder="you@email.com" id="email" />
-    </div>
-    <div>
-      <label for="message">Message</label>
-      <input v-model="messageForm.message" type="password" placeholder="Votre message" id="message" />
-    </div>
-    <button @click="sendMessageForm" class="button">Envoyer</button>
-  </form>
+  <div id="Contact-form-component"> 
+    <p class="please-fill-form">
+      Veuillez remplir le formulaire ci-contre, en renseignant vos coordonnées. 
+    </p>
+
+    <form id="Contact-form" @submit.prevent>
+      <div>
+        <input id="Email-input" v-model="messageForm.email" type="text" placeholder="Adresse e-mail"/>
+      </div>
+      <div>
+        <input id="Objet-input" v-model="messageForm.objet" type="text" placeholder="Objet"/>
+      </div>
+
+      <div>
+        <p class="message-label">Message</p>
+        <textarea id="Message-input" v-model="messageForm.message" type="text"/>
+      </div>
+      <button id="Contact-submit-btn" class="black-button" @click="sendMessageForm">
+        <p class="black-button-txt">ENVOYER</p>
+      </button>
+    </form>
+  </div>
 </template>
+
 <script>
   import { sendMessageService } from '@/core/services/send-message-service.js'
+
   export default {
     name: 'ContactFormComponent',
     mixins: [sendMessageService],
     data() {
       return { 
         messageForm: {
-          name: '',
-          firstname: '',
           email: '',
+          objet: '',
           message: ''
         }
       }
@@ -42,8 +45,10 @@
       }
     }
   }
-</script>
-<style lang="scss" scoped>
 
+</script>
+
+<style lang="scss" scoped>
+  @import "contact-form-component.scss";
 </style>
 

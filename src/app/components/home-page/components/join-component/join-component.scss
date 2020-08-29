@@ -1,5 +1,5 @@
 @import '@/styles/_icons.scss';
-.main-join {
+.join-component {
   background-image: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.897)), url('../../../../../assets/join-us.png');
   background-size: cover;
   background-blend-mode: saturation;
@@ -26,7 +26,7 @@
   .join-button {
     padding: 50px;
     button {
-      @include coloredButton(231px, 60px, 31.5px, $strawberry, $strawberry);
+      @include colored-button(231px, 60px, 31.5px, $strawberry, $strawberry);
       color: white;
     }
   }

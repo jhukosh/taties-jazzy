@@ -36,7 +36,7 @@
         align-items: center;
         display: flex;
         flex-direction: row;
-        font-family: 'title-font', sans-serif !important;
+        font-family: 'bod72b', sans-serif !important;
         justify-content: space-evenly;
         list-style: none;
         padding-inline-start: 0;
