@@ -8,11 +8,9 @@
       -->
       <BackgroundedInfosComponent :parentData="'circle'"/>
       <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.fares" :undisplayDot="true" />
-      <OffersComponent />
+      <FaresComponent />
       <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.offers" :undisplayDot="true" />
-      <!-- 
-      <OffersCommponent /> 
-      -->
+      <OffersComponent /> 
       <JoinComponent />
       <!-- 
       <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.agenda" :undisplayDot="true" />
@@ -38,6 +36,7 @@
 <script>
   import HomeBand from '@/app/components/home-page/components/home-band-component/home-band-component.vue'
   import OpeningComponent from '@/app/components/home-page/components/opening-component/opening-component.vue'
+  import FaresComponent from '@/app/components/home-page/components/fares-component/fares-component.vue'
   import OffersComponent from '@/app/components/home-page/components/offers-component/offers-component.vue'
   import JoinComponent from '@/app/components/home-page/components/join-component/join-component.vue'
   //import EventComponent from '@/app/shared/components/event-component/event-component.vue'
@@ -55,6 +54,7 @@
       JoinComponent,
       OpeningComponent,
       OffersComponent,
+      FaresComponent,
       TatiesTitleComponent
     },
     data() {
