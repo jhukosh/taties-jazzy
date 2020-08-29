@@ -2,7 +2,7 @@
     <div class="main">
         <p>Master class page</p>
         <p>{{ masterClasses }}</p>
-
+        <EventDateComponent />
         <EventComponent :parentData="masterClasses"/>
     </div>
 </template>

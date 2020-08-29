@@ -4,6 +4,7 @@
 
         <div id="Show-page-container">
             <div class="show-item" v-for="show in shows" :key="show.id">
+                <EventDateComponent />
                 <EventComponent :parentData="show"/>
             </div>
         </div>
@@ -15,12 +16,14 @@
 import { firebaseService } from '@/core/services/firebase-service.js'
 import TitleBackgroundComponent from '../../shared/components/title-background-component/title-background-component.vue'
 import EventComponent from '@/app/shared/components/event-component/event-component.vue'
+import EventDateComponent from '@/app/shared/components/event-date-component/event-date-component.vue'
 
 export default {
     name: 'ShowsPage',
     components: {
         TitleBackgroundComponent,
-        EventComponent
+        EventComponent, 
+        EventDateComponent
     },
     mixins: [firebaseService],
     data() {

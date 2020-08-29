@@ -2,10 +2,10 @@
     <div id="Home-page-component">
       <HomeBand />
       <OpeningComponent />
-      <!-- 
+      
       <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.agenda" :undisplayDot="true" />
       <EventComponent :parentData="homeShow"/> 
-      -->
+      
       <BackgroundedInfosComponent :parentData="'circle'"/>
       <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.fares" :undisplayDot="true" />
       <FaresComponent />
@@ -39,7 +39,7 @@
   import FaresComponent from '@/app/components/home-page/components/fares-component/fares-component.vue'
   import OffersComponent from '@/app/components/home-page/components/offers-component/offers-component.vue'
   import JoinComponent from '@/app/components/home-page/components/join-component/join-component.vue'
-  //import EventComponent from '@/app/shared/components/event-component/event-component.vue'
+  import EventComponent from '@/app/shared/components/event-component/event-component.vue'
   import BackgroundedInfosComponent from '@/app/shared/components/backgrounded-infos-component/backgrounded-infos-component.vue'
   import TatiesTitleComponent from '@/app/shared/components/taties-title-component/taties-title-component.vue'
   import { firebaseService } from '@/core/services/firebase-service.js'
@@ -49,7 +49,7 @@
     mixins: [firebaseService],
     components: {
       HomeBand,
-      //EventComponent,
+      EventComponent,
       BackgroundedInfosComponent,
       JoinComponent,
       OpeningComponent,
