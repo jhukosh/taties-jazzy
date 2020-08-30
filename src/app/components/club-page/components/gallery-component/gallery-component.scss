@@ -1,39 +1,34 @@
-#groscontainer{
+#Gallery-component {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  #container1 {
+  #Gallery-left-container {
     display: flex;
     flex-direction: column;
+    img {
+      width: 23rem;
+      height: 35.58rem;
+      margin: 0.7rem;
+    }
+  }
+  #Gallery-right-container {
+    display: flex;
+    flex-direction: column;
+    .gallery-right-container-images {
+      display: flex;
+      flex-direction: column;
+      width: 31rem;
+      height: 19.71rem;
+      margin: 0.7rem;
       img {
-        //background-color: #8ca0ff;
-        width: 23rem;
-        height: 35.58rem;
+        width: 31rem;
+        height: 19.71rem;
         margin: 0.7rem;
       }
-  }
-  #container2 {
-    display: flex;
-    flex-direction: column;
-    .nana{
-        display: flex;
-        flex-direction: column;
-           //background-color: #8ca0ff;
-           width: 31rem;
-           height: 19.71rem;
-           margin: 0.7rem;
-
-        
-        img {
-          //background-color: #8ca0ff;
-          width: 31rem;
-          height: 19.71rem;
-          margin: 0.7rem;
+    }:first-child {
+      img {
+        margin-top: 0;
       }
     }
   }
 }
-
-
-
-

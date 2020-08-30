@@ -1,5 +1,5 @@
 <template>
-  <div id="Association-page-component">
+  <div id="Association-page-container">
     <TitleBackgroundComponent
       :background_image="path_to_image"
       :background_title="background_title_value"
@@ -48,7 +48,7 @@ export default {
       },
       // Contain value for banner image and title value
       path_to_image: "association-page-assets/association-banner.jpg",
-      background_title_value: "L’association",
+      background_title_value: "L’association"
     };
   },
 };

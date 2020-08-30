@@ -1,5 +1,5 @@
 <template>
-  <div id="Footer-component">
+  <div id="Footer-container">
     <div class="footer-ticket-booking">
       <div>
         <p

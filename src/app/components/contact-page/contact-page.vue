@@ -1,5 +1,5 @@
 <template>
-  <div id="Contact-page-component">
+  <div id="Contact-page-container">
     <TitleBackgroundComponent
       :background_image="path_to_image"
       :background_title="background_title_value"

@@ -1,5 +1,5 @@
 <template>
-  <div id="Home-page-component">
+  <div id="Home-page-container">
     <HomeBand />
     <!-- Opening Component to remove later on -->
     <OpeningComponent />
