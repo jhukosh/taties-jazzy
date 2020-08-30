@@ -1,8 +1,10 @@
 <template>
   <div id="Home-page-component">
     <HomeBand />
+    <!-- Opening Component to remove later on -->
     <OpeningComponent />
 
+    <!-- Main show to promote from home-events collection -->
     <TatiesTitleComponent
       :subtitle="title.subtitle_value"
       :title="title.agenda"
@@ -15,26 +17,37 @@
       :fromHome="true"
       :type="'show'"
     />
+    <!-- Placeholder if none show to promote -->
     <div v-else-if="!homeShow" class="home-page-show-placeholder">
-      <h4>La programmation des concerts est en cours !</h4>
+      <h4>La programmation des événements est en cours !</h4>
       <img :src="tmpEventShowPicture" alt />
     </div>
 
-    <BackgroundedInfosComponent :parentData="'circle'" id="Home-page-register-component"/>
+    <!-- Red backgrounded join us component -->
+    <BackgroundedInfosComponent :parentData="'circle'" id="Home-page-register-component" />
+
+    <!-- Fares cards component -->
     <TatiesTitleComponent
       :subtitle="title.subtitle_value"
       :title="title.fares"
       :undisplayDot="true"
     />
     <FaresComponent />
+
+    <!-- Taties Jazzy offers component TODO: second tab -->
     <TatiesTitleComponent
       :subtitle="title.subtitle_value"
       :title="title.offers"
       :undisplayDot="true"
     />
     <OffersComponent />
+
+    <!-- Become member backgrounded band component -->
     <JoinComponent />
+
+    <!-- Main masterclass to promote from home-events collection -->
     <TatiesTitleComponent
+      v-if="homeClass"
       :subtitle="title.title_masterclass"
       :title="title.title_masterclass"
       :undisplayDot="true"
@@ -46,16 +59,16 @@
       :fromHome="true"
       :type="'masterclass'"
     />
-    <div v-else-if="!homeClass" class="home-page-masterclass-placeholder">
-      <h4>Programmation des masterclasses à venir...</h4>
-      <img :src="tmpClassPicture" alt />
-    </div>
+
+    <!-- Red backgrounded who are we component -->
     <TatiesTitleComponent
       :subtitle="title.subtitle_value"
       :title="title.about_us"
       :undisplayDot="false"
     />
     <BackgroundedInfosComponent :parentData="'trumpet'" />
+
+    <!-- Social media -->
     <!-- TODO Transfer social media in a dedicated component -->
     <div class="home-social-media">
       <h4>
@@ -63,8 +76,20 @@
         <span class="home-social-media-text">réseaux sociaux</span> !
       </h4>
       <div class="home-social-media-icons">
-        <img src="@/assets/social-media/instagram.png" alt="Logo Instagram" />
-        <img src="@/assets/social-media/facebook.png" alt="Logo Facebook" />
+        <a
+          href="https://www.instagram.com/lestatiesjazzy/?hl=fr"
+          target="_blank"
+          title="Redirection vers le compte instagram"
+        >
+          <img src="@/assets/social-media/instagram.png" alt="Logo Instagram" />
+        </a>
+        <a
+          href="https://www.facebook.com/lestatiesjazzy"
+          target="_blank"
+          title="Redirection vers le compte facebook"
+        >
+          <img src="@/assets/social-media/facebook.png" alt="Logo Facebook" />
+        </a>
       </div>
       <div class="home-img-gallery">
         <img src="@/assets/gallery-1.jpg" alt />
@@ -97,13 +122,13 @@ export default {
     OpeningComponent,
     OffersComponent,
     FaresComponent,
-    TatiesTitleComponent
+    TatiesTitleComponent,
   },
   data() {
     return {
-      homeShow: {},
+      homeShow: null,
       tmpEventShowPicture: require("@/assets/photo-band-test.jpg"),
-      homeClass: {},
+      homeClass: null,
       tmpClassPicture: require("@/assets/masterclasses-page-assets/batterie.jpg"),
       title: {
         agenda: "Programmation",

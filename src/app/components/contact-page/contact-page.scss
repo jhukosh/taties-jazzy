@@ -1,10 +1,23 @@
 #Contact-page-component {
-    overflow: hidden;
-    #Form-and-info-container {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: space-between;
+  overflow: hidden;
+  #Form-and-info-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    .contact-page-tmp-placeholder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "FrutigerLTStd-Roman", sans-serif;
+      font-size: 24px;
+      margin-right: 5%;
+      width: 50%;
+      p {
+        text-align: center;
+      }
     }
+  }
 }

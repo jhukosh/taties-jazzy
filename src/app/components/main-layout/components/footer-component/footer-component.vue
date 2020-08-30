@@ -2,8 +2,14 @@
   <div id="Footer-component">
     <div class="footer-ticket-booking">
       <div>
-        <p class="footer-ticket-booking-first-paragraph">Vous ne voulez pas louper votre artiste préféré ?</p>
-        <p class="footer-ticket-booking-second-paragraph">Avec <span>Weezevent</span> réservez vos billets en un clic et obtenez <span>10% de rabais !</span></p>
+        <p
+          class="footer-ticket-booking-first-paragraph"
+        >Vous ne voulez pas louper votre artiste préféré ?</p>
+        <p class="footer-ticket-booking-second-paragraph">
+          Avec
+          <span>Weezevent</span> réservez vos billets en un clic et obtenez
+          <span>10% de rabais !</span>
+        </p>
       </div>
       <div>
         <button class="black-button black-button-txt">RÉSERVER MON BILLET</button>
@@ -46,7 +52,7 @@
             <div class="mail-icon"></div>
             <a
               href="mailto:lestatiesjazzy@gmail.com"
-              title="Envoyer un email à lestatiesjazzy@gmail.com"
+              title="Envoyer un email à l'association"
             >lestatiesjazzy@gmail.com</a>
           </div>
         </div>
@@ -66,7 +72,7 @@
             <a
               href="https://www.facebook.com/lestatiesjazzy"
               target="_blank"
-              title="Redirection vers le compte instagram"
+              title="Redirection vers le compte facebook"
             >Les Taties Jazzy</a>
           </div>
         </div>

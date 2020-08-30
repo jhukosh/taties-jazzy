@@ -5,11 +5,15 @@
       :background_title="background_title_value"
     />
 
-    <div id="Show-page-container">
+    <div v-if="shows && shows.length > 0" id="Show-page-container">
       <div class="show-item" v-for="show in shows" :key="show.id">
         <EventDateComponent :date="show.date"/>
         <EventComponent :parentData="show" :eventPicture="tmpShowsPicture" :type="'show'" />
       </div>
+    </div>
+    <div v-else-if="!shows || shows.length === 0" class="show-page-placeholder">
+      <h4>La programmation des concerts est en cours !</h4>
+      <img :src="tmpShowsPicture" alt />
     </div>
   </div>
 </template>
@@ -30,7 +34,7 @@ export default {
   mixins: [firebaseService],
   data() {
     return {
-      shows: {},
+      shows: [],
       tmpShowsPicture: require("@/assets/photo-band-test.jpg"),
       path_to_image: "show-page-assets/show-banner.png",
       background_title_value: "Concerts"

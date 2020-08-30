@@ -6,8 +6,18 @@
     />
     <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.contact_title" />
     <div id="Form-and-info-container">
+      <!-- TODO Make this contact form work and replace mailto on pages
       <ContactFormComponent />
+      -->
       <InfoContactFormComponent />
+      <div class="contact-page-tmp-placeholder">
+        <p
+        >N'hésitez pas à nous envoyer un email en précisant votre demande !</p>
+        <button
+          class="black-button black-button-txt"
+        >ENVOYER UN EMAIL</button>
+        <img src="@/assets/contact-page-assets/send-email-icon.png" alt="">
+      </div>
     </div>
     <MapComponent />
   </div>
@@ -16,7 +26,7 @@
 <script>
 import TitleBackgroundComponent from "@/app/shared/components/title-background-component/title-background-component.vue";
 import TatiesTitleComponent from "@/app/shared/components/taties-title-component/taties-title-component.vue";
-import ContactFormComponent from "@/app/components/contact-page/components/contact-form-component/contact-form-component.vue";
+//import ContactFormComponent from "@/app/components/contact-page/components/contact-form-component/contact-form-component.vue";
 import InfoContactFormComponent from "@/app/components/contact-page/components/info-contact-form-component/info-contact-form-component.vue";
 import MapComponent from "@/app/components/contact-page/components/map-component/map-component.vue";
 
@@ -25,7 +35,7 @@ export default {
   components: {
     TitleBackgroundComponent,
     TatiesTitleComponent,
-    ContactFormComponent,
+    //ContactFormComponent,
     InfoContactFormComponent,
     MapComponent,
   },

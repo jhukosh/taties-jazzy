@@ -4,11 +4,15 @@
       :background_image="path_to_image"
       :background_title="background_title_value"
     />
-    <div id="Masterclasses-page-container">
+    <div v-if="masterClasses && masterClasses.length > 0" id="Masterclasses-page-container">
       <div class="masterclass-item" v-for="masterclass in masterClasses" :key="masterclass.id">
         <EventDateComponent :date="masterclass.date"/>
         <EventComponent :parentData="masterclass" :eventPicture="tmpClassPicture" :type="'masterclass'" />
       </div>
+    </div>
+    <div v-else-if="!masterClasses || masterClasses.length === 0" class="master-classes-page-placeholder">
+      <h4>Programmation des master classes à venir...</h4>
+      <img :src="tmpClassPicture" alt />
     </div>
   </div>
 </template>
@@ -29,7 +33,7 @@ export default {
   },
    data() {
     return {
-      masterClasses: {},
+      masterClasses: [],
       tmpClassPicture: require("@/assets/masterclasses-page-assets/batterie.jpg"),
       path_to_image: "masterclasses-page-assets/masterclasses-banner.jpg",
       background_title_value: "Master Classes"

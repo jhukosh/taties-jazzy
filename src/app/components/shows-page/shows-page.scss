@@ -1,8 +1,18 @@
 #Show-page-component {
   overflow: hidden;
+  margin-bottom: 5%;
   #Show-page-container {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    .show-item {
+      margin-top: 5%;
+    }
+  }
+  .show-page-placeholder {
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+    font-style: italic;
   }
 }

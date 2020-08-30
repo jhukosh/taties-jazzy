@@ -23,7 +23,7 @@
        -->
     </div>
     <div v-else-if="type === 'masterclass'">
-      <p>avec {{ event.artist }}</p>
+      <p class="event-infos-masterclass-artist">avec {{ event.artist }}</p>
     </div>
     <div class="show-content">
       <p>{{ event.presentation }}</p>
