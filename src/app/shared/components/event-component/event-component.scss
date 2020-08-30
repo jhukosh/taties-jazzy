@@ -1,120 +1,28 @@
-@import '@/styles/_icons.scss';
-.event-main {
-    color: #393939;
+@import "@/styles/_icons.scss";
+#Event-component {
+  color: #393939;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  .event-trumpet-icon {
+    width: 15%;
+  }
+  .event-infos-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: flex-start;
-    margin-top: 25px;
-    .event-info-container {
+    justify-content: space-evenly;
+    width: 100%;
+    .event-infos-image {
+      width: 40%;
+      img {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        .event-image {
-            img {
-                width: fit-content;
-                max-height: 400px;
-            }
-        }
-        .show-info {
-            width: 50%;
-            h5 {
-                font-family: 'AvenirNext', sans-serif;
-                font-size: 42px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: #000000;
-                margin: 0;
-            }
-            .info-icon-container {
-                font-family: 'FrutigerLTStd', sans-serif;
-                font-size: 14px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.79;
-                letter-spacing: normal;
-                color: $text-article;
-                display: flex;
-                align-items: baseline;
-                margin: 2em 0em;
-                div  {
-                    display: flex;
-                    align-items: baseline;    
-                    margin-right: 2em;
-                }
-                img {
-                    height: 14px;
-                    margin-right: .5em;
-                }
-            }
-            .show-content {
-                font-family: 'FrutigerLTStd-Roman', sans-serif;
-                font-size: 14px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.79;
-                letter-spacing: normal;
-                color: #000000;
-            }
-            .time-and-price-container {
-                display: flex;
-                margin: 3em 0em;
-                p {
-                    font-family: 'AvenirNext', sans-serif;
-                    font-size: 22px;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    color: #000000;
-                }
-                div {
-                    margin-right: 1em;
-                }
-                .show-hours {
-                    display: flex;
-                    align-items: baseline;
-                    margin-right: 3em;
-                }
-                .show-price {
-                    display: flex;
-                    align-items: baseline;
-                }
-            }
-        }
+      }
     }
-
-
-    .event-icons {
-        display: flex;
-        flex-direction: row;
-        .event-icons-item {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: fit-content;
-            .stamp-icon {
-                @include stamp-icon(black);
-                margin-top: 15px;
-            }
-            .stamp-icon:before {
-                @include stamp-icon-before;
-            }
-            .stamp-icon:after {
-                @include stamp-icon-after;
-            }
-            p {
-                margin-left: 8px;
-            }
-            .event-price-info {
-                margin-left: 65px;
-            }
-        }
+    .event-infos-content {
+      width: 40%;
     }
+  }
 }

@@ -1,66 +1,43 @@
 <template>
-  <div>
-    <h5>Titre</h5>
+  <div id="Event-infos-component">
+    <h5>{{ event.artist }}</h5>
     <div class="info-icon-container">
-      <!-- DEV : in comms waiting for backdata -->
-      <!-- <div>
-                        <img src="../../../../assets/icons/map-pin-black-icon.png" alt="icone de marqueur de carte">
-                        {{ parentData.origin }}
-                    </div>
-                    <div>
-                        <img src="../../../../assets/icons/calendar-icon.png" alt="icone de calendrier">
-                        {{ parentData.creation }}
-                    </div>
-                    <div>
-                        <img src="../../../../assets/icons/music-note-icon.png" alt="icone de note de musique">
-                        {{ parentData.inspiration }}
-                    </div>
-                    <div>
-                        <img src="../../../../assets/icons/mic-icon.png" alt="icone de micro">
-                        {{ parentData.tour }}
-      </div>-->
-
-      <!-- DEV : PLACEHOLDER -->
+      <!-- TODO Create proper data model and replace by data -->
       <div>
         <img src="@/assets/icons/map-pin-black-icon.png" alt="icone de marqueur de carte" />
-        Réunion
+        {{ event.origin }}
       </div>
       <div>
         <img src="@/assets/icons/calendar-icon.png" alt="icone de calendrier" />
-        2009
+        {{ event.creation }}
       </div>
       <div>
         <img src="@/assets/icons/music-note-icon.png" alt="icone de note de musique" />
-        New Orlean
+        {{ event.inspiration }}
       </div>
+      <!--
       <div>
         <img src="@/assets/icons/mic-icon.png" alt="icone de micro" />
         Réunion, Marseille, Toulouse …
       </div>
-      <!-- DEV : /PLACEHOLDER -->
+       -->
     </div>
     <div class="show-content">
-      <!-- <p>{{ parentData.text }}</p> -->
-      <p>
-        Ce groupe nous apporte des vibration d’antand avec un style à la New Orleans pur et significatifs.
-        Avec un chanteur touchant, un saxophoniste épatant et un pianiste pointilleux ce trio à de quoi vous faire vibrer le coeur.
-      </p>
+      <p>{{ event.presentation }}</p>
     </div>
-    <div class="time-and-price-container">
+    <div class="event-infos-time-and-price-container">
       <div class="show-hours">
         <div class="clock-icon"></div>
-        <p>{{ event.heure }}</p>
+        <p>{{ event.time }}</p>
       </div>
       <div class="show-price">
         <div class="card-icon"></div>
-        <p>{{ event.prix }} €</p>
+        <p>{{ event.price }} €</p>
       </div>
     </div>
     <div>
-      <button class="white-button">
-        <p class="white-button-txt">
-          <a href="#">RÉSERVER MON BILLET</a>
-        </p>
+      <button class="white-button white-button-txt">
+        RÉSERVER MON BILLET
       </button>
     </div>
   </div>

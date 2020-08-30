@@ -4,7 +4,7 @@
       <OpeningComponent />
       
       <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.agenda" :undisplayDot="true" />
-      <EventComponent :parentData="homeShow"/> 
+      <EventComponent :parentData="homeShow" :fromHome="true"/> 
       
       <BackgroundedInfosComponent :parentData="'circle'"/>
       <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.fares" :undisplayDot="true" />
@@ -18,6 +18,7 @@
       -->
       <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.about_us" :undisplayDot="false" />
       <BackgroundedInfosComponent :parentData="'trumpet'"/>
+      <!-- TODO Transfer social media in a dedicated component -->
       <div class="home-social-media">
         <h4>Retrouvez nous sur les <span class="home-social-media-text">réseaux sociaux</span> !</h4>
         <div class="home-social-media-icons">
@@ -72,13 +73,16 @@
     },
     methods: {
       async getHomeEventsFromFirebase() {
-        this.getHomeEvents().then( res => {
-            this.homeShow = res.filter( show => show.type === "show")[0];
-            this.homeClass = res.filter( masterclass => masterclass.type === "masterclass")[0];
+        this.getHomeEvents().then( async res => {
+            this.homeShow = res.filter( show => show.eventCollection === "shows")[0];
+            this.homeClass = res.filter( masterclass => masterclass.eventCollection=== "masterclasses")[0];
+            console.log('home show', this.homeShow)
+            const show = await this.getHomeEventById(this.homeShow.eventId);
+            console.log(show);
         })
       }
     },
-    mounted() {
+    beforeMount() {
         this.getHomeEventsFromFirebase()
     }
 }
