@@ -1,16 +1,14 @@
 body {
   margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-#app {
-  -webkit-font-smoothing: 'text-font';
-  -moz-osx-font-smoothing: 'text-font';
-  font-family: 'bod72b', sans-serif;
-  .main {
-    min-height: calc(100vh - 200px);
+  #app {
+    -webkit-font-smoothing: 'text-font';
+    -moz-osx-font-smoothing: 'text-font';
+    font-family: 'bod72b', sans-serif;
+    .main {
+      min-height: calc(100vh - 200px);
+    }
+    a {
+      text-decoration: unset;
+    }
   }
 }

@@ -1,1 +1,0 @@
-export const content = 'Vue parle moi';

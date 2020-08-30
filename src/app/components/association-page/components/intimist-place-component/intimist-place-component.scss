@@ -1,62 +1,57 @@
-#Intimist-place-main {
-    position: relative;
-    top: -36rem;
-    #Background {
-    background: url(../../../../../assets/customSVG/curvy-bg-test.svg);
+#Intimist-place-component {
+  position: relative;
+  top: -36rem;
+  #Background {
+    background: url("../../../../../assets/customSVG/curvy-bg-test.svg");
     background-size: 100% 600px;
     height: 600px;
     margin: 5rem 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-        .information-container {
-            display: flex;
-            justify-content: space-evenly;
-            height: 80%;
-            align-items: center;
-            .place-information {
-                font-family: 'FrutigerLTStd', sans-serif !important;
-                font-size: 16px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 2.13;
-                letter-spacing: normal;
-                color: #ffffff;
-                text-align: left;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                width: 37%;
-                height: 100%;
-                margin-left: 8rem;
-            }
-            .place-information p {
-                font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
-                font-size: 58px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.02;
-                letter-spacing: normal;
-                color: #ffffff;
-            }
-            .place-image {
-                width: 45%;
-                z-index: 2;
-                img {
-                    width: 95%;
-                }
-            }
+    .information-container {
+      display: flex;
+      justify-content: space-evenly;
+      height: 80%;
+      align-items: center;
+      color: #ffffff;
+      .place-information {
+        line-height: 2.13;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 37%;
+        height: 100%;
+        margin-left: 8rem;
+        h5 {
+          font-size: 58px;
+          line-height: 1.02;
+          margin-top: 5%;
+          margin-bottom: 5%;
         }
-    }
-    #Background-trumpet {
-        text-align: end;
+        p {
+          font-family: "FrutigerLTStd", sans-serif !important;
+          font-size: 16px;
+        }
+      }
+      .place-image {
+        width: 45%;
+        z-index: 2;
         img {
-            position: relative;
-            top: -40rem;
-            z-index: 1;
-            left: 4rem;
+          width: 95%;
         }
+      }
     }
+  }
+  #Background-trumpet {
+    text-align: end;
+    img {
+      position: relative;
+      top: -40rem;
+      z-index: 1;
+      left: 4rem;
+    }
+  }
 }

@@ -1,44 +1,33 @@
-#Jazz-main {
+#Jazz-component {
     #Background {
         background: url(../../../../../assets/customSVG/curvy-bg-test.svg);
         background-size: 100% 1000px;
         height: 1000px;
-        margin: 5rem 0px;    
+        margin: 5rem 0px;
+        color: #ffffff;  
+        text-align: center; 
         #Jazz-top-part {
             display: flex;
             flex-direction: column;
             .jazz-header {
-                font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
                 font-size: 48px;
                 font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
                 letter-spacing: 1.71px;
-                color: #ffffff;
                 margin-top: 3rem;
-                text-align: center;
             }
             .jazz-content {
                 font-family: 'FrutigerLTStd-Roman', sans-serif !important;
                 font-size: 16px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
                 line-height: 1.56;
-                letter-spacing: normal;
-                text-align: center;
                 display: flex;
                 margin-left: 2rem;
                 margin-top: 3rem;
-                color: #ffffff;
                 img {
                     z-index: 1;
                 }
             }
             p {
                 width: 50%;
-                text-align: center;
             }
         }
         .jazz-image {
@@ -56,13 +45,7 @@
             .jazz-content-justified {
                 font-family: 'FrutigerLTStd-Roman', sans-serif !important;
                 font-size: 16px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
                 line-height: 1.56;
-                letter-spacing: normal;
-                text-align: center;
-                color: #ffffff;
                 width: 35%;
                 margin-left: auto;
                 margin-right: auto;

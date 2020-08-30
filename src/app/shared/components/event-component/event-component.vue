@@ -1,54 +1,44 @@
 <template>
-    <div class="event">
-        <div class="event-image">
-            <img :src="image" alt=""/>
-        </div>
-        <div class="event-infos">
-            <div v-if="parentData" class="home-event-infos">
-                <p class="home-event-type">{{ parentData.type === "show" ? 'Concert' : 'Masterclass' }}</p>
-                <h4 class="home-event-date">{{ parentData.date }}</h4>
-            </div>
-            <hr v-if="parentData" class="home-event-separator">
-            <div v-else>
-                Faire titre etc. pour show et master classes
-            </div>
-            <div class="event-secondary-infos">
-                <p class="event-secondary-infos-artist">{{ parentData ? parentData.artist : 'artist' }}</p>
-                <p class="event-secondary-infos-presentation">{{ parentData ? parentData.presentation : 'présentation' }}</p>
-            </div>
-            <div class="event-icons">
-                <div class="event-icons-item">
-                    <div class="clock-icon"></div>
-                    <p> {{ parentData ? parentData.time + 'h' : '21h' }}</p>
-                </div>
-                <div class="event-icons-item">
-                    <div class="stamp-icon"></div>
-                    <p v-bind:style="parentData.price ? 'margin-left:65px':'margin-left:90px'"> {{ parentData ? parentData.price + '€' : 'Gratuit' }}</p>
-                </div>
-            </div>
-        </div>
+  <div id="Event-component">
+    <div
+      class="event-trumpet-icon"
+      :style="fromHome ? type === 'show' ? 'width: fit-content': 'width: 10%': 'display: none'"
+    >
+      <img src="@/assets/reversed-trumpet.png" alt v-if="fromHome && type === 'show'" />
     </div>
+    <div class="event-infos-container">
+      <div class="event-infos-image">
+        <img :src="eventPicture" alt />
+      </div>
+      <div class="event-infos-content">
+        <EventHomeDateComponent v-if="fromHome" :event="parentData" :type="type" />
+        <div class="event-infos-content-show">
+          <EventInfosComponent :event="parentData" :type="type" :fromHome="fromHome" />
+        </div>
+      </div>
+      <div class="event-handle-icon" v-if="fromHome && type === 'masterclass'">
+        <img src="@/assets/handle.png" alt />
+      </div>
+    </div>
+  </div>
 </template>
+
 <script>
+import EventInfosComponent from "@/app/shared/components/event-component/components/event-infos-component/event-infos-component.vue";
+import EventHomeDateComponent from "@/app/shared/components/event-component/components/event-home-date-component/event-home-date-component.vue";
 export default {
-        name: 'EventComponent',
-        props: ['parentData'],
-        // watch: {
-        //     parentData: {
-        //             handler: 'methodName',
-        //             immediate: true
-        //         }
-        //     },
-        data() {
-            return {
-                image: require('@/assets/photo-band-test.jpg')
-            }
-        },
-        mounted() {
-            console.log(this.parentData);
-        }
-    }
+  name: "EventComponent",
+  components: {
+    EventInfosComponent,
+    EventHomeDateComponent,
+  },
+  props: ["parentData", "fromHome", "type", "eventPicture"],
+  mounted() {
+    console.log("Mounted :", this.parentData);
+  },
+};
 </script>
+
 <style lang="scss">
-    @import "event-component.scss";
+@import "event-component.scss";
 </style>

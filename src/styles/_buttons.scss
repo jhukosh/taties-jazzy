@@ -1,51 +1,58 @@
 // Buttons mixins
-
-@mixin colored-button ($btnWidth, $btnHeight, $borderRadiusValue, $borderRadiusColor, $backgroundColorValue) {
-    width: $btnWidth;
-    height: $btnHeight;
-    border-radius: $borderRadiusValue;
-    border: solid 1px $borderRadiusColor;
-    background-color: $backgroundColorValue;
+@mixin colored-button($btnWidth, $btnHeight, $borderRadiusValue, $borderRadiusColor, $backgroundColorValue) {
+  cursor: pointer;
+  width: $btnWidth;
+  height: $btnHeight;
+  border-radius: $borderRadiusValue;
+  border: solid 1px $borderRadiusColor;
+  background-color: $backgroundColorValue;
 }
 
-@mixin colored-button-text ($fontSizeValue, $textColorValue) {
-    font-family: FrutigerLTStd sans-serif;
-    font-size: $fontSizeValue;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.5px;
-    color: $textColorValue;
+@mixin colored-button-text($fontSizeValue, $textColorValue) {
+  font-family: "FrutigerLTStd", sans-serif !important;
+  font-size: $fontSizeValue;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: $textColorValue;
 }
 
 // Buttons classes
-
 .white-button {
-    @include colored-button(233px, 50px, 31.5px, $middleGrey, #ffffff)
+  @include colored-button(230px, 50px, 31.5px, $middleGrey, #ffffff);
 }
 
 .white-button-txt {
-    @include colored-button-text(16px,#000000)
+  @include colored-button-text(16px, #000000);
 }
 
 .strawberry-button {
-    @include colored-button(231px, 60px, 31.5px, $strawberry, $strawberry)
+  @include colored-button(230px, 60px, 31.5px, $strawberry, $strawberry);
+  a {
+    color: white;
+  }
 }
 
 .strawberry-button-txt {
-    @include colored-button-text(18px,#ffffff)
+  @include colored-button-text(18px, #ffffff);
 }
 
 .black-button {
-    @include colored-button(184px, 50px, 31.5px, $middleGrey, #000000)
+  @include colored-button(230px, 50px, 31.5px, #000000, #000000);
+  a {
+    color: white;
+  }
 }
 
 .black-button-txt {
-    @include colored-button-text(16px,#ffffff)
+  @include colored-button-text(16px, #ffffff);
 }
 
 // Canceling chrome button default behaviour (need to think about interactivity !)
-.white-button:focus, .strawberry-button:focus, .black-button:focus {
-    outline: none;
-} 
+.white-button:focus,
+.strawberry-button:focus,
+.black-button:focus {
+  outline: none;
+}

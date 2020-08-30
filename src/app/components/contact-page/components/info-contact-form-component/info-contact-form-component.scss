@@ -1,0 +1,29 @@
+#Info-contact-form-component {
+    transform: translateY(-1em);
+    #Info-contact-header {
+        font-family: 'BodoniSvtyTwoITCTT', sans-serif;
+        font-size: 42px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #000000;
+        h3 {
+            margin: 0;
+        }
+    }
+    #Info-contact-content {
+        font-family: 'FrutigerLTStd-Roman', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.63;
+        letter-spacing: normal;
+        color: #000000;
+        .line-height {
+            line-height: 2.88;
+        }
+    }
+}

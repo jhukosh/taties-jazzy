@@ -1,6 +1,5 @@
-#About-us-main {
+#About-us-component {
     #About-us-presentation {
-        margin-top: 2rem;
         .about-us-content {
             display: flex;
             .about-us-content-image {
@@ -20,7 +19,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                div {
+                .article-content, .article-header {
                     width: 80%;
                     text-align: initial;
                 }
@@ -39,6 +38,7 @@
                     font-size: 34px;
                     color: $strawberry;
                     text-align: left;
+                    width: 80%;
                 }
                 .article-content {
                     font-family: 'FrutigerLTStd', sans-serif !important;    

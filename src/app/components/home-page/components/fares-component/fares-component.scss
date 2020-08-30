@@ -1,0 +1,26 @@
+#Fares-component {
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .cards {
+      width: 20%;
+    }
+  }
+  .fares-infos-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    align-items: center;
+    margin-top: 2%;
+    p {
+      margin: 0;
+      span {
+        color: $strawberry;
+      }
+    }
+    .black-button {
+      margin-top: 2%;
+    }
+  }
+}

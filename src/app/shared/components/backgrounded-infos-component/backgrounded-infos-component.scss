@@ -13,6 +13,7 @@
   }
   p {
     font-size: 16px;
+    font-family: 'FrutigerLTStd', sans-serif !important;
   }
 
   .home-circle-version {
@@ -39,6 +40,9 @@
         li {
           padding-top: 3%;
           font-size: 18px;
+          span {
+            font-family: 'FrutigerLTStd', sans-serif !important;
+          }
           .check-icon {
             @include check-icon(white);
           }
@@ -75,7 +79,10 @@
       padding-top: 5%;
       padding-bottom: 5%;
       margin-left: 10%;
-      width: 40%;
+      width: 50%;
+      .text-part-paragrah {
+        margin-bottom: 2%;
+      }
     }
     .text-part > *{
       width: 70%;

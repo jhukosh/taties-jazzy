@@ -5,7 +5,7 @@
             <h4 class="taties-subtitle">{{ subtitle }}</h4>
             <h2 class="taties-title">
                 {{ title }}
-                <span class="red-dot">•</span>
+                <span v-if="!this.undisplayDot" class="red-dot">•</span>
             </h2>
         </div>
         <div class="black-horizontal-separator"></div>
@@ -14,8 +14,8 @@
 
 <script>
     export default {
-        name: 'TatiesTitle',
-        props: ['subtitle','title'],
+        name: 'TatiesTitleComponent',
+        props: ['subtitle','title', 'undisplayDot']
     }
 </script>
 
