@@ -11,12 +11,9 @@
       -->
       <InfoContactFormComponent />
       <div class="contact-page-tmp-placeholder">
-        <p
-        >N'hésitez pas à nous envoyer un email en précisant votre demande !</p>
-        <button
-          class="black-button black-button-txt"
-        >ENVOYER UN EMAIL</button>
-        <img src="@/assets/contact-page-assets/send-email-icon.png" alt="">
+        <img src="@/assets/icons/send-email-icon.jpg" alt />
+        <p>Envoyez-nous un email en précisant votre demande !</p>
+        <button class="black-button black-button-txt">ENVOYER UN EMAIL</button>
       </div>
     </div>
     <MapComponent />

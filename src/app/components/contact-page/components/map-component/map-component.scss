@@ -16,6 +16,7 @@
       background-color: #000000;
       margin-left: 55%;
       transform: translateY(-8em);
+      color: #ffffff;
       .title-container {
         padding-left: 3rem;
         h2 {
@@ -23,7 +24,6 @@
           font-size: 24px;
           font-weight: bold;
           line-height: 2.29;
-          color: #ffffff;
         }
       }
       #Adresse-and-mail-container {
@@ -31,7 +31,6 @@
         font-size: 16px;
         font-weight: 300;
         line-height: 3.44;
-        color: #ffffff;
         padding-left: 3em;
         padding-bottom: 2em;
         .mail-variation {
@@ -47,7 +46,6 @@
         font-family: "FrutigerLTStd-Roman", sans-serif;
         font-size: 16px;
         line-height: 3.44;
-        color: #ffffff;
         text-decoration: underline;
         padding-left: 3em;
       }
@@ -59,8 +57,7 @@
           height: 34px;
           width: 34px;
         }
-        p,
-        a {
+        p, a {
           margin-left: 1em;
           color: #ffffff;
         }
