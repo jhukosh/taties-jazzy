@@ -33,7 +33,9 @@
         des nouveaux talents dans un cadre dédié.
       </p>
       <div>
-        <button class="black-button  black-button-txt">VOIR PLUS</button>
+        <button class="black-button  black-button-txt">
+          <router-link to="/association">VOIR PLUS</router-link>
+        </button>
       </div>
     </div>
     <div class="img-part">

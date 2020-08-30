@@ -1,0 +1,21 @@
+#Event-home-date-component {
+  .event-home-date-infos {
+    .event-home-date {
+      color: $strawberry;
+      font-size: 22px;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+    .event-home-date-type {
+      color: $light-grey;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  .event-home-date-separator {
+    border-bottom: 1px solid black;
+    margin-left: 0;
+    width: 50%;
+  }
+}

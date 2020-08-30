@@ -1,5 +1,4 @@
 // Buttons mixins
-
 @mixin colored-button($btnWidth, $btnHeight, $borderRadiusValue, $borderRadiusColor, $backgroundColorValue) {
   cursor: pointer;
   width: $btnWidth;
@@ -21,7 +20,6 @@
 }
 
 // Buttons classes
-
 .white-button {
   @include colored-button(230px, 50px, 31.5px, $middleGrey, #ffffff);
 }
@@ -32,6 +30,9 @@
 
 .strawberry-button {
   @include colored-button(230px, 60px, 31.5px, $strawberry, $strawberry);
+  a {
+    color: white;
+  }
 }
 
 .strawberry-button-txt {
@@ -40,6 +41,9 @@
 
 .black-button {
   @include colored-button(230px, 50px, 31.5px, #000000, #000000);
+  a {
+    color: white;
+  }
 }
 
 .black-button-txt {

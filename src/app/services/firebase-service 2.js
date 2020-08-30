@@ -7,7 +7,7 @@ export const firebaseService = {
             const result = []
             db.collection("events").get().then((querySnapshot) => {
                 querySnapshot.forEach((doc) => {
-                result.push(doc.data())
+                    result.push(doc.data())
                 });
                 resolve(result)
                 reject('No event found in databse')

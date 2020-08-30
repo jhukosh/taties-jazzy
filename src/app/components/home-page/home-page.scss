@@ -1,58 +1,58 @@
 #Home-page-component {
-    h1, h2, h3, h4 {
-        font-family: 'bod72b', sans-serif;
-        span {
-            font-family: 'bod72b', sans-serif;
-        }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "bod72b", sans-serif;
+    span {
+      font-family: "bod72b", sans-serif;
     }
-    
-    p, span, button {
-        font-family: 'bod72b', sans-serif;
+  }
+
+  p,
+  span,
+  button {
+    font-family: "bod72b", sans-serif;
+  }
+  .taties-header {
+    margin-left: 15%;
+    padding-left: 12px;
+    text-align: start;
+  }
+  .home-page-show-placeholder,
+  .home-page-masterclass-placeholder {
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+    font-style: italic;
+  }
+  #Home-page-register-component {
+    margin-top: 5%;
+  }
+  .home-social-media {
+    font-size: 26px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    span {
+      color: $strawberry;
     }
-    .taties-header {
-        margin-left: 15%;
-        padding-left: 12px;
-        text-align: start;
+    .home-social-media-icons {
+      justify-content: center;
+      img {
+        cursor: pointer;
+        padding: 2%;
+      }
     }
-    .main-event {
-        border-top: 2px solid black;
-        color: black;
-        display:flex;
-        font-size: 22px;
-        justify-content: center;
-    
-        .main-event-title {
-            background: white;
-            margin-top: -15px;
-            padding-left: 20px;
-            text-align: start;
-            width: 70%;
-        }
+    .home-img-gallery {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      img {
+        margin-left: 10px;
+        width: 23%;
+      }
     }
-    
-    .home-social-media {
-        font-size: 26px;
-        color: black;
-        margin-bottom: 20px;
-        text-align: center;
-        span {
-            color: $strawberry;
-        }
-        .home-social-media-icons {
-            justify-content: center;
-            img {
-                padding: 2%;
-            }
-        }
-        .home-img-gallery {
-            display:flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: center;
-            img {
-                margin-left: 10px;
-                width: 23%;
-            }
-        }
-    }
+  }
 }

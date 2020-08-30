@@ -4,22 +4,20 @@
   flex-direction: row;
   justify-content: space-evenly;
   .offers-trumpet-icon {
-    width: 15%;
+    width: 10%;
   }
   .offers-content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-right: 10%;
     width: 100%;
     .offers-content-img {
       width: 40%;
       img {
-        width: 100%;
+        width: 90%;
       }
     }
     .offers-content-infos {
-      
       width: 40%;
       h4 {
         font-size: 32px;
