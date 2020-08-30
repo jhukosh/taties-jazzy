@@ -1,8 +1,9 @@
 module.exports = {
-    css: {
-      loaderOptions: {
-        sass: {
-          prependData: `
+  publicPath: '/les-taties-jazzy/',
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `
             @import "@/styles/_colors.scss";
             @import "@/styles/_buttons.scss";
             @import "@/styles/_curvyBackground.scss";
@@ -11,9 +12,9 @@ module.exports = {
             @import "@/styles/_select.scss";
             @import "@/styles/_separator-line.scss";
             @import "@/styles/_text.scss";`
-        }
       }
     }
-  };
+  }
+};
 
 // Dev : Colors.scss must come first
