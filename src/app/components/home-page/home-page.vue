@@ -8,9 +8,19 @@
       :title="title.agenda"
       :undisplayDot="true"
     />
-    <EventComponent :parentData="homeShow" :eventPicture="tmpEventShowPicture" :fromHome="true" :type="'show'"/>
+    <EventComponent
+      v-if="homeShow"
+      :parentData="homeShow"
+      :eventPicture="tmpEventShowPicture"
+      :fromHome="true"
+      :type="'show'"
+    />
+    <div v-else-if="!homeShow" class="home-page-show-placeholder">
+      <h4>La programmation des concerts est en cours !</h4>
+      <img :src="tmpEventShowPicture" alt />
+    </div>
 
-    <BackgroundedInfosComponent :parentData="'circle'" />
+    <BackgroundedInfosComponent :parentData="'circle'" id="Home-page-register-component"/>
     <TatiesTitleComponent
       :subtitle="title.subtitle_value"
       :title="title.fares"
@@ -24,8 +34,22 @@
     />
     <OffersComponent />
     <JoinComponent />
-    <TatiesTitleComponent :subtitle="title.title_masterclass" :title="title.title_masterclass" :undisplayDot="true" />
-    <EventComponent :parentData="homeClass" :eventPicture="tmpClassPicture" :fromHome="true" :type="'masterclass'"/> 
+    <TatiesTitleComponent
+      :subtitle="title.title_masterclass"
+      :title="title.title_masterclass"
+      :undisplayDot="true"
+    />
+    <EventComponent
+      v-if="homeClass"
+      :parentData="homeClass"
+      :eventPicture="tmpClassPicture"
+      :fromHome="true"
+      :type="'masterclass'"
+    />
+    <div v-else-if="!homeClass" class="home-page-masterclass-placeholder">
+      <h4>Programmation des masterclasses à venir...</h4>
+      <img :src="tmpClassPicture" alt />
+    </div>
     <TatiesTitleComponent
       :subtitle="title.subtitle_value"
       :title="title.about_us"
@@ -73,7 +97,7 @@ export default {
     OpeningComponent,
     OffersComponent,
     FaresComponent,
-    TatiesTitleComponent,
+    TatiesTitleComponent
   },
   data() {
     return {
@@ -87,20 +111,28 @@ export default {
         about_us: "Qui sommes-nous ?",
         offers: "Vous proposent",
         subtitle_value: "Les Taties Jazzy",
-        title_masterclass: "Master Class"
+        title_masterclass: "Master Class",
       },
     };
   },
   async beforeMount() {
     await this.getHomeEvents().then(async (res) => {
-      const homeShowEventId = res.filter(
-        (show) => show.eventCollection === "shows"
-      )[0].eventId;
-      const homeMasterClassEventId = res.filter(
-        (masterclass) => masterclass.eventCollection === "masterclasses"
-      )[0].eventId;
-      this.homeShow = await this.getShowById(homeShowEventId);
-      this.homeClass = await this.getMasterClassById(homeMasterClassEventId);
+      const homeShow =
+        res.filter((show) => show.eventCollection === "shows")[0] || null;
+      const homeShowEventId = homeShow ? homeShow.eventId : null;
+      const homeMasterClass =
+        res.filter(
+          (masterclass) => masterclass.eventCollection === "masterclasses"
+        )[0] || null;
+      const homeMasterClassEventId = homeMasterClass
+        ? homeMasterClass.eventId
+        : null;
+      this.homeShow = homeShowEventId
+        ? await this.getShowById(homeShowEventId)
+        : null;
+      this.homeClass = homeMasterClassEventId
+        ? await this.getMasterClassById(homeMasterClassEventId)
+        : null;
     });
   },
 };
