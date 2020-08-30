@@ -33,9 +33,16 @@ export const firebaseService = {
         reject('No home event found in database');
       })
     }),
-    getHomeEventById: (eventId) => new Promise((resolve, reject) => {
-      db.collection("home-events").doc(eventId).get().then(result => {
-        console.log(result)
+    getShowById: (eventId) => new Promise((resolve, reject) => {
+      db.collection("shows").doc(eventId).get().then( show => {
+        const result = show.data()
+        resolve(result);
+        reject('No home event found in database');
+      })
+    }),
+    getMasterClassById: (eventId) => new Promise((resolve, reject) => {
+      db.collection("masterclasses").doc(eventId).get().then( masterclass => {
+        const result = masterclass.data()
         resolve(result);
         reject('No home event found in database');
       })

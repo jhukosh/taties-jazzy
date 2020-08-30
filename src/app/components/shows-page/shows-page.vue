@@ -7,8 +7,8 @@
 
     <div id="Show-page-container">
       <div class="show-item" v-for="show in shows" :key="show.id">
-        <EventDateComponent />
-        <EventComponent :parentData="show" :type="'show'" />
+        <EventDateComponent :date="show.date"/>
+        <EventComponent :parentData="show" :eventPicture="tmpShowsPicture" :type="'show'" />
       </div>
     </div>
   </div>
@@ -31,12 +31,9 @@ export default {
   data() {
     return {
       shows: {},
+      tmpShowsPicture: require("@/assets/photo-band-test.jpg"),
       path_to_image: "show-page-assets/show-banner.png",
-      background_title_value: "Concerts",
-      title: {
-        contact_title: "Concert",
-        subtitle_value: "Les Taties Jazzy",
-      },
+      background_title_value: "Concerts"
     };
   },
   methods: {

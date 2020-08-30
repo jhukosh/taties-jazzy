@@ -1,15 +1,23 @@
 <template>
   <div id="Event-component">
-    <img v-if="fromHome" src="@/assets/reversed-trumpet.png" alt="" class="event-trumpet-icon"/>
+    <div
+      class="event-trumpet-icon"
+      :style="fromHome ? type === 'show' ? 'width: fit-content': 'width: 10%': 'display: none'"
+    >
+      <img src="@/assets/reversed-trumpet.png" alt v-if="fromHome && type === 'show'" />
+    </div>
     <div class="event-infos-container">
       <div class="event-infos-image">
-        <img :src="image" alt />
+        <img :src="eventPicture" alt />
       </div>
       <div class="event-infos-content">
-        <EventHomeDateComponent v-if="fromHome" :event="parentData" />
-        <div class="show-info" v-if="type === 'show'">
-          <EventInfosComponent :event="parentData" />
+        <EventHomeDateComponent v-if="fromHome" :event="parentData" :type="type" />
+        <div class="event-infos-content-show">
+          <EventInfosComponent :event="parentData" :type="type" :fromHome="fromHome" />
         </div>
+      </div>
+      <div class="event-handle-icon" v-if="fromHome && type === 'masterclass'">
+        <img src="@/assets/handle.png" alt />
       </div>
     </div>
   </div>
@@ -24,12 +32,7 @@ export default {
     EventInfosComponent,
     EventHomeDateComponent,
   },
-  props: ["parentData", "fromHome", 'type'],
-  data() {
-    return {
-      image: require("@/assets/photo-band-test.jpg"),
-    };
-  },
+  props: ["parentData", "fromHome", "type", "eventPicture"],
   mounted() {
     console.log("Mounted :", this.parentData);
   },

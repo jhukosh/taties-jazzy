@@ -1,7 +1,7 @@
 <template>
   <div id="Event-infos-component">
-    <h5>{{ event.artist }}</h5>
-    <div class="info-icon-container">
+    <h5>{{ type === 'show' ? event.artist: event.title }}</h5>
+    <div class="info-icon-container" v-if="type === 'show'">
       <!-- TODO Create proper data model and replace by data -->
       <div>
         <img src="@/assets/icons/map-pin-black-icon.png" alt="icone de marqueur de carte" />
@@ -22,20 +22,27 @@
       </div>
        -->
     </div>
+    <div v-else-if="type === 'masterclass'">
+      <p>avec {{ event.artist }}</p>
+    </div>
     <div class="show-content">
       <p>{{ event.presentation }}</p>
     </div>
-    <div class="event-infos-time-and-price-container">
+    <div 
+    class="event-infos-time-and-price-container"
+    :style="type === 'masterclass' && !fromHome ? 'flex-direction: column': 'flex-direction: row'"
+    >
       <div class="show-hours">
         <div class="clock-icon"></div>
-        <p>{{ event.time }}</p>
+        <p v-if="type === 'show'">{{ event.time }}h</p>
+        <p v-else-if="type === 'masterclass'">{{ event.startTime }}h / {{ event.endTime }}h</p>
       </div>
       <div class="show-price">
         <div class="card-icon"></div>
         <p>{{ event.price }} €</p>
       </div>
     </div>
-    <div>
+    <div v-if="type === 'show'" :style="fromHome ? 'margin-top: 2%': 'margin-top: 8%'">
       <button class="white-button white-button-txt">
         RÉSERVER MON BILLET
       </button>
@@ -45,7 +52,7 @@
 <script>
 export default {
   name: 'EventInfosComponent',
-  props: ['event']
+  props: ['event', 'type', 'fromHome']
 }
 </script>
 <style lang="scss" scoped>

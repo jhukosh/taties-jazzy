@@ -1,6 +1,8 @@
 <template>
 <div id="Offers-component">
-  <img src="@/assets/reversed-trumpet.png" alt="" class="offers-trumpet-icon"/>
+  <div class="offers-trumpet-icon">
+    <img src="@/assets/reversed-trumpet.png" alt="" />
+  </div>
   <div class="offers-content">
     <div class="offers-content-img">
       <img :src="picture" alt="" />
