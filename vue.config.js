@@ -1,5 +1,7 @@
 module.exports = {
-  publicPath: '/les-taties-jazzy/',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/taties-jazzy/'
+    : '/',
   css: {
     loaderOptions: {
       sass: {
