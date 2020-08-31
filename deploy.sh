@@ -10,5 +10,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f master:gh-pages
+git push origin HEAD:gh-pages --force
 cd -
