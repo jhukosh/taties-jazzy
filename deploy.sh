@@ -10,5 +10,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push origin HEAD:gh-pages --force
+git push https://github.com/jhukosh/taties-jazzy.git HEAD:gh-pages --force
 cd -
