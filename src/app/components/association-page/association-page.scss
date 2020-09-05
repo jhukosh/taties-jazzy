@@ -4,5 +4,8 @@
     position: relative;
     top: -65rem;
     height: 40rem;
+    @media all  and (max-width: 450px) {
+      top: -30rem;
+    }
   }
 }

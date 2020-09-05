@@ -8,7 +8,7 @@
                 <span v-if="!this.undisplayDot" class="red-dot">•</span>
             </h2>
         </div>
-        <div class="black-horizontal-separator"></div>
+        <div class="black-horizontal-separator end-separator"></div>
     </div>
 </template>
 

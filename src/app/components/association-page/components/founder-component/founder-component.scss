@@ -8,7 +8,7 @@
   }
   .background-big-text-top {
     position: relative;
-    @media all and (min-width: 414px) {
+    @media all and (min-width: 450px) {
       top: -12rem;
 
     }
@@ -16,7 +16,7 @@
       opacity: 0.06;
       font-family: "BodoniSvtyTwoITCTT", sans-serif !important;
       // font-family: AvenirNext; Originaly (licencied font)
-      @media all and (min-width: 414px) {
+      @media all and (min-width: 450px) {
         font-size: 308px;
         letter-spacing: 35.84px;
         margin-left: -5rem;
@@ -38,7 +38,7 @@
     justify-content: space-evenly;
     position: relative;
     top: -19rem;
-    @media all and (max-width: 414px) {
+    @media all and (max-width: 450px) {
       flex-direction: column;
       .founders-separator {
         display: none;
@@ -46,7 +46,7 @@
     }
     .founder {
       width: 40%;
-      @media all and (max-width: 414px) {
+      @media all and (max-width: 450px) {
         width: 100%;
       }
       .founder-header {
@@ -70,7 +70,7 @@
           color: #000000;
         }
       }
-      @media all and (min-width: 414px) {
+      @media all and (min-width: 450px) {
         .align-right {
           text-align: right;
         }
@@ -78,7 +78,7 @@
           text-align: left;
         }
       }
-      @media all and (max-width: 414px) {
+      @media all and (max-width: 450px) {
         .align-right {
           text-align: left;
         }
@@ -93,14 +93,14 @@
     position: relative;
     text-overflow: ellipsis;
     overflow: hidden;
-    @media all and (min-width: 414px) {
+    @media all and (min-width: 450px) {
       top: -23rem;
     }
     p {
       opacity: 0.06;
       font-family: "BodoniSvtyTwoITCTT", sans-serif !important;
       // font-family: AvenirNext; Originaly (licencied font)
-      @media all and (min-width: 414px) {
+      @media all and (min-width: 450px) {
         font-size: 278px;
         letter-spacing: 48.2px;
         margin-right: -5rem;
@@ -113,7 +113,7 @@
       margin: 0px;
     }
   }
-  @media all and (max-width: 414px) {
+  @media all and (max-width: 450px) {
     .background-big-text-top {
       font-size: 70px;
       height: 370px;

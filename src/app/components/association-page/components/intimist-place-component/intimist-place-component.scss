@@ -36,6 +36,9 @@
           font-size: 16px;
         }
       }
+      .place-image-mobile {
+        display: none;
+      }
       .place-image {
         width: 45%;
         z-index: 2;
@@ -52,6 +55,40 @@
       top: -40rem;
       z-index: 1;
       left: 4rem;
+    }
+  }
+  @media all and (max-width: 450px) {
+    top: -30rem;
+    #Background-trumpet {
+      display: none;
+    }
+    #Background {
+      background-size: 100% 750px;
+      height: 750px;
+      margin: 0;
+      .information-container  {
+        .place-information {
+          display: flex;
+          justify-content: center;
+          margin-left: 0;
+          width: 90%;
+          h5 {
+            font-size: 40px;
+          }
+        }
+        .place-image-mobile {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          img {
+            width: 300px;
+          }
+        }
+        .place-image {
+          display: none;
+          width: 75%;
+        }
+      }
     }
   }
 }

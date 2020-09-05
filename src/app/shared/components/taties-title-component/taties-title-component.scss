@@ -26,7 +26,10 @@
             margin: 0;
         }
     }
-    @media all and (max-width: 414px) {
+    @media all and (max-width: 450px) {
+        .end-separator {
+            display: none;
+        }
         .title-container {
             .taties-title {
                 font-size: 25px;
