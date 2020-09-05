@@ -1,22 +1,56 @@
 <template>
   <div id="Header-container">
     <ul class="navList">
-      <li class="headerBurger">
-        <img src="@/assets/icons/menu-icon.jpg" alt="Menu Burger" />     
-      </li>
-      <!-- <div class="Menu">
-        <div class="headerSousMenu">
-          <a class="sousMenu" href="#" id="close">×</a>
-          <img src=@/assets/logo515copy.png class="menuLogo">
+
+      <div id="app">
+      <burger></burger>
+      </div>
+
+      <template id="burger">
+      <div id="burger" 
+      :class="{ 'active' : isBurgerActive }"
+       @click.prevent="toggle">
+        
+      <slot>
+      <button type="button" class="burger-button" title="Menu">
+        <span class="hidden">Toggle menu</span>
+        <span class="burger-bar burger-bar--1"></span>
+        <span class="burger-bar burger-bar--2"></span>
+        <span class="burger-bar burger-bar--3"></span>
+      </button>
+      </slot>      
+      </div>
+      </template>
+
+      <template>
+      <div class="sidebar">
+        <div class="sidebar-backdrop" @click="closeSidebarPanel" v-if="isPanelOpen"></div>
+        <transition name="slide">
+            <div v-if="isPanelOpen"
+                 class="sidebar-panel">
+                <slot></slot>
+            </div>
+        </transition>
+      </div>
+      </template>
+      <template>
+        <div id="app">
+        <nav class="main-nav">
+          <div class="logo">my.company
         </div>
-              <a class="sousMenu" href="#">Accueil</a>
-              <a class="sousMenu" href="#"> Concert</a>
-              <a class="sousMenu" href="#">Masterclass</a>
-              <a class="sousMenu" href="#">L'association</a>
-              <a class="sousMenu" href="#">Le Club</a>
-              <a class="sousMenu" href="#">Contact</a>
-              <p class="sousMenu"> Retrouvez nous sur les réseaux sociaux</p>
-      </div>   -->   
+          <Burger></Burger>
+        </nav>
+
+      <Sidebar>
+        <ul class="sidebar-panel-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </Sidebar>
+    </div>
+  </template>
+         
       <li class="navItem">
         <router-link to="/">Accueil</router-link>
       </li>
@@ -44,8 +78,23 @@
 <script>
 export default {
   name: "HeaderComponent",
+  data: () => ({
+        isBurgerActive: false,
+        isPanelOpen: true,
+        }),
+        
+  methods: {
+  toggle() {
+        this.isBurgerActive = !this.isBurgerActive
+            },
+  closeSidebarPanel() {
+        this.isPanelOpen = false
+            }
+        },   
 };
+
 </script>
 <style lang="scss" scoped>
 @import "header-component.scss";
 </style>
+
