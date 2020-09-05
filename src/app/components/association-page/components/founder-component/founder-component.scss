@@ -1,101 +1,127 @@
 #Founder-component {
-    // Image & background text
-    #Founder-picture {
-        text-align: center;
-        img {
-            width: 80%;
-        }
+  // Image & background text
+  #Founder-picture {
+    text-align: center;
+    img {
+      width: 80%;
     }
+  }
+  .background-big-text-top {
+    position: relative;
+    @media all and (min-width: 414px) {
+      top: -12rem;
+
+    }
+    p {
+      opacity: 0.06;
+      font-family: "BodoniSvtyTwoITCTT", sans-serif !important;
+      // font-family: AvenirNext; Originaly (licencied font)
+      @media all and (min-width: 414px) {
+        font-size: 308px;
+        letter-spacing: 35.84px;
+        margin-left: -5rem;
+      }
+      font-weight: 900;
+      // Value changed, cause of wrong font style
+      // letter-spacing: 16.84px;
+      color: #4c4c4c;
+      margin: 0px;
+      text-align: left;
+    }
+  }
+  // Founder
+  #Founder-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -19rem;
+    @media all and (max-width: 414px) {
+      flex-direction: column;
+      .founders-separator {
+        display: none;
+      }
+    }
+    .founder {
+      width: 40%;
+      @media all and (max-width: 414px) {
+        width: 100%;
+      }
+      .founder-header {
+        font-family: "BodoniSvtyTwoSCITCTT", sans-serif !important;
+        font-size: 38px;
+        color: #000000;
+        .sub-header {
+          font-size: 28px;
+          color: #be1900;
+        }
+      }
+      .founder-content {
+        font-family: "FrutigerLTStd-Roman", sans-serif !important;
+        font-size: 14px;
+        line-height: 1.79;
+        color: $text-article;
+        .founder-one-subtitle {
+          font-family: "FrutigerLTStd-Roman", sans-serif !important;
+          font-size: 16px;
+          font-weight: 900;
+          color: #000000;
+        }
+      }
+      @media all and (min-width: 414px) {
+        .align-right {
+          text-align: right;
+        }
+        .align-left {
+          text-align: left;
+        }
+      }
+      @media all and (max-width: 414px) {
+        .align-right {
+          text-align: left;
+        }
+        .align-left {
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+  // Bottom backround text
+  .background-big-text-bottom {
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @media all and (min-width: 414px) {
+      top: -23rem;
+    }
+    p {
+      opacity: 0.06;
+      font-family: "BodoniSvtyTwoITCTT", sans-serif !important;
+      // font-family: AvenirNext; Originaly (licencied font)
+      @media all and (min-width: 414px) {
+        font-size: 278px;
+        letter-spacing: 48.2px;
+        margin-right: -5rem;
+      }
+      font-weight: 900;
+      // Value changed, cause of wrong font style
+      // letter-spacing: 15.2px;
+      color: #4c4c4c;
+      text-align: right;
+      margin: 0px;
+    }
+  }
+  @media all and (max-width: 414px) {
     .background-big-text-top {
-        position: relative;
-        top: -12rem;        
-        p {
-            opacity: 0.06;
-            font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
-            // font-family: AvenirNext; Originaly (licencied font)
-            font-size: 308px;
-            font-weight: 900;
-            letter-spacing: 35.84px;;
-            // Value changed, cause of wrong font style
-            // letter-spacing: 16.84px;
-            color: #4c4c4c;
-            margin: 0px;    
-            text-align: left;
-            margin-left: -5rem;
-        }
+      font-size: 70px;
+      height: 370px;
     }
-    // Founder
-    #Founder-content {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: space-evenly;
-        position: relative;
-        top: -19rem;
-        @media all and (max-width: 414px) {
-            flex-direction: column;
-            .founders-separator {
-                display: none;
-            }
-        }
-        .founder {
-            width: 40%;
-            @media all and (max-width: 414px) {
-                width: 100%;
-            }
-            .founder-header {
-                font-family: 'BodoniSvtyTwoSCITCTT', sans-serif !important;
-                font-size: 38px;
-                color: #000000;
-                .sub-header {
-                    font-size: 28px;
-                    color: #be1900;
-                }
-            }
-            .founder-content {
-                font-family: 'FrutigerLTStd-Roman', sans-serif !important;
-                font-size: 14px;
-                line-height: 1.79;
-                color: $text-article;
-                .founder-one-subtitle {
-                    font-family: 'FrutigerLTStd-Roman', sans-serif !important;
-                    font-size: 16px;
-                    font-weight: 900;
-                    color: #000000;
-                }
-            }
-            .align-right {
-                text-align: right;
-            }
-            .align-left {
-                text-align: left;
-            }
-        }
-        .founder-two {
-            width: 40%;
-        }
-    }
-    // Bottom backround text
     .background-big-text-bottom {
-        position: relative;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        position: relative;
-        top: -23rem;
-        p {
-            opacity: 0.06;
-            font-family: 'BodoniSvtyTwoITCTT', sans-serif !important;
-            // font-family: AvenirNext; Originaly (licencied font)
-            font-size: 278px;
-            font-weight: 900;
-            letter-spacing: 48.2px;
-            // Value changed, cause of wrong font style
-            // letter-spacing: 15.2px;
-            color: #4c4c4c;
-            text-align: right;
-            margin: 0px;
-            margin-right: -5rem;
-        }
+      font-size: 70px;
+      height: 270px;
+      top: -20rem;
     }
+  }
 }
