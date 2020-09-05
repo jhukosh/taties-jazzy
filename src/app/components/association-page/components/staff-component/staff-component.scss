@@ -70,7 +70,7 @@
   .bass-background-container-placeholder {
     display: flex;
     position: relative;
-    top: -30rem;
+    top: -32rem;
     flex-direction: row-reverse;
     overflow: hidden;
     .bass-background-placeholder {
@@ -88,6 +88,9 @@
       flex-direction: column;
       height: 100%;
       top: 0;
+      .staff-undisplayed {
+        display: none;
+      }
       .left-column, .right-column {
         width: 100%;
         .staff-name-container {
