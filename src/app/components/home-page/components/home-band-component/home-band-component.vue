@@ -2,7 +2,7 @@
     <!-- Carry css background-image -->
     <div class="home-component">
         <img src="@/assets/jazzy.png" alt="" id="jazzy"/>
-        <GirlsAndBannerLogoComponent id="home-band-main-logo"/>
+        <GirlsAndBannerLogoComponent id="home-band-main-logo" :bannerMarginTop="'-48px'"/>
         <img src="@/assets/asso.png" alt="" id="asso"/>
     </div>
 </template>

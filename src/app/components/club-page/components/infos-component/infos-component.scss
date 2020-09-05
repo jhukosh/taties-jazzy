@@ -1,23 +1,24 @@
 .infos-club-main {
-  
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-around;
-
     p {
         font-family: 'FrutigerLTStd-Roman';
         font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
         line-height: 1.5;
-        letter-spacing: normal;
         color: #5b5b5b;
         width: 40%;
-        text-align: left; 
-    
-
+        text-align: left;
+    }
+    @media all and (max-width: 414px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        width: 100%;
+      }
     }
 
 }

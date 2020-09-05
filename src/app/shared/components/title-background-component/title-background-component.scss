@@ -24,4 +24,12 @@
             }
         }
     }
+    @media all and (max-width: 414px) {
+        #Title-background-banner {
+            height: 250px;
+            #Main-page-title {
+                display: none;
+            }
+        }
+    }
 }

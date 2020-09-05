@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="vertical-grey-separator"></div>
+            <div class="vertical-grey-separator founders-separator"></div>
 
             <div class="founder">
                 <div class="founder-header align-left">

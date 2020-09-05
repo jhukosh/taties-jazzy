@@ -2,16 +2,21 @@
     width: 100%;
     h4 {
         font-family: 'bod72b', sans-serif;
-        font-size: 38px;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         margin: 0;
+        @media all and (min-width: 414px) {
+            font-size: 38px;
+        }
     }
     .black-horizontal-separator {
         width: 100%;
         margin-top: .2em;
         margin-bottom: 2em;
+    }
+    @media all and (max-width: 414px) {
+        font-size: 25px;
     }
 }

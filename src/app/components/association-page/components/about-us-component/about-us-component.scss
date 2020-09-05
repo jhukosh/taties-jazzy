@@ -3,7 +3,9 @@
         .about-us-content {
             display: flex;
             .about-us-content-image {
-                width: 50%;
+                @media all and (min-width: 414px) {
+                    width: 50%;
+                }
                 // temp css waiting for trumpet svg
                 display: flex;
                 justify-content: center;
@@ -15,10 +17,12 @@
                 }
             }
             .about-us-article {
-                width: 50%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                @media all and (min-width: 414px) {
+                    justify-content: space-around;
+                    width: 50%;
+                }
                 .article-content, .article-header {
                     width: 80%;
                     text-align: initial;
@@ -27,10 +31,7 @@
                     font-family: 'FrutigerLTStd', sans-serif !important;
                     font-size: 18px;
                     font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
                     line-height: 1.72;
-                    letter-spacing: normal;
                     color: #000000;
                 }
                 .article-handwritting, .article-next-header {
@@ -44,21 +45,30 @@
                     font-family: 'FrutigerLTStd', sans-serif !important;    
                     font-size: 14px;
                     font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
                     line-height: 1.5;
-                    letter-spacing: normal;
                     color: $text-article;
                 }
             }
-
             // Second part
             #Article-second-part {
                 justify-content: unset !important;
                 align-items: center !important;
                 margin-top: -2rem;
             }
-
+        }
+    }
+    @media all and (max-width: 414px) {
+        .about-us-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .about-us-content .about-us-content-image,
+        .about-us-content .about-us-article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
         }
     }
 }

@@ -1,7 +1,4 @@
 #Gallery-component {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   #Gallery-left-container {
     display: flex;
     flex-direction: column;
@@ -30,5 +27,9 @@
         margin-top: 0;
       }
     }
+  }
+  @media all and (max-width: 414px) {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -39,3 +39,9 @@
 .red-dot {
     color: $darkerorangegradient;
 }
+
+// Simple white line 
+.half-width-white-border-top {
+    border-top: 1px solid white;
+    width: 50%;
+}

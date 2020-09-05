@@ -13,7 +13,9 @@ module.exports = {
             @import "@/styles/_icons.scss";
             @import "@/styles/_select.scss";
             @import "@/styles/_separator-line.scss";
-            @import "@/styles/_text.scss";`
+            @import "@/styles/_text.scss";
+            @import "@/styles/_layout.scss";
+            `
       }
     }
   }

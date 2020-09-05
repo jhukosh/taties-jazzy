@@ -1,4 +1,3 @@
-@import "@/styles/_icons.scss";
 #Footer-container {
   .footer-ticket-booking {
     align-items: center;
@@ -46,10 +45,11 @@
       }
 
       .first-section-logos {
-        width: 120px;
-
-        #banner-logo {
-          margin-top: -18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media all and (min-width: 769px) {
+          width: 120px;
         }
       }
 
@@ -72,33 +72,30 @@
         justify-content: space-around;
         p,
         a {
-          margin-left: 12%;
           text-align: start;
         }
-
         .footer-club-location {
-          .pin-icon {
-            @include pin-icon(white);
-          }
-          .pin-icon:before {
-            @include pin-icon-before;
-          }
-          p {
-            margin-top: 0;
+          
+          div {
+            width: 15%;
+            #location-icon {
+              width: 20px;
+            }
           }
         }
-
         .footer-email-contact {
+          div {
+            width: 15%;
+            #mail-icon {
+              width: 20px;
+            }
+          }
           text-align: start;
-          .mail-icon {
-            @include mail-icon(white);
-          }
-          .mail-icon:before {
-            @include mail-icon-before;
-          }
-          .mail-icon:after {
-            @include mail-icon-after;
-          }
+        }
+      }
+      @media all and (min-width: 414px) {
+        .half-width-white-border-top {
+          display: none;
         }
       }
       .footer-social-media {
@@ -106,10 +103,12 @@
         flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
+        @media all and (min-width: 414px) {
         img {
           width: 24px;
           height: 24px;
         }
+      }
         a {
           margin-left: 10%;
           align-self: flex-end;
@@ -122,6 +121,83 @@
     }
     :last-child {
       border-right: none;
+    }
+  }
+
+  @media all and (min-width: 414px) and (max-width: 768px) {
+    .first-section-links {
+      display: none;
+    }
+    .first-section-logos {
+      width: 100%;
+      .girls-and-banner-logo {
+        width: 150px;
+      }
+    }
+  }
+
+  @media all and (max-width: 414px) {
+    .footer-ticket-booking {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 5%;
+    }
+    .footer-sections {
+      flex-direction: column;
+      height: auto;
+      .section {
+        border-right: none;
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        .footer-contact .footer-club-location,
+        .footer-contact .footer-email-contact {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          p, a {
+            padding-top: 2%;
+            text-align: center;
+          }
+          div #mail-icon,
+          div #location-icon {
+            width: 30px;
+          }
+        }
+        .footer-social-media .footer-instagram,
+        .footer-social-media .footer-facebook {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding-top: 5%;
+          a {
+            align-self: center;
+            margin-left:0;
+            padding-top: 2%;
+          }
+        }
+      }
+      .footer-social-media {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .footer-social-media-section {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+      }
+    }
+    .first-section-links {
+      display: none;
+    }
+    .first-section-logos {
+      width: 100%;
+      .girls-and-banner-logo {
+        width: 180px;
+      }
     }
   }
 }

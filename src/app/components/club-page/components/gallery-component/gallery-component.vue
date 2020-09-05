@@ -1,7 +1,7 @@
 <template>
-  <div id="Gallery-component">
+  <div id="Gallery-component" class="row-all-centered">
     <div id="Gallery-left-container">
-      <div class="bebe" v-for="(item, index) in 4" :key="item">
+      <div v-for="(item, index) in 4" :key="item">
         <img :src="require(`@/assets/club-page-assets/gallery-component/img-left${index+1}.png`)" />
       </div>
     </div>

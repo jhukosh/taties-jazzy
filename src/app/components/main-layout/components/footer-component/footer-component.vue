@@ -18,7 +18,7 @@
     <div class="footer-sections">
       <div class="section">
         <div class="first-section-logos">
-          <GirlsAndBannerLogoComponent />
+          <GirlsAndBannerLogoComponent :bannerMarginTop="'-18px'" />
         </div>
         <div class="first-section-links">
           <ul class="links-list">
@@ -39,8 +39,10 @@
       </div>
       <div class="section">
         <div class="footer-contact">
-          <div class="footer-club-location">
-            <div class="pin-icon"></div>
+          <div class="footer-club-location row-horizontal-start">
+            <div class="row-all-centered">
+            <img src="@/assets/icons/map-pin.png" id="location-icon" />
+            </div>
             <p>
               Le Club
               <br />23 rue Voltaire
@@ -48,8 +50,10 @@
               <br />
             </p>
           </div>
-          <div class="footer-email-contact">
-            <div class="mail-icon"></div>
+          <div class="footer-email-contact row-horizontal-start">
+            <div class="row-all-centered">
+            <img src="@/assets/icons/mail.png" id="mail-icon"/>
+            </div>
             <a
               href="mailto:lestatiesjazzy@gmail.com"
               title="Envoyer un email à l'association"
@@ -57,7 +61,8 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div class="section footer-social-media-section">
+        <div class="half-width-white-border-top"></div>
         <div class="footer-social-media">
           <div class="footer-instagram">
             <img src="@/assets/social-media/instagram.png" alt="Logo Instagram" />

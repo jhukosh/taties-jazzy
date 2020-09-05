@@ -16,23 +16,24 @@
         .taties-subtitle {
             font-family: 'FrutigerLTStd-Roman', sans-serif !important;
             font-size: 18px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
             color: $strawberry;
             margin: 0;
         }
         .taties-title {
             font-size: 38px;
             font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
             color: #000000;
             margin: 0;
+        }
+    }
+    @media all and (max-width: 414px) {
+        .title-container {
+            .taties-title {
+                font-size: 25px;
+            }
+            .taties-subtitle {
+                font-size: 12px;
+            }
         }
     }
 }

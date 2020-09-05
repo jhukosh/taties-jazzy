@@ -13,13 +13,24 @@
       align-items: center;
       font-family: "FrutigerLTStd-Roman", sans-serif;
       font-size: 24px;
-      //margin-right: 5%;
       width: 50%;
       p {
         text-align: center;
       }
       img {
         width: 20%;
+      }
+    }
+    @media all and (max-width: 414px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .contact-page-tmp-placeholder {
+        margin-bottom: 5%;
+        width: 100%;
+        p, img {
+          display: none;
+        }
       }
     }
   }

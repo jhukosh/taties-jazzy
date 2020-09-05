@@ -30,4 +30,16 @@
       z-index: -9999;
     }
   }
+  @media all and (max-width: 414px) {
+    .event-infos-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    .event-infos-image, .event-infos-content {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    }
+  }
 }

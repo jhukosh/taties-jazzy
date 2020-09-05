@@ -3,10 +3,6 @@
     font-family: "AvenirNext", sans-serif;
     font-size: 42px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #000000;
     margin: 0;
   }
@@ -14,10 +10,7 @@
     font-family: "FrutigerLTStd", sans-serif;
     font-size: 14px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.79;
-    letter-spacing: normal;
     color: $text-article;
     display: flex;
     align-items: baseline;
@@ -34,11 +27,7 @@
   }
   .show-content {
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.79;
-    letter-spacing: normal;
     color: #000000;
     p {
       font-family: "FrutigerLTStd-Roman", sans-serif;
@@ -53,10 +42,6 @@
       font-family: "AvenirNext", sans-serif;
       font-size: 22px;
       font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
       color: #000000;
     }
     div {
@@ -70,6 +55,17 @@
     .show-price {
       display: flex;
       align-items: baseline;
+    }
+  }
+  @media all and (max-width: 414px) {
+    margin-top:5%;
+    h5 {
+      font-size: 25px;
+    }
+    .show-content {
+      p {
+        width: 90%;
+      }
     }
   }
 }
