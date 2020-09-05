@@ -49,6 +49,8 @@
       flex-direction: column;
       width: 90%;
       .offers-content-img {
+        display: flex;
+        justify-content: center;
         width: 100%;
       }
       .offers-content-infos {

@@ -42,7 +42,7 @@
         <p>{{ event.price }} €</p>
       </div>
     </div>
-    <div v-if="type === 'show'" :style="fromHome ? 'margin-top: 2%': 'margin-top: 8%'">
+    <div v-if="type === 'show'" :class="fromHome ? 'home-margin-top-btn ': 'events-pages-margin-top-btn'">
       <button class="white-button white-button-txt">
         RÉSERVER MON BILLET
       </button>

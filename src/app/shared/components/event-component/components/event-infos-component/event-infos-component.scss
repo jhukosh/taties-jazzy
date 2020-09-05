@@ -1,4 +1,10 @@
 #Event-infos-component {
+  .home-margin-top-btn {
+    margin-top: 2%;
+  }
+  .events-pages-margin-top-btn {
+    margin-top: 8%;
+  }
   h5 {
     font-family: "AvenirNext", sans-serif;
     font-size: 42px;
@@ -57,7 +63,10 @@
       align-items: baseline;
     }
   }
-  @media all and (max-width: 414px) {
+  @media all and (max-width: 450px) {
+    .events-pages-margin-top-btn {
+      margin-top: 2%;
+    }
     margin-top:5%;
     h5 {
       font-size: 25px;

@@ -39,3 +39,16 @@
     }
   }
 }
+
+@media all and (max-width: 450px) {
+  .fare-card {
+    box-shadow: 5px 5px 12px $middleGrey, -5px 0px 12px $middleGrey;
+    .fare-card-infos {
+      background-color: $strawberry;
+      color: white;
+      .fare-card-subtitle, .fare-card-price, .fare-card-price-bonus {
+        color: white;
+      }
+    }
+  }
+}
