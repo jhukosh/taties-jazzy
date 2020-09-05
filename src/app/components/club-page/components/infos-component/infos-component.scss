@@ -1,24 +1,23 @@
 .infos-club-main {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  p {
+    font-family: "FrutigerLTStd-Roman";
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5b5b5b;
+    width: 40%;
+    text-align: left;
+  }
+  @media all and (max-width: 450px) {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     p {
-        font-family: 'FrutigerLTStd-Roman';
-        font-size: 14px;
-        line-height: 1.5;
-        color: #5b5b5b;
-        width: 40%;
-        text-align: left;
+      width: 100%;
     }
-    @media all and (max-width: 414px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      p {
-        width: 100%;
-      }
-    }
-
+  }
 }

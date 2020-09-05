@@ -4,9 +4,9 @@
       :background_image="path_to_image"
       :background_title="background_title_value"
     />
-    <TatiesTitle :subtitle="subtitle_value" :title="about_us_title.name" />
-    <InfoComponent />
-    <GalleryComponent />
+    <TatiesTitle :subtitle="subtitle_value" :title="about_us_title.name"/>
+    <InfoComponent/>
+    <GalleryComponent/>
   </div>
 </template>
 
@@ -33,9 +33,9 @@ export default {
       path_to_image: "club-page-assets/club-page-banner.png",
       background_title_value: "Le Club"
     };
-  },
+  }
 };
 </script>
 <style lang="scss" scoped>
-@import 'club-page.scss';
+@import "club-page.scss";
 </style>

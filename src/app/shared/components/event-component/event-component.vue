@@ -32,10 +32,7 @@ export default {
     EventInfosComponent,
     EventHomeDateComponent,
   },
-  props: ["parentData", "fromHome", "type", "eventPicture"],
-  mounted() {
-    console.log("Mounted :", this.parentData);
-  },
+  props: ["parentData", "fromHome", "type", "eventPicture"]
 };
 </script>
 

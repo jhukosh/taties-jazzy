@@ -1,30 +1,30 @@
 #Info-contact-form-component {
-    transform: translateY(-1em);
+  transform: translateY(-1em);
+  #Info-contact-header {
+    font-family: "BodoniSvtyTwoITCTT", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.43;
+    color: #000000;
+    h3 {
+      margin: 0;
+    }
+  }
+  #Info-contact-content {
+    font-family: "FrutigerLTStd-Roman", sans-serif;
+    font-size: 16px;
+    line-height: 1.63;
+    color: #000000;
+    .line-height {
+      line-height: 2.88;
+    }
+  }
+  @media all and (max-width: 450px) {
     #Info-contact-header {
-        font-family: 'BodoniSvtyTwoITCTT', sans-serif;
-        font-size: 42px;
-        font-weight: bold;
-        line-height: 1.43;
-        color: #000000;
-        h3 {
-            margin: 0;
-        }
-    }
-    #Info-contact-content {
-        font-family: 'FrutigerLTStd-Roman', sans-serif;
-        font-size: 16px;
-        line-height: 1.63;
-        color: #000000;
-        .line-height {
-            line-height: 2.88;
-        }
-    }
-    @media all and (max-width: 414px) {
-        #Info-contact-header {
-            font-size: 28px;
-            p {
-                margin: 2% 0 2% 0;
-            }
-        }
+      font-size: 28px;
+      p {
+        margin: 2% 0 2% 0;
       }
+    }
+  }
 }

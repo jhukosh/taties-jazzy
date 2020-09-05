@@ -7,7 +7,7 @@
     justify-content: space-between;
     padding: 0 5% 0 5%;
     .footer-ticket-booking-first-paragraph {
-      font-size:22px;
+      font-size: 22px;
       margin-bottom: 0;
     }
     .footer-ticket-booking-second-paragraph {
@@ -16,7 +16,8 @@
       margin-top: 0;
       span {
         color: $strawberry;
-      }:last-child {
+      }
+      :last-child {
         color: black;
       }
     }
@@ -27,7 +28,7 @@
     border-top: 11px solid #fd2232;
     display: flex;
     flex-direction: row;
-    font-family: 'FrutigerLTStd', sans-serif !important;
+    font-family: "FrutigerLTStd", sans-serif !important;
     justify-content: space-evenly;
     height: 200px;
     width: 100%;
@@ -75,7 +76,6 @@
           text-align: start;
         }
         .footer-club-location {
-          
           div {
             width: 15%;
             #location-icon {
@@ -93,7 +93,7 @@
           text-align: start;
         }
       }
-      @media all and (min-width: 414px) {
+      @media all and (min-width: 450px) {
         .half-width-white-border-top {
           display: none;
         }
@@ -103,12 +103,12 @@
         flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
-        @media all and (min-width: 414px) {
-        img {
-          width: 24px;
-          height: 24px;
+        @media all and (min-width: 450px) {
+          img {
+            width: 24px;
+            height: 24px;
+          }
         }
-      }
         a {
           margin-left: 10%;
           align-self: flex-end;
@@ -124,7 +124,7 @@
     }
   }
 
-  @media all and (min-width: 414px) and (max-width: 768px) {
+  @media all and (min-width: 450px) and (max-width: 768px) {
     .first-section-links {
       display: none;
     }
@@ -136,7 +136,7 @@
     }
   }
 
-  @media all and (max-width: 414px) {
+  @media all and (max-width: 450px) {
     .footer-ticket-booking {
       display: flex;
       align-items: center;
@@ -156,7 +156,8 @@
           display: flex;
           align-items: center;
           flex-direction: column;
-          p, a {
+          p,
+          a {
             padding-top: 2%;
             text-align: center;
           }
@@ -173,7 +174,7 @@
           padding-top: 5%;
           a {
             align-self: center;
-            margin-left:0;
+            margin-left: 0;
             padding-top: 2%;
           }
         }
@@ -185,9 +186,9 @@
         }
       }
       .footer-social-media-section {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
       }
     }
     .first-section-links {

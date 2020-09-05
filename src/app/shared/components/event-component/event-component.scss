@@ -11,7 +11,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    position:relative;
+    position: relative;
     width: 100%;
     .event-infos-image {
       width: 40%;
@@ -30,16 +30,26 @@
       z-index: -9999;
     }
   }
-  @media all and (max-width: 414px) {
+  @media all and (max-width: 450px) {
+    .event-trumpet-icon {
+      display: none;
+    }
+    .event-infos-content {
+      display: flex;
+      flex-direction: column;
+    }
     .event-infos-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
-    .event-infos-image, .event-infos-content {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
+      overflow: hidden;
+      margin-left: 0;
+      .event-infos-image,
+      .event-infos-content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
     }
   }
 }

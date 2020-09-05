@@ -22,13 +22,14 @@
         height: 19.71rem;
         margin: 0.7rem;
       }
-    }:first-child {
+    }
+    :first-child {
       img {
         margin-top: 0;
       }
     }
   }
-  @media all and (max-width: 414px) {
+  @media all and (max-width: 450px) {
     display: flex;
     flex-direction: column;
   }

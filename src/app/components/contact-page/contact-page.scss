@@ -21,14 +21,15 @@
         width: 20%;
       }
     }
-    @media all and (max-width: 414px) {
+    @media all and (max-width: 450px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
       .contact-page-tmp-placeholder {
         margin-bottom: 5%;
         width: 100%;
-        p, img {
+        p,
+        img {
           display: none;
         }
       }

@@ -1,37 +1,37 @@
 #Book-ticket-button-component {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 -1px 12px 0 rgba(122, 122, 122, 0.5);
-    #Ticket-alarm-container {
-        padding: 1.5em;
-        margin-left: 3em;
-        .ticket-text {
-            font-family: 'BodoniSvtyTwoITCTT', sans-serif;
-            font-size: 25px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            color: #000000;
-        }
-        .ticket-sub {
-            font-family: 'Avenir', sans-serif;
-            font-size: 14px;
-            font-weight: normal;
-            color: #919191;
-            span {
-                font-weight: 900;
-                color: #e62f3d;
-            }
-        }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -1px 12px 0 rgba(122, 122, 122, 0.5);
+  #Ticket-alarm-container {
+    padding: 1.5em;
+    margin-left: 3em;
+    .ticket-text {
+      font-family: "BodoniSvtyTwoITCTT", sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
     }
-    .black-button {
-        width: 20%;
-        margin-right: 2em;
-        a {
-            color: white;
-        }
+    .ticket-sub {
+      font-family: "Avenir", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      color: #919191;
+      span {
+        font-weight: 900;
+        color: #e62f3d;
+      }
     }
+  }
+  .black-button {
+    width: 20%;
+    margin-right: 2em;
+    a {
+      color: white;
+    }
+  }
 }

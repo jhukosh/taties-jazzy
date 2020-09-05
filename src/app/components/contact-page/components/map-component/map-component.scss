@@ -3,7 +3,7 @@
     background-image: url("../../../../../assets/contact-page-assets/taties-jazzy-adresse.png");
     background-repeat: no-repeat;
     background-size: cover;
-    @media all and (min-width: 414px)  {
+    @media all and (min-width: 450px)  {
       margin-bottom: -2em;
       margin-top: 8em;
     }
@@ -16,7 +16,7 @@
       border: solid 1px $middleGrey;
       background-color: #000000;
       color: #ffffff;
-      @media all and (min-width: 414px) {
+      @media all and (min-width: 450px) {
         width: 26.4375em;
         margin-left: 55%;
         transform: translateY(-8em);
@@ -68,7 +68,7 @@
       }
     }
   }
-  @media all and (max-width: 414px) {
+  @media all and (max-width: 450px) {
     margin-bottom: 0;
     margin-top: 0;
     #Contact-informations {

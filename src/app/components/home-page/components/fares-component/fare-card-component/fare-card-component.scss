@@ -17,7 +17,7 @@
       margin-bottom: 4%;
     }
     .fare-card-price {
-      color:$strawberry;
+      color: $strawberry;
       font-size: 32px;
       .fare-card-price-bonus {
         color: $middleGrey;
@@ -34,7 +34,9 @@
     background-color: $strawberry;
     color: white;
     transition: all 0.2s ease;
-    .fare-card-subtitle, .fare-card-price, .fare-card-price-bonus {
+    .fare-card-subtitle,
+    .fare-card-price,
+    .fare-card-price-bonus {
       color: white;
     }
   }
@@ -46,7 +48,9 @@
     .fare-card-infos {
       background-color: $strawberry;
       color: white;
-      .fare-card-subtitle, .fare-card-price, .fare-card-price-bonus {
+      .fare-card-subtitle,
+      .fare-card-price,
+      .fare-card-price-bonus {
         color: white;
       }
     }

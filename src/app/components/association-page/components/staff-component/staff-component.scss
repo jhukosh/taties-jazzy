@@ -83,10 +83,9 @@
   @media all and (max-width: 450px) {
     .change-staff-displayed-btn {
       display: flex;
-      justify-content:center;
+      justify-content: center;
       margin-top: 2%;
       width: 100%;
-
       p {
         #Left-arrow {
           transform: rotate(180deg);
@@ -125,7 +124,8 @@
         display: none;
         height: 0;
       }
-      .left-column, .right-column {
+      .left-column,
+      .right-column {
         margin-top: 5%;
         width: 100%;
         .staff-name-container {

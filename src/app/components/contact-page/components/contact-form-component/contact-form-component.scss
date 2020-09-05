@@ -1,68 +1,63 @@
 #Contact-form-component {
-    width: 40%;
-    .please-fill-form {
-        font-family: 'FrutigerLTStd-Roman', sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.31;
-        letter-spacing: normal;
-        color: #000000;
+  width: 40%;
+  .please-fill-form {
+    font-family: "FrutigerLTStd-Roman", sans-serif;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #000000;
+  }
+  #Contact-form {
+    height: 32em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    input:focus,
+    textarea:focus {
+      outline: none;
     }
-    #Contact-form {
-        height: 32em;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        input:focus, textarea:focus {
-            outline: none;
-        }
-        #Email-input, #Objet-input, #Message-input {
-            padding: 1rem;
-            padding-right: 0rem;
-            border: solid 1px $middleGrey;
-            width: stretch; // == fill-available with webkit
-        }
-        #Email-input, #Email-input::placeholder, 
-        #Objet-input, #Objet-input::placeholder {
-            font-family: 'FrutigerLTStd', sans-serif;
-            font-size: 14px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            color: #000000;
-        }
-        #Email-input:focus, #Objet-input:focus, #Message-input:focus {
-            border: 2px solid $strawberry;
-        }
-        #Message-input {
-            height: 15em;
-            resize: none;
-        }
-        .message-label {
-            width: 5em;
-            position: relative;
-            left: .6em;
-            top: .7em;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            resize: none;
-            font-family: 'FrutigerLTStd', sans-serif;
-            font-size: 14px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            color: #000000;
-        }
-        #Contact-submit-btn {
-            width: 37%;
-            padding: 1rem;
-        }
+    #Email-input,
+    #Objet-input,
+    #Message-input {
+      padding: 1rem;
+      padding-right: 0rem;
+      border: solid 1px $middleGrey;
+      width: stretch; // == fill-available with webkit
     }
+    #Email-input,
+    #Email-input::placeholder,
+    #Objet-input,
+    #Objet-input::placeholder {
+      font-family: "FrutigerLTStd", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+    }
+    #Email-input:focus,
+    #Objet-input:focus,
+    #Message-input:focus {
+      border: 2px solid $strawberry;
+    }
+    #Message-input {
+      height: 15em;
+      resize: none;
+    }
+    .message-label {
+      width: 5em;
+      position: relative;
+      left: 0.6em;
+      top: 0.7em;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      resize: none;
+      font-family: "FrutigerLTStd", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+    }
+    #Contact-submit-btn {
+      width: 37%;
+      padding: 1rem;
+    }
+  }
 }

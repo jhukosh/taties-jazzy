@@ -1,35 +1,35 @@
 #Title-background-component {
-    margin-top: -6em;
+  margin-top: -6em;
+  #Title-background-banner {
+    display: flex;
+    flex-direction: column;
+    height: 582px;
+    width: 100%;
+    #Title-banner-image {
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      #Main-page-title {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 128px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+    }
+  }
+  @media all and (max-width: 450px) {
     #Title-background-banner {
-        display: flex;
-        flex-direction: column;
-        height: 582px;
-        width: 100%;
-        #Title-banner-image {
-            background-size: cover;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            #Main-page-title {
-                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-                font-size: 128px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: #ffffff;
-            }
-        }
+      height: 250px;
+      #Main-page-title {
+        display: none;
+      }
     }
-    @media all and (max-width: 414px) {
-        #Title-background-banner {
-            height: 250px;
-            #Main-page-title {
-                display: none;
-            }
-        }
-    }
+  }
 }

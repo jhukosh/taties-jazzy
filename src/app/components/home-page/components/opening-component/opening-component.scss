@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: space-between;
   p {
-    font-family: 'FrutigerLTStd', sans-serif !important;
+    font-family: "FrutigerLTStd", sans-serif !important;
     color: $text-article;
-    line-height:25px;
+    line-height: 25px;
     margin-top: 2% !important;
   }
   .opening-content {
@@ -15,7 +15,7 @@
     flex-direction: row;
     h3 {
       font-size: 80px;
-      color:  $strawberry;
+      color: $strawberry;
       white-space: nowrap;
     }
     .opening-logo {
@@ -25,7 +25,7 @@
       .opening-logo-bg {
         border-radius: 50%;
         background-color: black;
-        width:460px;
+        width: 460px;
         height: 460px;
         text-align: center;
         img {
@@ -53,12 +53,13 @@
         margin-top: 5%;
         margin-bottom: 0;
       }
-      .opening-text-date, strong {
+      .opening-text-date,
+      strong {
         color: black;
         margin-top: 5%;
       }
       strong {
-        font-family: 'FrutigerLTStd', sans-serif !important;
+        font-family: "FrutigerLTStd", sans-serif !important;
         font-size: 18px;
         margin-top: 0;
       }
@@ -101,32 +102,33 @@
   .opening-container-component {
     align-items: flex-start;
     .opening-content {
-    flex-direction: column;
-    h3 {
-      font-size: 38px;
-    }
-    .opening-logo {
-      margin-top: 70px;
-      .opening-logo-bg {
-      display: flex;
-      flex-direction: column-reverse;
-      width: 250px;
-      height: 250px;
-      img {
-        width: 300px;
-      }
+      flex-direction: column;
       h3 {
-        font-size: 48px;
-        margin-bottom: 5%;
+        font-size: 38px;
+      }
+      .opening-logo {
+        margin-top: 70px;
+        .opening-logo-bg {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 250px;
+          height: 250px;
+          img {
+            width: 300px;
+          }
+          h3 {
+            font-size: 48px;
+            margin-bottom: 5%;
+          }
+        }
+      }
+      .opening-text {
+        width: 90%;
       }
     }
-  }
-    .opening-text {
-      width: 90%;
+    .triangleDecorationLeft,
+    .triangleDecorationRight {
+      top: 0;
     }
   }
-  .triangleDecorationLeft, .triangleDecorationRight {
-    top: 0;
-  }
-}
 }

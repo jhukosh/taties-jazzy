@@ -57,7 +57,7 @@
   }
   @media all and (max-width: 450px) {
     .home-social-media {
-      display:flex;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -76,8 +76,7 @@
         }
       }
     }
-    .home-page-show-placeholder
-    .home-page-show-placeholder-img {
+    .home-page-show-placeholder .home-page-show-placeholder-img {
       display: none;
     }
     .home-page-show-placeholder {
