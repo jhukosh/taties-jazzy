@@ -55,4 +55,30 @@
       }
     }
   }
+  @media all and (max-width: 450px) {
+    .home-social-media {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h4 {
+        white-space: initial;
+        width: 90%;
+      }
+      .home-social-media-icons {
+        width: 90%;
+      }
+      .home-img-gallery {
+        justify-content: flex-start;
+        overflow: hidden;
+        img {
+          width: 150px;
+        }
+      }
+    }
+    .home-page-show-placeholder
+    .home-page-show-placeholder-img {
+      display: none;
+    }
+  }
 }

@@ -20,7 +20,7 @@
     <!-- Placeholder if none show to promote -->
     <div v-else-if="!homeShow" class="home-page-show-placeholder">
       <h4>La programmation des événements est en cours !</h4>
-      <img :src="tmpEventShowPicture" alt />
+      <img :src="tmpEventShowPicture" alt  class="home-page-show-placeholder-img"/>
     </div>
 
     <!-- Red backgrounded join us component -->

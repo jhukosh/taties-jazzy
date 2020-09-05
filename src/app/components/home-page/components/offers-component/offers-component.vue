@@ -20,7 +20,7 @@
           {{ secondParagraph }}
           <span>{{ secondParagraphEnd }}</span>
         </p>
-        <div>
+        <div class="offers-content-btn">
           <button class="black-button black-button-txt">
             <router-link to="/shows">VOIR PLUS</router-link>
           </button>

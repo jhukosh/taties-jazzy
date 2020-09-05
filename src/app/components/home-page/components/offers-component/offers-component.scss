@@ -40,4 +40,24 @@
       }
     }
   }
+  @media all and (max-width: 450px) {
+    .offers-trumpet-icon {
+      display: none;
+    }
+    .offers-content {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      .offers-content-img {
+        width: 100%;
+      }
+      .offers-content-infos {
+        width: 100%;
+        .offers-content-btn {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }

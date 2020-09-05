@@ -3,15 +3,23 @@
   <div class="cards-container">
     <div 
         class="cards"
-        v-for="fare in fares" 
-        :key="fare.type"
+        v-for="(fare, index) in fares" 
+        :key="index"
     >
     <FareCardComponent  
         :title="fare.title" 
         :price="fare.price"
         :bonus="fare.bonus"
         :picture="fare.picture"
+        :class="index !== indexToDisplay ? 'undisplayCard': ''"
     />
+    <div class="change-card-displayed-btn" :class="index !== indexToDisplay ? 'undisplayCard': ''">
+      <p @click="changeCardDisplayed(index)">
+        <img src="@/assets/arrow.png" alt id="Left-arrow">
+          {{ `${index + 1}/4` }}
+        <img src="@/assets/arrow.png" alt>
+      </p>
+    </div>
     </div>
   </div>
   <div class="fares-infos-container">
@@ -56,7 +64,13 @@ export default {
           price: 'Gratuit',
           type: 'children'
         }
-      ]
+      ],
+      indexToDisplay: 0
+    }
+  },
+  methods: {
+    changeCardDisplayed(index) {
+      this.indexToDisplay = index + 1;
     }
   }
 }

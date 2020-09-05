@@ -5,6 +5,12 @@
     justify-content: space-evenly;
     .cards {
       width: 20%;
+      .undisplayCard {
+        display: inherit;
+      }
+      .change-card-displayed-btn {
+        display: none;
+      }
     }
   }
   .fares-infos-container {
@@ -21,6 +27,37 @@
     }
     .black-button {
       margin-top: 2%;
+    }
+  }
+  @media all and (max-width: 450px) {
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .cards {
+      width: 90%;
+      .undisplayCard {
+        display: none;
+      }
+    }
+      .change-card-displayed-btn {
+        display: flex;
+        p {
+          #Left-arrow {
+            transform: rotate(180deg);
+          }
+          img {
+            width: 20px;
+            margin-left: 8px;
+            margin-right: 8px;
+          }
+          img:hover {
+            opacity: 0.2;
+          }
+        }
+      }
     }
   }
 }

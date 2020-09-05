@@ -26,4 +26,11 @@
   .join-button {
     padding: 50px;
   }
+  @media all and (max-width: 450px) {
+    display:flex;
+    flex-direction: column;
+    .join-button {
+      padding-top: 0;
+    }
+  }
 }

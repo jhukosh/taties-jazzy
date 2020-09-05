@@ -96,28 +96,37 @@
       }
     }
   }
-  .triangleDecorationLeft, .triangleDecorationRight {
-    display: none;
-  }
 }
 @media all and (max-width: 640px) {
-  .opening-container-component .opening-content {
+  .opening-container-component {
+    align-items: flex-start;
+    .opening-content {
     flex-direction: column;
     h3 {
       font-size: 38px;
     }
-    .opening-logo .opening-logo-bg {
-      width: 300px;
-      height: 300px;
+    .opening-logo {
+      margin-top: 70px;
+      .opening-logo-bg {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 250px;
+      height: 250px;
       img {
         width: 300px;
       }
       h3 {
-        margin-top: 0;
+        font-size: 48px;
+        margin-bottom: 5%;
       }
     }
   }
-  .triangleDecorationLeft, .triangleDecorationRight {
-    display: none;
+    .opening-text {
+      width: 90%;
+    }
   }
+  .triangleDecorationLeft, .triangleDecorationRight {
+    top: 0;
+  }
+}
 }

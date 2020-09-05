@@ -102,4 +102,37 @@
       }
     }
   }
+  @media all and (max-width: 450px) {
+    background-size: 100% 450px;
+    height: 450px;
+    .home-circle-version, .home-trumpet-version {
+      .text-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        margin:15% 0 0 0;
+        padding: 0;
+        h3, h4 {
+          margin:0;
+        }
+        .text-part-paragrah {
+          margin-bottom: 0;
+        }
+        p {
+          width: 90%;
+          margin-left: 0;
+        }
+        ul {
+          margin-top: 12%;
+          width: 90%;
+        }
+      }
+      .img-part-desktop {
+        display: none;
+      }
+    }
+  }
 }

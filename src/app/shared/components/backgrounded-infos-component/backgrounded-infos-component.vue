@@ -2,7 +2,7 @@
 <div class="background">
   <!-- Backgrounded component with circle icon -->
   <div v-if="parentData === 'circle'" class="home-circle-version">
-    <div class="img-part">
+    <div class="img-part img-part-desktop">
       <img src="@/assets/members.jpg" />
     </div>
     <div class="text-part">
@@ -38,7 +38,7 @@
         </button>
       </div>
     </div>
-    <div class="img-part">
+    <div class="img-part img-part-desktop">
       <img src="@/assets/members2.jpg" />
     </div>
   </div>

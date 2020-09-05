@@ -1,34 +1,48 @@
 .home-component {
+  align-items: center;
+  background: url("../../../../../assets/home-band-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+
+  #home-band-main-logo {
     align-items: center;
-    background: url('../../../../../assets/home-band-bg.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    height: 450px;
+    height: 50%;
+    width: 50%;
     justify-content: center;
-    overflow: hidden;
-    width: 100%;
+    z-index: 2;
+  }
 
+  #jazzy {
+    align-self: flex-start;
+    margin-bottom: -50px;
+    width: 45%;
+  }
+
+  #asso {
+    align-self: flex-end;
+    margin-top: -50px;
+    width: 45%;
+  }
+  @media all and (max-width: 450px) {
+    height: 400px;
     #home-band-main-logo {
-        align-items: center;
-        height: 50%;
-        width: 50%;
-        justify-content: center;
-        z-index: 2;
+      width: 90%;
     }
-
     #jazzy {
-        align-self: flex-start;
-        margin-bottom: -50px;
-        width: 45%;
+      margin-bottom: 0;
+      width: 90%;
     }
-
     #asso {
-        align-self: flex-end;
-        margin-top: -50px;
-        width: 45%;
+      margin-top: 0;
+      width: 80%;
     }
+  }
 }
