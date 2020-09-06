@@ -1,23 +1,14 @@
 <template>
   <div id="Header-container">
     <ul class="navList">
+      <!-- Burger menu -->
       <li class="headerBurger">
-        <img src="@/assets/icons/menu-icon.jpg" alt="Menu Burger" />     
+        <img src="@/assets/icons/menu-icon.jpg" alt="Menu Burger" @click="displayResponsiveMenu"/>     
       </li>
-      <!-- <div class="Menu">
-        <div class="headerSousMenu">
-          <a class="sousMenu" href="#" id="close">×</a>
-          <img src=@/assets/logo515copy.png class="menuLogo">
-        </div>
-              <a class="sousMenu" href="#">Accueil</a>
-              <a class="sousMenu" href="#"> Concert</a>
-              <a class="sousMenu" href="#">Masterclass</a>
-              <a class="sousMenu" href="#">L'association</a>
-              <a class="sousMenu" href="#">Le Club</a>
-              <a class="sousMenu" href="#">Contact</a>
-              <p class="sousMenu"> Retrouvez nous sur les réseaux sociaux</p>
-      </div>   -->   
-      <li class="navItem">
+
+      <ResponsiveMenuComponent v-if="displayMenu" @closeResponsiveOk="closing"/>
+              
+      <li class="navItem" @click="displayResponsiveMenu">
         <router-link to="/">Accueil</router-link>
       </li>
       <li class="navItem">
@@ -42,9 +33,28 @@
   </div>
 </template>
 <script>
+import ResponsiveMenuComponent from '@/app/components/main-layout/components/header-component/components/responsive-menu-component.vue';
 export default {
   name: "HeaderComponent",
+  components: {
+    ResponsiveMenuComponent
+  },
+  data: function() {
+    return {
+      displayMenu: false
+    }
+  },
+  methods: {
+    displayResponsiveMenu: function(){
+    this.displayMenu = !this.displayMenu
+    },
+    closing(bool){
+      console.log('bool', bool)
+      this.displayMenu=false     
+    }
+  }
 };
+
 </script>
 <style lang="scss" scoped>
 @import "header-component.scss";
