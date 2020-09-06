@@ -7,18 +7,15 @@
       <h4>Animer une Master Class ?</h4>
     </div>
     <div class="join-button">
-      <button class="strawberry-button strawberry-button-txt">
-        <a
-          href="mailto:lestatiesjazzy@gmail.com"
-          title="Envoyer un email à l'association"
-        >ENVOYER UN MAIL</a>
-      </button>
+      <a href="mailto:lestatiesjazzy@gmail.com" title="Envoyer un email à l'association">
+        <button class="strawberry-button strawberry-button-txt">ENVOYER UN MAIL</button>
+      </a>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: "JoinComponent",
+  name: "JoinComponent"
 };
 </script>
 

@@ -4,19 +4,21 @@
       :background_image="path_to_image"
       :background_title="background_title_value"
     />
-    <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.contact_title" />
+    <TatiesTitleComponent :subtitle="title.subtitle_value" :title="title.contact_title"/>
     <div id="Form-and-info-container">
       <!-- TODO Make this contact form work and replace mailto on pages
       <ContactFormComponent />
       -->
-      <InfoContactFormComponent />
+      <InfoContactFormComponent/>
       <div class="contact-page-tmp-placeholder">
-        <img src="@/assets/icons/send-email-icon.jpg" alt />
+        <img src="@/assets/icons/send-email-icon.jpg" alt>
         <p>Envoyez-nous un email en précisant votre demande !</p>
-        <button class="black-button black-button-txt">ENVOYER UN EMAIL</button>
+        <a href="mailto:lestatiesjazzy@gmail.com" title="Envoyer un email à l'association">
+          <button class="black-button black-button-txt">ENVOYER UN EMAIL</button>
+        </a>
       </div>
     </div>
-    <MapComponent />
+    <MapComponent/>
   </div>
 </template>
 
@@ -34,7 +36,7 @@ export default {
     TatiesTitleComponent,
     //ContactFormComponent,
     InfoContactFormComponent,
-    MapComponent,
+    MapComponent
   },
   data: () => {
     return {
@@ -42,10 +44,10 @@ export default {
       background_title_value: "Contact",
       title: {
         contact_title: "Contact",
-        subtitle_value: "Les Taties Jazzy",
-      },
+        subtitle_value: "Les Taties Jazzy"
+      }
     };
-  },
+  }
 };
 </script>
 

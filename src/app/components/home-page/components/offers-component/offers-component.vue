@@ -1,11 +1,11 @@
 <template>
   <div id="Offers-component">
     <div class="offers-trumpet-icon">
-      <img src="@/assets/reversed-trumpet.png" alt />
+      <img src="@/assets/reversed-trumpet.png" alt>
     </div>
     <div class="offers-content">
       <div class="offers-content-img">
-        <img :src="picture" alt />
+        <img :src="picture" alt>
       </div>
       <div class="offers-content-infos">
         <h4>{{ title }}</h4>
@@ -21,9 +21,9 @@
           <span>{{ secondParagraphEnd }}</span>
         </p>
         <div class="offers-content-btn">
-          <button class="black-button black-button-txt">
-            <router-link to="/shows">VOIR PLUS</router-link>
-          </button>
+          <router-link to="/shows">
+            <button class="black-button black-button-txt">VOIR PLUS</button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -44,9 +44,9 @@ export default {
       firstParagraph3: "artistes talentueux",
       secondParagraph:
         "Tous les vendredis et samedis soirs, de 19h jusqu'au bout de la nuit",
-      secondParagraphEnd: "(Enfin... 00h30, c'est déjà pas mal !)",
+      secondParagraphEnd: "(Enfin... 00h30, c'est déjà pas mal !)"
     };
-  },
+  }
 };
 </script>
 <style lang="scss" scoped>

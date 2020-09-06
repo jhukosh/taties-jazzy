@@ -50,6 +50,7 @@ export default {
   name: "ResponsiveMenuComponent",
   methods: {
     closeResponsive() {
+      document.documentElement.style.overflow = "scroll";
       this.$emit("closeResponsiveOk", false);
     },
     disableScroll() {

@@ -18,7 +18,7 @@
     <div class="footer-sections">
       <div class="section">
         <div class="first-section-logos">
-          <GirlsAndBannerLogoComponent :bannerMarginTop="'-18px'" />
+          <GirlsAndBannerLogoComponent :bannerMarginTop="'-18px'"/>
         </div>
         <div class="first-section-links">
           <ul class="links-list">
@@ -41,18 +41,18 @@
         <div class="footer-contact">
           <div class="footer-club-location row-horizontal-start">
             <div class="row-all-centered">
-            <img src="@/assets/icons/map-pin.png" id="location-icon" />
+              <img src="@/assets/icons/map-pin.png" id="location-icon">
             </div>
             <p>
               Le Club
-              <br />23 rue Voltaire
-              <br />Fontainebleau
-              <br />
+              <br>23 rue Voltaire
+              <br>Fontainebleau
+              <br>
             </p>
           </div>
           <div class="footer-email-contact row-horizontal-start">
             <div class="row-all-centered">
-            <img src="@/assets/icons/mail.png" id="mail-icon"/>
+              <img src="@/assets/icons/mail.png" id="mail-icon">
             </div>
             <a
               href="mailto:lestatiesjazzy@gmail.com"
@@ -65,7 +65,13 @@
         <div class="half-width-white-border-top"></div>
         <div class="footer-social-media">
           <div class="footer-instagram">
-            <img src="@/assets/social-media/instagram.png" alt="Logo Instagram" />
+            <a
+              href="https://www.instagram.com/lestatiesjazzy/?hl=fr"
+              target="_blank"
+              title="Redirection vers le compte instagram"
+            >
+              <img src="@/assets/social-media/instagram.png" alt="Logo Instagram">
+            </a>
             <a
               href="https://www.instagram.com/lestatiesjazzy/?hl=fr"
               target="_blank"
@@ -73,7 +79,13 @@
             >@lestatiesjazzy</a>
           </div>
           <div class="footer-facebook">
-            <img src="@/assets/social-media/facebook.png" alt="Logo Facebook" />
+            <a
+              href="https://www.facebook.com/lestatiesjazzy"
+              target="_blank"
+              title="Redirection vers le compte facebook"
+            >
+              <img src="@/assets/social-media/facebook.png" alt="Logo Facebook">
+            </a>
             <a
               href="https://www.facebook.com/lestatiesjazzy"
               target="_blank"
@@ -92,8 +104,8 @@ import GirlsAndBannerLogoComponent from "@/app/shared/components/girls-and-banne
 export default {
   name: "FooterComponent",
   components: {
-    GirlsAndBannerLogoComponent,
-  },
+    GirlsAndBannerLogoComponent
+  }
 };
 </script>
 <style lang="scss" scoped>
