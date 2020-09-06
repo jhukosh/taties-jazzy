@@ -37,14 +37,12 @@
   }
   @media all and (max-width: 768px) and (min-width: 450px) {
     .navList {
-      justify-content: flex-start;
       align-items: center;
       .navItem {
         display: none;
       }
       .headerBurger {
-        margin-left: 5%;
-        margin-right: calc(50% - (5% + 40px + 114.5px));
+        margin-left: -15%;
         cursor: pointer;
         display: flex;
         width: 20%;
@@ -56,14 +54,12 @@
   }
   @media all and (max-width: 450px) {
     .navList {
-      justify-content: flex-start;
       align-items: center;
       .navItem {
         display: none;
       }
       .headerBurger {
-        margin-left: 5%;
-        margin-right: 10%;
+        margin-left: 1%;
         cursor: pointer;
         display: flex;
         img {
