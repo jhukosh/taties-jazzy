@@ -4,6 +4,8 @@ body {
     -webkit-font-smoothing: 'text-font';
     -moz-osx-font-smoothing: 'text-font';
     font-family: 'bod72b', sans-serif;
+    width: 100vw;
+    overflow: hidden;
     .main {
       min-height: calc(100vh - 200px);
     }
