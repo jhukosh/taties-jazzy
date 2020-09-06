@@ -52,6 +52,9 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        img {
+          max-height: 250px;
+        }
       }
       .offers-content-infos {
         width: 100%;

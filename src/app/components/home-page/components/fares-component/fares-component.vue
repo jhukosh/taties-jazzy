@@ -33,8 +33,6 @@
     <div class="fares-infos-container">
       <p>
         <span>Réservez</span> votre billet maintenant et
-      </p>
-      <p>
         obtenez
         <span>10% de rabais !!!</span>
       </p>
