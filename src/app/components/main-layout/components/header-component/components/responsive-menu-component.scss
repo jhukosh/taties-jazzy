@@ -1,0 +1,84 @@
+#Responsive-menu {
+  overflow-y: auto;
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 999;
+  padding: 1rem 20px 2rem 20px;
+  width: 420px;
+  overflow: hidden;
+  .responsive-menu-header {
+    .closing-button {
+      cursor: pointer;
+      font-size: 30px;
+      color: #fff;
+      position: relative;
+      height: 24px;
+      width: 24px;
+      display: block;
+      border: 0;
+      border-radius: 0;
+      background-color: transparent;
+      pointer-events: all;
+    }
+
+    #logoMenu {
+      height: 40px;
+      width: 180px;
+      align-self: center;
+      position: relative;
+      margin-left: 75px;
+    }
+  }
+  hr {
+    background-color: #393939;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 10px;
+    margin-right: 0px;
+    position: relative;
+    width: 300px;
+  }
+
+  p {
+    width: 308px;
+    height: 58px;
+    font-family: BodoniSvtyTwoOSITCTT;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.63px;
+    color: #ffffff;
+    margin-left: 30px;
+    letter-spacing: 2px;
+  }
+
+  a {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    text-align: left;
+    letter-spacing: 2px;
+  }
+  a:hover {
+    color: $strawberry;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    padding-top: 25px;
+  }
+  .socialMediaIcon {
+    margin-left: 40px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+  }
+}

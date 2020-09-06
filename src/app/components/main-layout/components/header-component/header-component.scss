@@ -1,7 +1,6 @@
 #Header-container {
- 
   .navList {
-    color:#fff;
+    color: #fff;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -9,19 +8,16 @@
     justify-content: space-evenly;
     list-style: none;
     padding-inline-start: 0;
-
     .headerLogo {
       height: 63px;
       object-fit: contain;
       width: 229px;
     }
-
     .navItem {
       font-size: 16px;
       text-transform: uppercase;
-      color:#fff;
+      color: #fff;
       font-family: "BodoniSvtyTwoSCITCTT", sans-serif !important;
-
       a {
         color: #393939;
         letter-spacing: 1.2px;
@@ -38,22 +34,43 @@
   @media all and (min-width: 769px) {
     .headerBurger {
       display: none;
-      
     }
   }
-
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 768px) and (min-width: 450px) {
+    .navList {
+      justify-content: flex-start;
+      align-items: center;
       .navItem {
-      display: none;
-      
-      
+        display: none;
       }
-     .headerBurger {
-      cursor:pointer;
-      display: flex;
-      img {
-        width: 80px;
+      .headerBurger {
+        margin-left: 5%;
+        margin-right: calc(50% - (5% + 40px + 114.5px));
+        cursor: pointer;
+        display: flex;
+        width: 20%;
+        img {
+          width: 60px;
+        }
       }
     }
-  } 
+  }
+  @media all and (max-width: 450px) {
+    .navList {
+      justify-content: flex-start;
+      align-items: center;
+      .navItem {
+        display: none;
+      }
+      .headerBurger {
+        margin-left: 5%;
+        margin-right: 10%;
+        cursor: pointer;
+        display: flex;
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
 }
