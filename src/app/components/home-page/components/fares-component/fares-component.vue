@@ -11,7 +11,7 @@
         />
         <div
           class="change-card-displayed-btn"
-          :style="index !== indexToDisplay ? 'display: none': 'display: flex'"
+          v-if="index === indexToDisplay"
         >
           <img
             src="@/assets/arrow.png"

@@ -7,7 +7,7 @@
       <li class="headerBurger">
         <img src="@/assets/icons/menu-icon.jpg" alt="Menu Burger" @click="displayResponsiveMenu">
       </li>
-      <li class="navItem" @click="displayResponsiveMenu">
+      <li class="navItem">
         <router-link to="/">Accueil</router-link>
       </li>
       <li class="navItem">
